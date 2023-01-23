@@ -8,7 +8,7 @@
 
 ## In-Class Assignments
 
-- ICA1: 
+- https://alexanderpusey.github.io/ica/ica1.pdf
 - ICA2
 - ICA3
 - ICA4
