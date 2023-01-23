@@ -1,5 +1,4 @@
 # alexanderpusey.github.io
-This is my repo for ATLS2200.
 
 ## Projects
 
