@@ -8,7 +8,7 @@
 
 ## In-Class Assignments
 
-- ICA1
+- ICA1: 
 - ICA2
 - ICA3
 - ICA4
@@ -26,7 +26,7 @@
 
 ## Weekly Assignments
 
-- WA1
+- https://alexanderpusey.github.io/wa/wa1.html
 - WA2
 - WA3
 - WA4
