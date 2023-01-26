@@ -9,7 +9,7 @@
 ## In-Class Assignments
 
 - https://alexanderpusey.github.io/ica/ica1.pdf
-- ICA2
+- https://alexanderpusey.github.io/ica/ica2.pdf
 - ICA3
 - ICA4
 - ICA5
@@ -27,7 +27,7 @@
 ## Weekly Assignments
 
 - https://alexanderpusey.github.io/wa/wa1.html
-- WA2
+- https://alexanderpusey.github.io/wa/wa2.html
 - WA3
 - WA4
 - WA5
