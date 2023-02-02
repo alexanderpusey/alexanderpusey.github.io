@@ -28,7 +28,7 @@
 
 - https://alexanderpusey.github.io/wa/wa1.html
 - https://alexanderpusey.github.io/wa/wa2.html
-- WA3
+- https://alexanderpusey.github.io/wa/wa3.html
 - WA4
 - WA5
 - WA6
