@@ -11,7 +11,7 @@
 - https://alexanderpusey.github.io/ica/ica1.pdf
 - https://alexanderpusey.github.io/ica/ica2.pdf
 - https://alexanderpusey.github.io/ica/ica3a.html & https://alexanderpusey.github.io/ica/ica3-part2/index.html
-- ICA4
+- https://alexanderpusey.github.io/ica/ica4.html
 - ICA5
 - ICA6
 - ICA7
@@ -29,7 +29,7 @@
 - https://alexanderpusey.github.io/wa/wa1.html
 - https://alexanderpusey.github.io/wa/wa2.html
 - https://alexanderpusey.github.io/wa/wa3.html
-- WA4
+- https://alexanderpusey.github.io/wa/wa4/wa4.html
 - WA5
 - WA6
 - WA7
