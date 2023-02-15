@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../css/ica3a.css">
+</head>
+
+<body>
+    <h1>ATLS 3300 Lab 2: Digital IO and LED Reaction Game</h1>
+    <h2>Lab Overview</h2>
+    <p>
+        This lab introduces the Arduino IDE and presents a couple challenging exercises that involve circuitry and programming. This lab
+        culminates in the creation of a reaction time game, involving a button and an LED.
+    </p>
+    <h2>Materials Used</h2>
+    <section>
+        <p>All materials are sourced from the Elegoo Super Starter Kit UNO R3 Project Kit</p>
+        <ul>
+            <li>Elegoo Uno R3 Controller Board</li>
+            <li>USB Cable</li>
+            <li>USB-C to USB-A Adapter</li>
+            <li>Button</li>
+            <li>830 Tie-Points Breadboard</li>
+            <li>Breadboard Jumper Wire</li>
+            <li>Resistors</li>
+            <li>LEDS</li>
+            <li>Multimeter</li>
+        </ul>
+    </section>
+    <h2>Part 1: Setting up the Arduino IDE</h2>
+    <section>
+        <p>
+            After downloading the Arduino IDE from the <a href="https://wiki-content.arduino.cc/en/software">Arduino downloads page</a>
+            I plugged the Elegoo Uno into my computer via the USB cable and adapter. I loaded a basic blinking light example by
+            navigating to File > Examples > 01. Basics > Blink. Once the code had loaded, I selected the Elegoo device from the drop 
+            down menu in the upper left corner of the IDE. Finally, I clicked the blue right arrow button to upload the code onto the 
+            microcontroller. The resulting blinking yellow led is shown in the unexplainably shaky video below.
+        </p>
+        <video controls width="500">
+            <source src="./media/blink1.mov" type="video/mp4">
+        </video>
+    </section>
+    <h2>Part 2: Blinking an External LED</h2>
+    <section>
+        <p>
+            To blink an external LED I modified the code from the previous blink example to instead use a digital output pin as opposed
+            to the LED on the microcontroller. To do this, I started by declaring a global int LED_PIN with a value of 10. I then replaced
+            LED_BUILTIN with LED_PIN within the digitalwrite() functions. I then constructed the circuit which consisted of a LED and 220 Ohm
+            resistor wired in series. The circuit receives power from the D10 output pin and returns back to the GND. After constructing the
+            circuit I uploaded the code, again using the blue right arrow button. The functioning circuit is shown below.
+        </p>
+        <video controls width="500">
+            <source src="./media/blink2.mov" type="video/mp4">
+        </video>
+        <p>
+            To change the delay, all I had to do was reduce the number within the two delay() functions in the code. The video below shows
+            a more rapidly blinking LED.
+        </p>
+        <video controls width="500">
+            <source src="./media/blink3.mov" type="video/mp4">
+        </video>
+    </section>
+    <h2>Part 3: Button Press and Serial Monitor</h2>
+    <section>
+        <p>
+            Adding a button to the LED circuit was a matter of following a circuit diagram and making the circuit. The button connects to 
+            digital pin 7, which will be used as an input pin to measure the voltage and to determine whether the button is pressed or not.
+            This circuit also features a 10k Ohms resistor which is acting as a <i>pull down resistor</i> and prevents the circuit from 
+            shorting when the button is pressed. The completed circuit is shown below.
+        </p>
+        <img src="./media/buttonandled.JPG" style="width:400px">
+        <p>
+            This part of the exercise involved familiarizing myself with the serial monitor within the Arduino IDE. To initialize the serial
+            monitor I first had to write Serial.begin(9600) within the setup() function. Within the loop() function, I placed
+            Serial.println(), inside of which I placed an output string.
+        </p>
+        <img src="./media/console1.JPG" style="width:350px">
+        <img src="./media/console2.JPG" style="width:350px">
+        <p>
+            By initializing two boolean variables as state variables, I was able to use while() and if() statements to output "waiting" when
+            the button was not pressed, and "pressed" when the button was pressed. This <a href="https://gist.github.com/alexanderpusey/e8c28a701c495e6ef7920c30d541c2aa">code</a> is demonstrated working below.
+            I did notice there were random oscillations between "pressed" and "waiting." I believe these oscillations are caused by the digitalRead() function
+            outputting values other than 0 and 1. This could be fixed by adding less than and greater than operators, rather than equals operators.
+        </p>
+        <video controls width="500">
+            <source src="./media/pressedwaiting.mov" type="video/mp4">
+        </video>
+    </section>
+    <h2>Part 4: LED Reaction Game</h2>
+    <section>
+        <p>
+            For the final part of this lab, we were tasked to code a reaction time game that measures the player's reaction time to the LED turning on. 
+            The program flow is as follows:
+        </p>
+            <ol>
+                <li>Game displays "ready..." to ready the player</li>
+                <li>Using the random() function, the game takes a random delay between 0.5 and 1 seconds</li>
+                <li>After the delay has expired, the LED turns on and the starttime variable is set to millis()</li>
+                <li>The player touches the button which exits a while(digitalRead(INPUT_PIN) == 0) loop</li>
+                <li>The endtime variable is set to millis()</li>
+                <li>The player's score is calculated by subtracting starttime from endtime and is printed to the console</li>
+                <li>A 5 second delay signifies the game restarting</li>
+            </ol>
+        <p>
+            Below is the video game of the game in action. <a href="https://gist.github.com/alexanderpusey/07625033315537cd46b173f4d2ac8786">And here's the code!</a>
+        </p>
+    </section>
+    <video controls width="500">
+        <source src="./media/reactiontime.mov" type="video/mp4">
+    </video>
+    <h2>Conclusion</h2>
+    <section>
+        <p>
+            I thought this was a good intro lab to coding with Arduino. Part 3 had me stumped for a while until I tried to store state within my variables. I also
+            thought part 4 was a good way to tie up all the concepts into a fun exercise. Overall, I enjoyed this lab and feel I have a better handle on Arduino 
+            programming because of it.
+        </p>
+    </section>
+</body>
+
+</html>
