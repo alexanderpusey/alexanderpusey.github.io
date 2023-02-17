@@ -1,18 +1,12 @@
 # alexanderpusey.github.io
 
-## Projects
-
-- HTML
-- CSS
-- JS
-
 ## In-Class Assignments
 
-- https://alexanderpusey.github.io/ica/ica1.pdf
-- https://alexanderpusey.github.io/ica/ica2.pdf
-- https://alexanderpusey.github.io/ica/ica3a.html & https://alexanderpusey.github.io/ica/ica3-part2/index.html
-- https://alexanderpusey.github.io/ica/ica4.html
-- ICA5
+- alexanderpusey.github.io/ica/ica1.pdf
+- alexanderpusey.github.io/ica/ica2.pdf
+- alexanderpusey.github.io/ica/ica3a.html & alexanderpusey.github.io/ica/ica3-part2/index.html
+- alexanderpusey.github.io/ica/ica4.html
+- alexanderpusey.github.io/ica/ica5/ica5.html
 - ICA6
 - ICA7
 - ICA8
@@ -26,10 +20,10 @@
 
 ## Weekly Assignments
 
-- https://alexanderpusey.github.io/wa/wa1.html
-- https://alexanderpusey.github.io/wa/wa2.html
-- https://alexanderpusey.github.io/wa/wa3.html
-- https://alexanderpusey.github.io/wa/wa4/wa4.html
+- alexanderpusey.github.io/wa/wa1.html
+- alexanderpusey.github.io/wa/wa2.html
+- alexanderpusey.github.io/wa/wa3.html
+- alexanderpusey.github.io/wa/wa4/wa4.html
 - WA5
 - WA6
 - WA7
