@@ -27,8 +27,8 @@ hr {
 }
 
 #title {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -65,4 +65,14 @@ li:hover {
 
 a {
     text-decoration: none;
+}
+
+img {
+    width: 50%;
+}
+
+#flexcontainer2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
