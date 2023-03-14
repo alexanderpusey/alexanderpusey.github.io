@@ -23,13 +23,22 @@ hr {
 .flexitem {
     height: 40px;
     padding: 10px;
-    width:35%;
+    width: 35%;
 }
 
 #title {
     margin-top: 80px;
     margin-bottom: 20px;
     padding: 0;
+}
+
+@media (max-width: 400px) {
+    .flexitem {
+        width:100%;
+    }
+    #title {
+        margin-top: 5px;
+    }
 }
 
 #content {
