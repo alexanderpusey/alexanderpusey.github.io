@@ -44,88 +44,40 @@
         <video controls width="500">
             <source src="./media/processing2.mov" type="video/mp4">
         </video>
-        <p>
-            To communicate with the servo, we'll be using the built in Servo.h library. The below photo shows the
-            Servo.h library
-            is installed within the Ardunio IDE.
-        </p>
-        <img src="./media/installed.png" style="width:400px">
-        <p>
-            The video below shows the servo turning using the sketch given to us in the documentation.
-        </p>
-        <video controls width="500">
-            <source src="./media/docsketch.mov" type="video/mp4">
-        </video>
     </section>
-    <h2>Part 2: Controlling the Servo</h2>
+    <h2>Part 2: Processing with Ardunio</h2>
     <section>
         <p>
-            The lab's second part required us to use the potentiometer to control movement of the servo. The below photo
-            shows
-            my circuit with the addition of the potentiometer.
+            To interface with processing, we'll be using the arduino and joystick module. The below wiring diagram shows how the joystick should be connected.
         </p>
-        <img src="./media/potentiometercircuit.JPG" style="width:400px">
+        <img src="./media/joystickdiagram.png" style="width:400px">
         <p>
-            To convert the analog reading of the potentiometer to an angle for the servo, I used the map() function. The
-            sketch can be viewed
-            <a href="https://gist.github.com/alexanderpusey/0df106d6469c7656fe5a8b70174b0a25">here</a>, and the result
+            To talk with processing using the joystick, the Arduino needs to output a specific string of values to the serial monitor. The format is as such: xVal:VALUE;yVal:VALUE;swVal:VALUE. To achieve this I wrote a sketch
+            which can be viewed
+            <a href="https://gist.github.com/alexanderpusey/567d1ce5b45886618129c168723c7199">here</a>, and the result
             is shown below.
         </p>
         <video controls width="500">
-            <source src="./media/potentiometer.mov" type="video/mp4">
+            <source src="./media/serialoutput.mov" type="video/mp4">
         </video>
         <p>
-            Next, we were tasked with using the potentiometer to change the speed of the sweeping servo. This was
-            accomplished by changing the delay between
-            servoA.write() statements. The <a href="AHHHHHHHHHHH">modified sketch</a> is shown running below.
+            By modifying the provided code, I mapped the x and y values of the joystick to the borders of the processing window and used the mapping to render ellipses.
+            Also, when the joystick button is pressed, the color of the ellipse changes to black. The code can be seen
+            <a href="https://gist.github.com/alexanderpusey/dc32b2728430e8fe1407a842b44b41f3">here</a> and is shown running below.
         </p>
         <video controls width="500">
-            <source src="./media/speedsweeper.mov" type="video/mp4">
+            <source src="./media/processing3.mov" type="video/mp4">
         </video>
     </section>
-    <h2>Part 3: DC Motor and Motor Drivers</h2>
+    <h2>Part 3: Creating your own Visualization</h2>
     <section>
         <p>
-            This part of the lab required us to use the DC motor, I wired it to my arduino as such.
-        </p>
-        <img src="./media/dcmotor.JPG" style="width:450px">
-        <video controls width="500">
-            <source src="./media/dcmotor.mov" type="video/mp4">
-        </video>
-        <p>
-            To drive the DC motor, I included the L293D chip in the circuit.
-        </p>
-        <img src="./media/motordriver.JPG" style="width:400px">
-        <p>
-            We were then tasked to code the motor to:
-        </p>
-        <ol>
-            <li>Turn forward at full speed for 2 seconds</li>
-            <li>Stop for 1 second</li>
-            <li>Turn backwards at full speed for 2 seconds</li>
-            <li>Stop for 1 second. Go back to 1</li>
-        </ol>
-        <p>
-            My code can be seen <a href="AHHHHHHHH">here</a> and is shown running below.
+            This part of the lab tasked us to create our own processing visualization with three input components. I chose to use the joystick, a push button, and a potentiometer. The push button changes the red value of the 
+            fill() from 0 to 255, while the potentiometer changes the blue value. The code can be seen <a href="https://gist.github.com/alexanderpusey/0f545198e98e36dfedda3f7af0937d31">here</a> and is shown working below.
         </p>
         <video controls width="500">
-            <source src="./media/sequence.mov" type="video/mp4">
+            <source src="./media/processing4.mov" type="video/mp4">
         </video>
-        <p>
-            ANOTHER SKETCH AND VIDEO HERE!
-        </p>
-    </section>
-    <h2>Part 4: Table-Top Fan</h2>
-    <section>
-        <p>
-
-        </p>
-        <h2>Conclusion</h2>
-        <section>
-            <p>
-                Le conclusion
-            </p>
-        </section>
 </body>
 
 </html>
