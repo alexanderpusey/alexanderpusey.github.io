@@ -53,7 +53,7 @@ function populateMarkers() {
             el.style.backgroundColor = 'lightcoral'
         }
         else if (marker.num_bikes_available <= 5) {
-            el.style.backgroundColor = 'orange'
+            el.style.backgroundColor = 'yellow'
         }
         else if (marker.num_bikes_available > 5) {
             el.style.backgroundColor = 'lightgreen'
