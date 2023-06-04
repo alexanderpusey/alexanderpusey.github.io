@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: orange;
+}
+
+h1 {
+    text-align: center;
+    padding: 0.2em;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controls {
+    /* margin: auto; */
+    width:30%;
+    height: 30%;
+    color: greenyellow;
+    background-color: darkslateblue;
+    padding: 3em;
+}
