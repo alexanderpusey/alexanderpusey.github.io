@@ -5,6 +5,8 @@ let stationdata = null
 // https://gbfs.bcycle.com/bcycle_boulder/station_status.json
 // https://gbfs.bcycle.com/bcycle_boulder/station_information.json
 
+
+
 window.addEventListener('load', () => {
     fetch("https://gbfs.bcycle.com/bcycle_boulder/station_status.json")
         .then(res => res.json())
