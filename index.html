@@ -1,36 +1,78 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./index.css">
-    <title>Alex Pusey</title>
-</head>
+    <head>
+        <title>Alex's Website</title>
+        <link rel="stylesheet" href="./swag.css">
+    </head>
 
-<body>
-    <div id="flexcontainer">
+    <body>
 
-        <div class="flexitem" id="title">
-            <h1>alexanderpusey.github.io</h1>
-            <hr>
-        </div>
+        <div class="page-centered-x">
 
-        <div class="flexitem" id="content">
-            <p>Please select a service to visit</p>
-            <div id="inner">
-                <ul>
-                    <li id="aboutnav">[*] About</li>
-                    <li id="githubnav">[*] Github</li>
-                    <li id="linkedinnav">[*] Linkedin</li>
-                    <li id="bcyclenav">[*] BCycle Station Map</li>
-                </ul>
+            <div id="column">
+
+                <h1>alexanderpusey.github.io</h1>
+                <hr/>
+
+                <div id="content-block">
+                    <p>Welcome to my website!</p>
+                    <div id="nav-menu">
+                        <ul>
+                            <li id="projectsnav">
+                                <a href="./projects.html">[*] Art & Engineering</a>
+                            </li>
+                            <li id="githubnav">
+                                <a href="https://github.com/alexanderpusey">[*] Github</a>
+                            </li>
+                            <li id="linkedinnav">
+                                <a href="https://www.linkedin.com/in/alex-pusey/">[*] Linkedin</a>
+                            </li>
+                            <li id="aboutnav">
+                                <a href="./about.html">[*] About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="content-block">
+                    <p>Lately...</p>
+                    <div id="project-menu">
+                        <a href="./projects/restingpermitted.html">
+                            <div id="project-menu-item">
+                                <img src="./img/restingpermitted.jpg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
+
         </div>
 
-    </div>
+    </body>
 
-    <script src="./index.js"></script>
-</body>
+    <script>
+        const projects = document.getElementById("projectsnav")
+        const about = document.getElementById("aboutnav")
+        const github = document.getElementById("githubnav")
+        const linkedin = document.getElementById("linkedinnav")
+
+        projects.addEventListener("click", function () {
+            window.open("./projects.html", "_self")
+        })
+
+        about.addEventListener("click", function () {
+            window.open("./about.html", "_self")
+        })
+
+        github.addEventListener("click", function () {
+            window.open("https://github.com/alexanderpusey", "_self")
+        })
+
+        linkedin.addEventListener("click", function () {
+            window.open("https://www.linkedin.com/in/alex-pusey//", "_self")
+        })
+    </script>
 
 </html>
