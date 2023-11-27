@@ -1,31 +1,45 @@
 {
     "projects" : [
         {
+            "title" : "Bike Watch",
+            "tags" : ["SwiftUI", "WatchOS"],
+            "link" : "./error.html"
+        },
+        {
             "title" : "Resting Permitted",
-            "materials" : "Vinyl installation",
+            "description" : "Vinyl installation",
+            "tags" : ["Sculpture"],
             "imgs" : ["./img/restingpermitted.jpg"],
-            "link" : "./projects/restingpermitted.html",
+            "link" : "./error.html",
             "featured" : true
         },
         {
             "title" : "partyreg.colorado.edu",
-            "materials" : "Full-stack web application",
+            "description" : "Full-stack web application",
+            "tags" : ["Node.js", "Docker", "React"],
             "imgs" : ["./img/partyreg.png"],
-            "link" : "./projects/partyreg.html",
+            "link" : "./error.html",
             "featured" : true
         },
         {
             "title" : "New Parts",
-            "materials" : "Plastic, concrete, and wax casts",
+            "description" : "Plastic, concrete, and wax casts",
+            "tags" : ["Sculpture"],
             "imgs" : ["./img/newparts.jpg"],
-            "link" : "./projects/newparts.html",
+            "link" : "./error.html",
             "featured" : true
         },
         {
             "title" : "Loft(ish) Bed",
-            "materials" : "Woodworking",
-            "imgs" : ["./img/newparts.jpg"],
-            "link" : "./projects/newparts.html"
+            "tags" : ["Woodworking", "CAD"],
+            "imgs" : ["./img/loftishbed.jpg"],
+            "link" : "./error.html"
+        },
+        {
+            "title" : "FPV Drone Bag",
+            "tags" : ["Product Design"],
+            "imgs" : ["./img/fpvbag.jpg"],
+            "link" : "./error.html"
         }
     ]
 

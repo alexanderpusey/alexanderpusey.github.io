@@ -17,18 +17,18 @@
                 </a>
                 <hr/>
 
-                <div id="content-block">
+                <div class="content-block">
                     <p>Directory</p>
                     <div id="nav-menu">
                         <ul>
                             <li id="projectsnav">
                                 <a href="./projects.html">[*] Projects</a>
                             </li>
+                            <li id="artnav">
+                                <a href="./error.html">[*] Art</a>
+                            </li>
                             <li id="githubnav">
                                 <a href="https://github.com/alexanderpusey">[*] Github</a>
-                            </li>
-                            <li id="linkedinnav">
-                                <a href="https://www.linkedin.com/in/alex-pusey">[*] Linkedin</a>
                             </li>
                             <li id="aboutnav">
                                 <a href="./about.html">[*] About</a>
@@ -37,10 +37,10 @@
                     </div>
                 </div>
 
-                <div id="content-block">
+                <div class="content-block">
                     <p>Latest</p>
                     <div id="project-gallery">
-                        <button id="gallery-prev">&lt</button>
+                        <button id="gallery-prev" class="gallery-button">&lt</button>
                         <a id="project-link">
                             <div id="project-gallery-item">
                                 <div id="project-overlay">
@@ -49,7 +49,7 @@
                                 <img id="project-gallery-image"src="./img/restingpermitted.jpg">
                             </div>
                         </a>
-                        <button id="gallery-next">&gt</button>
+                        <button id="gallery-next" class="gallery-button"">&gt</button>
                     </div>
                     <div id="gallery-footer">
                         <p id="gallery-position"></p>
@@ -69,7 +69,11 @@
         const projects = document.getElementById("projectsnav")
         const about = document.getElementById("aboutnav")
         const github = document.getElementById("githubnav")
-        const linkedin = document.getElementById("linkedinnav")
+        const art = document.getElementById("artnav")
+
+        art.addEventListener("click", function () {
+            window.open("./error.html", "_self")
+        })
 
         projects.addEventListener("click", function () {
             window.open("./projects.html", "_self")
@@ -81,10 +85,6 @@
 
         github.addEventListener("click", function () {
             window.open("https://github.com/alexanderpusey", "_self")
-        })
-
-        linkedin.addEventListener("click", function () {
-            window.open("https://www.linkedin.com/in/alex-pusey", "_self")
         })
 
         //project gallery
@@ -132,7 +132,7 @@
             projectImage.alt = item.title
             projectLink.href = item.link
             galleryPosition.textContent = "[" + (index + 1) + "/" + featured_projects.length + "]"
-            updatedText = item.title + ",<br>" + item.materials
+            updatedText = item.title + ",<br>" + item.description
             projectDescription.innerHTML = updatedText
         }
 

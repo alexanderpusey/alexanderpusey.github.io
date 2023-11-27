@@ -12,12 +12,10 @@
 
             <div id="column">
 
-                <h1>Projects</h1>
+                <h1>projects</h1>
                 <hr class="hidden"/>
 
-                <div id="content-block">
-                    <a href="./index.html"  class="content-block-title"> &lt; back</a>
-                </div>
+                    <a href="./index.html"  class="content-block-title"> &lt; home</a>
 
             </div>
 
@@ -30,10 +28,34 @@
 
         function populateProjects() {
             data.projects.forEach(p => {
+
                 const project = document.createElement("div")
-                project.id = "content-block"
-                const projectTitle = document.createElement("div")
+                project.className = "content-block project-block"
+
+                const projectInner = document.createElement("a")
+                projectInner.href = p.link
+
+                const projectTitle = document.createElement("p")
+                projectTitle.className = "project-title"
+                projectTitle.textContent = p.title
+
+                projectInner.appendChild(projectTitle)
+
+                try {
+                    p.tags.forEach(label => {
+                        const tag = document.createElement("div")
+                        tag.className = "project-tag"
+                        tag.textContent = label
+                        projectInner.appendChild(tag)
+                    })
+                }
+                catch {
+
+                }
+
+                project.appendChild(projectInner)
                 projects.appendChild(project)
+
             })
         }
 

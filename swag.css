@@ -23,7 +23,7 @@ hr {
 }
 h1 {
     font-family: Luminari, fantasy;
-    font-size:x-large;
+    font-size:normal;
     font-weight:bold;
     color: var(--titleColor);
 }
@@ -47,15 +47,14 @@ ul {
     width: 400px;
     margin: 50px 10px 0 10px;
 }
-#content-block {
+.content-block {
     margin: 12px 0 12px 0;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 10px 5px 10px;
     background-color: var(--secondaryColor);
     border-radius: 2px;
     /* border-top: 1px solid var(--white) */
 }
-
-#content-block p {
+.content-block p {
     color: var(--white);
 }
 .content-block-title {
@@ -92,7 +91,7 @@ ul {
 
 /* project gallery */
 #project-gallery {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 2px 0;
     max-height: 300px;
     display: flex;
     flex-direction: row;
@@ -100,12 +99,15 @@ ul {
     justify-content:space-evenly;
     gap: 5px;
 }
-#gallery-next, #gallery-prev {
+.gallery-button {
     cursor: pointer;
-    color: var(--highlightColor);
+    color: var(--white);
     background-color: var(--secondaryColor);
     font-size: medium;
     font-weight: normal;
+}
+.gallery-button:hover {
+    color: var(--highlightColor)
 }
 #project-gallery-item {
     width: calc(89 * 4px);
@@ -133,6 +135,7 @@ ul {
     display:block;
 }
 #gallery-footer {
+    padding: 5px 0 5px 0;
     font-size: smaller;
     display: flex;
     justify-content: space-between;
@@ -159,10 +162,51 @@ ul {
     padding-bottom: 6px;
 }
 
+/* projects menu */
+.project-block {
+    cursor: pointer;
+    background-color: var(--secondaryColor);
+}
+.project-block a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.project-title {
+    font-size: medium;
+    margin-right: auto;
+    color: var(--white);
+}
+.project-block:hover .project-title{
+    text-decoration: underline;
+}
+.project-tag {
+    font-size: x-small;
+    font-weight: bold;
+    color: var(--black);
+    padding: 5px;
+    background-color: var(--highlightColor);
+    border-radius: 20px;
+}
+
+/* project page */
+.project-page {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-page img {
+    height: auto;
+    width: 100%;
+}
+
 /* media queries */
-/* @media (max-width: 650px) {
+@media (max-width: 500px) {
     #column {
         margin-top: 15px;
         width: 100%;
     }
-} */
+}
