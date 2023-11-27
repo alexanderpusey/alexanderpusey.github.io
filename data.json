@@ -1,0 +1,32 @@
+{
+    "projects" : [
+        {
+            "title" : "Resting Permitted",
+            "materials" : "Vinyl installation",
+            "imgs" : ["./img/restingpermitted.jpg"],
+            "link" : "./projects/restingpermitted.html",
+            "featured" : true
+        },
+        {
+            "title" : "partyreg.colorado.edu",
+            "materials" : "Full-stack web application",
+            "imgs" : ["./img/partyreg.png"],
+            "link" : "./projects/partyreg.html",
+            "featured" : true
+        },
+        {
+            "title" : "New Parts",
+            "materials" : "Plastic, concrete, and wax casts",
+            "imgs" : ["./img/newparts.jpg"],
+            "link" : "./projects/newparts.html",
+            "featured" : true
+        },
+        {
+            "title" : "Loft(ish) Bed",
+            "materials" : "Woodworking",
+            "imgs" : ["./img/newparts.jpg"],
+            "link" : "./projects/newparts.html"
+        }
+    ]
+
+}

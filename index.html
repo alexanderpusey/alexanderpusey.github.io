@@ -12,21 +12,23 @@
 
             <div id="column">
 
-                <h1>alexanderpusey.github.io</h1>
+                <a href="./index.html">
+                    <h1>alexanderpusey.github.io</h1>
+                </a>
                 <hr/>
 
                 <div id="content-block">
-                    <p>Welcome to my website!</p>
+                    <p>Directory</p>
                     <div id="nav-menu">
                         <ul>
                             <li id="projectsnav">
-                                <a href="./projects.html">[*] Art & Engineering</a>
+                                <a href="./projects.html">[*] Projects</a>
                             </li>
                             <li id="githubnav">
                                 <a href="https://github.com/alexanderpusey">[*] Github</a>
                             </li>
                             <li id="linkedinnav">
-                                <a href="https://www.linkedin.com/in/alex-pusey/">[*] Linkedin</a>
+                                <a href="https://www.linkedin.com/in/alex-pusey">[*] Linkedin</a>
                             </li>
                             <li id="aboutnav">
                                 <a href="./about.html">[*] About</a>
@@ -36,13 +38,22 @@
                 </div>
 
                 <div id="content-block">
-                    <p>Lately...</p>
-                    <div id="project-menu">
-                        <a href="./projects/restingpermitted.html">
-                            <div id="project-menu-item">
-                                <img src="./img/restingpermitted.jpg">
+                    <p>Latest</p>
+                    <div id="project-gallery">
+                        <button id="gallery-prev">&lt</button>
+                        <a id="project-link">
+                            <div id="project-gallery-item">
+                                <div id="project-overlay">
+                                    <p id="project-description"></p>
+                                </div>
+                                <img id="project-gallery-image"src="./img/restingpermitted.jpg">
                             </div>
                         </a>
+                        <button id="gallery-next">&gt</button>
+                    </div>
+                    <div id="gallery-footer">
+                        <p id="gallery-position"></p>
+                        <a href="./projects.html" id="all-projects-link">all projects &gt</a>
                     </div>
                 </div>
 
@@ -53,6 +64,8 @@
     </body>
 
     <script>
+
+        //navigation menu
         const projects = document.getElementById("projectsnav")
         const about = document.getElementById("aboutnav")
         const github = document.getElementById("githubnav")
@@ -71,8 +84,81 @@
         })
 
         linkedin.addEventListener("click", function () {
-            window.open("https://www.linkedin.com/in/alex-pusey//", "_self")
+            window.open("https://www.linkedin.com/in/alex-pusey", "_self")
         })
+
+        //project gallery
+        const prevButton = document.getElementById("gallery-prev")
+        const nextButton = document.getElementById("gallery-next")
+        const projectImage = document.getElementById("project-gallery-image")
+        const projectDescription = document.getElementById("project-description")
+        const projectLink = document.getElementById("project-link")
+        const galleryPosition = document.getElementById("gallery-position")
+        let galleryIndex = 0
+
+        prevButton.addEventListener("click", function () {
+            galleryIndex--
+            updateGallery(galleryIndex)
+        })
+
+        nextButton.addEventListener("click", function() {
+            galleryIndex++
+            updateGallery(galleryIndex)
+        })
+
+        function updateGallery(index) {
+
+            if (index === 0) {
+                prevButton.style.opacity = 0
+                prevButton.style.cursor = "default"
+                prevButton.disabled = true
+            }
+            else if (index === (featured_projects.length -1)) {
+                nextButton.style.opacity = 0
+                nextButton.style.cursor = "default"
+                nextButton.disabled = true
+            }
+            else {
+                prevButton.style.opacity = 100
+                prevButton.disabled = false
+                prevButton.style.cursor = "pointer"
+                nextButton.style.opacity = 100
+                nextButton.disabled = false
+                nextButton.style.cursor = "pointer"
+            }
+
+            let item = featured_projects[index]
+            projectImage.src = item.imgs[0]
+            projectImage.alt = item.title
+            projectLink.href = item.link
+            galleryPosition.textContent = "[" + (index + 1) + "/" + featured_projects.length + "]"
+            updatedText = item.title + ",<br>" + item.materials
+            projectDescription.innerHTML = updatedText
+        }
+
+        //instantiating
+        var featured_projects
+
+        async function getData() {
+            try {
+                const response = await fetch("./data.json")
+                const json = await response.json()
+                featured_projects = json.projects.filter((project) => project.featured === true)
+            }
+            catch(error) {
+                console.error('Error getting json', error)
+            }
+        }
+
+        getData().then(() => {
+            updateGallery(galleryIndex)
+        })
+
+
     </script>
+
+    <noscript>
+
+    </noscript>
 
 </html>

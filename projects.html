@@ -13,9 +13,10 @@
             <div id="column">
 
                 <h1>Projects</h1>
+                <hr class="hidden"/>
 
                 <div id="content-block">
-                    <a href="./index.html"> &lt; back</a>
+                    <a href="./index.html"  class="content-block-title"> &lt; back</a>
                 </div>
 
             </div>
@@ -25,6 +26,34 @@
     </body>
 
     <script>
+        const projects = document.getElementById("column")
+
+        function populateProjects() {
+            data.projects.forEach(p => {
+                const project = document.createElement("div")
+                project.id = "content-block"
+                const projectTitle = document.createElement("div")
+                projects.appendChild(project)
+            })
+        }
+
+        //instantiating
+        var data
+
+        async function getData() {
+            try {
+                const response = await fetch("./data.json")
+                const json = await response.json()
+                data = json
+            }
+            catch(error) {
+                console.error('Error getting json', error)
+            }
+        }
+
+        getData().then(() => {
+            populateProjects()
+        })
 
     </script>
 
