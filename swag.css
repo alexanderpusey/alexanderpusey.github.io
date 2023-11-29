@@ -23,7 +23,7 @@ hr {
 }
 h1 {
     font-family: Luminari, fantasy;
-    font-size:normal;
+    font-size:x-large;
     font-weight:bold;
     color: var(--titleColor);
 }
