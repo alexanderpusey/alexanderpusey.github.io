@@ -1,0 +1,3802 @@
+[
+    {
+        "name": "Careem BIKE",
+        "location": "Dubai, AE",
+        "system_id": 0,
+        "url": "https://www.careem.com/en-ae/careem-bike/",
+        "station_information_url": "https://dubai.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://dubai.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 24.88264966,
+        "center_lon": 51.9443821
+    },
+    {
+        "name": "Bike Nordelta",
+        "location": "Buenos Aires, AR",
+        "system_id": 1,
+        "url": "https://bikeitau.com.br/nordelta/",
+        "station_information_url": "https://nordelta.publicbikesystem.net/customer/ube/gbfs/v1/en/station_information",
+        "station_status_url": "https://nordelta.publicbikesystem.net/customer/ube/gbfs/v1/en/station_status",
+        "center_lat": -34.406253070000005,
+        "center_lon": -58.654683850000005
+    },
+    {
+        "name": "Ecobici",
+        "location": "Buenos Aires, AR",
+        "system_id": 2,
+        "url": "https://www.buenosaires.gob.ar/ecobici",
+        "station_information_url": "https://buenosaires.publicbikesystem.net/customer/ube/gbfs/v1/en/station_information",
+        "station_status_url": "https://buenosaires.publicbikesystem.net/customer/ube/gbfs/v1/en/station_status",
+        "center_lat": -34.60143837994463,
+        "center_lon": -58.44682201918588
+    },
+    {
+        "name": "city bike Linz",
+        "location": "Linz, AT",
+        "system_id": 3,
+        "url": "https://citybikelinz.at/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_al/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_al/en/station_status.json",
+        "center_lat": 48.3047455,
+        "center_lon": 14.290408100000002
+    },
+    {
+        "name": "nextbike Burgenland Austria",
+        "location": "Neusiedler See, AT",
+        "system_id": 4,
+        "url": "https://www.nextbike.at/de/burgenland/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_na/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_na/en/station_status.json",
+        "center_lat": 47.886159199999994,
+        "center_lon": 16.774477
+    },
+    {
+        "name": "nextbike Klagenfurt Austria",
+        "location": "Klagenfurt, AT",
+        "system_id": 5,
+        "url": "https://www.nextbike.at/de/klagenfurt/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ka/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ka/en/station_status.json",
+        "center_lat": 46.61853133333333,
+        "center_lon": 14.288017666666665
+    },
+    {
+        "name": "nextbike Niederösterreich Austria",
+        "location": "AT",
+        "system_id": 6,
+        "url": "https://www.nextbike.at/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_la/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_la/en/station_status.json",
+        "center_lat": 48.184050899999995,
+        "center_lon": 16.0286391
+    },
+    {
+        "name": "Stadtrad Innsbruck Austria",
+        "location": "Innsbruck, AT",
+        "system_id": 7,
+        "url": "https://stadtrad.ivb.at/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_si/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_si/en/station_status.json",
+        "center_lat": 47.26635170000001,
+        "center_lon": 11.391398299999999
+    },
+    {
+        "name": "VVT REGIORAD Tirol",
+        "location": "AT",
+        "system_id": 8,
+        "url": "https://regiorad.vvt.at/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vt/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vt/en/station_status.json",
+        "center_lat": 47.5834669,
+        "center_lon": 12.168714900000001
+    },
+    {
+        "name": "WienMobil Rad",
+        "location": "Wien, AT",
+        "system_id": 9,
+        "url": "https://www.nextbike.at/de/wien/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wr/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wr/en/station_status.json",
+        "center_lat": 48.2114867,
+        "center_lon": 16.3754453
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Adelaide, AU",
+        "system_id": 10,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-adl-cbd.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-adl-cbd.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -35.213380536937215,
+        "center_lon": 139.2400241587121
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Bundaberg, AU",
+        "system_id": 11,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-bdb.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-bdb.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -24.839065883389345,
+        "center_lon": 152.40194841981315
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Ballarat, AU",
+        "system_id": 12,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-blt.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-blt.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -37.55776259338288,
+        "center_lon": 143.84624844352922
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Brisbane, AU",
+        "system_id": 13,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-bne.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-bne.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -27.449050352166285,
+        "center_lon": 153.03622660936267
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Canberra, AU",
+        "system_id": 14,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-cbr.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-cbr.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -35.28863195888346,
+        "center_lon": 149.13052722369096
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Darwin, AU",
+        "system_id": 15,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-drw.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-drw.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -12.455623168385113,
+        "center_lon": 130.84058124307924
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Frankston, AU",
+        "system_id": 16,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-fkt.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-fkt.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -38.14192229371639,
+        "center_lon": 145.1252035929188
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Hobart, AU",
+        "system_id": 17,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-hba.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-hba.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -42.87971947110749,
+        "center_lon": 147.3358886531204
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Launceston, AU",
+        "system_id": 18,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-lst.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-lst.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -41.42415523204037,
+        "center_lon": 147.12832666624212
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Melbourne, AU",
+        "system_id": 19,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-mel.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-mel.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -37.82570662016475,
+        "center_lon": 144.96741932610192
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Perth, AU",
+        "system_id": 20,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-per.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-per.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -31.88489223330846,
+        "center_lon": 115.76243467794093
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Stirling, AU",
+        "system_id": 21,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-per.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-per.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -31.88489223330846,
+        "center_lon": 115.76243467794093
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Rockhampton, AU",
+        "system_id": 22,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-rok.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-rok.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -23.371929550525742,
+        "center_lon": 150.5147161222131
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Sydney, AU",
+        "system_id": 23,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-syd.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-syd.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -33.88446922026312,
+        "center_lon": 151.21941040228688
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Townsville, AU",
+        "system_id": 24,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-tsv.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-tsv.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -19.261793457877598,
+        "center_lon": 146.81010404734923
+    },
+    {
+        "name": "Greenbike Aruba",
+        "location": "Aruba, AW",
+        "system_id": 25,
+        "url": "https://greenbikearuba.com",
+        "station_information_url": "https://aruba.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://aruba.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 12.5625000375,
+        "center_lon": -70.04626795
+    },
+    {
+        "name": "BL bike",
+        "location": "Banja Luka, BA",
+        "system_id": 26,
+        "url": "https://www.nextbike.ba/sr/banjaluka/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bj/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bj/en/station_status.json",
+        "center_lat": 44.769998,
+        "center_lon": 17.1985128
+    },
+    {
+        "name": "nextbike BIH",
+        "location": "BA",
+        "system_id": 27,
+        "url": "https://www.nextbike.ba/bs/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ba/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ba/en/station_status.json",
+        "center_lat": 43.7583022,
+        "center_lon": 18.264566
+    },
+    {
+        "name": "Zenica",
+        "location": "Zenica, BA",
+        "system_id": 28,
+        "url": "https://www.nextbike.ba/bs/zenica/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bz/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bz/en/station_status.json",
+        "center_lat": 44.202394874999996,
+        "center_lon": 17.910643874999998
+    },
+    {
+        "name": "Bolt OÜ",
+        "location": "Bruxelles,BE",
+        "system_id": 29,
+        "url": "https://www.bolt.eu/",
+        "station_information_url": "https://mds.bolt.eu/gbfs/2/336/station_information",
+        "station_status_url": "https://mds.bolt.eu/gbfs/2/336/station_status",
+        "center_lat": 50.847366,
+        "center_lon": 4.366768
+    },
+    {
+        "name": "Lime Antwerp",
+        "location": "Antwerp, BE",
+        "system_id": 30,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/antwerp/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/antwerp/station_status",
+        "center_lat": 51.2478,
+        "center_lon": 4.3925
+    },
+    {
+        "name": "Lime Brussels",
+        "location": "Brussels, BE",
+        "system_id": 31,
+        "url": "https://www.li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/brussels/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/brussels/station_status",
+        "center_lat": 50.808,
+        "center_lon": 4.4064
+    },
+    {
+        "name": "Velo Antwerpen",
+        "location": "Antwerpen, BE",
+        "system_id": 32,
+        "url": "https://www.velo-antwerpen.be/nl",
+        "station_information_url": "https://gbfs.smartbike.com/antwerp/1.0/en/station_information.json",
+        "station_status_url": "https://gbfs.smartbike.com/antwerp/1.0/en/station_status.json",
+        "center_lat": 0,
+        "center_lon": 0
+    },
+    {
+        "name": "nextbike Bulgaria",
+        "location": "Dobrich, BG",
+        "system_id": 33,
+        "url": "https://nextbike.eu/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bg/en/station_status.json",
+        "center_lat": 43.5662674,
+        "center_lon": 27.8297284
+    },
+    {
+        "name": "Bike Itaú - Pernambuco",
+        "location": "Recife, BR",
+        "system_id": 34,
+        "url": "https://bikeitau.com.br/bikepe",
+        "station_information_url": "https://recife.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://recife.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": -8.059668334850455,
+        "center_lon": -34.892597394593835
+    },
+    {
+        "name": "Bike Itaú - Poa",
+        "location": "Porto Alegre, BR",
+        "system_id": 35,
+        "url": "https://bikeitau.com.br/bikepoa",
+        "station_information_url": "https://portoalegre.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://portoalegre.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": -30.044679764444925,
+        "center_lon": -51.213523475643704
+    },
+    {
+        "name": "Bike Itaú - Rio",
+        "location": "Rio de Janeiro, BR",
+        "system_id": 36,
+        "url": "https://bikeitau.com.br/bikerio/",
+        "station_information_url": "https://riodejaneiro.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://riodejaneiro.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": -22.958349719596765,
+        "center_lon": -43.22225124594204
+    },
+    {
+        "name": "Bike Itaú - Riviera",
+        "location": "Riviera, BR",
+        "system_id": 37,
+        "url": "https://www.rivieradesaolourenco.com/rivibike-2/",
+        "station_information_url": "https://riviera.publicbikesystem.net/customer/ube/gbfs/v1/en/station_information",
+        "station_status_url": "https://riviera.publicbikesystem.net/customer/ube/gbfs/v1/en/station_status",
+        "center_lat": -23.80084306666667,
+        "center_lon": -46.01895915
+    },
+    {
+        "name": "Bike Itaú - Salvador",
+        "location": "Salvador, BR",
+        "system_id": 38,
+        "url": "https://bikeitau.com.br/bikesalvador/",
+        "station_information_url": "https://salvador.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://salvador.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": -12.99772498664247,
+        "center_lon": -38.4729643856699
+    },
+    {
+        "name": "Bike Itaú - Sampa",
+        "location": "São Paulo, BR",
+        "system_id": 39,
+        "url": "https://bikeitau.com.br/bikesampa",
+        "station_information_url": "https://saopaulo.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://saopaulo.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": -23.583097694517853,
+        "center_lon": -46.67452101551644
+    },
+    {
+        "name": "Accès Vélo",
+        "location": "Saguenay, CA",
+        "system_id": 40,
+        "url": "https://sts.saguenay.ca/infos-pratiques/acces-velo-1/acces-velo",
+        "station_information_url": "https://saguenay.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://saguenay.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 48.410390288888884,
+        "center_lon": -71.09173605555554
+    },
+    {
+        "name": "àVélo",
+        "location": "Ville de Québec, CA",
+        "system_id": 41,
+        "url": "https://www.rtcquebec.ca/informations-pratiques/services-complementaires/avelo",
+        "station_information_url": "https://quebec.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://quebec.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 46.80866228379982,
+        "center_lon": -71.23698771814767
+    },
+    {
+        "name": "Bike Share Toronto",
+        "location": "Toronto, CA",
+        "system_id": 42,
+        "url": "https://www.bikesharetoronto.com/",
+        "station_information_url": "https://toronto.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://toronto.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 43.66705566650805,
+        "center_lon": -79.40405135676887
+    },
+    {
+        "name": "BIXI Montréal",
+        "location": "Montréal, CA",
+        "system_id": 43,
+        "url": "https://www.bixi.com/",
+        "station_information_url": "https://gbfs.velobixi.com/gbfs/en/station_information.json",
+        "station_status_url": "https://gbfs.velobixi.com/gbfs/en/station_status.json",
+        "center_lat": 45.53326688368615,
+        "center_lon": -73.58534215021064
+    },
+    {
+        "name": "Lime Calgary",
+        "location": "Calgary, CA",
+        "system_id": 44,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/calgary/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/calgary/station_status",
+        "center_lat": 51.142,
+        "center_lon": -114.0524
+    },
+    {
+        "name": "Lime Edmonton",
+        "location": "Edmonton, CA",
+        "system_id": 45,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/edmonton/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/edmonton/station_status",
+        "center_lat": 53.5338,
+        "center_lon": -113.9796
+    },
+    {
+        "name": "Lime Kelowna",
+        "location": "Kelowna, CA",
+        "system_id": 46,
+        "url": "https://www.li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/kelowna/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/kelowna/station_status",
+        "center_lat": 49.9553,
+        "center_lon": -119.4272
+    },
+    {
+        "name": "Lime Ottawa",
+        "location": "Ottawa, CA",
+        "system_id": 47,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/ottawa/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/ottawa/station_status",
+        "center_lat": 44.8464,
+        "center_lon": -76.0811
+    },
+    {
+        "name": "Mobi Bike Share",
+        "location": "Vancouver, CA",
+        "system_id": 48,
+        "url": "https://www.mobibikes.ca/",
+        "station_information_url": "https://vancouver-gbfs.smoove.pro/gbfs/2/en/station_information.json",
+        "station_status_url": "https://vancouver-gbfs.smoove.pro/gbfs/2/en/station_status.json",
+        "center_lat": 49.2722819,
+        "center_lon": -123.1234124
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Airdrie, CA",
+        "system_id": 49,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-ard.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-ard.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 51.252192908310995,
+        "center_lon": -114.02093538212384
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Brampton, CA",
+        "system_id": 50,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-bmt.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-bmt.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 43.68363497210987,
+        "center_lon": -79.75958195140845
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Calgary, CA",
+        "system_id": 51,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-yyc.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-yyc.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 51.03804099678412,
+        "center_lon": -114.0700880341199
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Kitchen-Cambridge-Waterloo, CA",
+        "system_id": 52,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-kcw.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-kcw.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 43.451457019283374,
+        "center_lon": -80.48848852325577
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Lethbridge, CA",
+        "system_id": 53,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-yql.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-yql.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 49.6841971158417,
+        "center_lon": -112.83977041966936
+    },
+    {
+        "name": "Neuron Oshawa",
+        "location": "Oshawa, CA",
+        "system_id": 54,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-yoo.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-yoo.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 43.89329805170867,
+        "center_lon": -78.87338510144608
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Ottawa, CA",
+        "system_id": 55,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-yow.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-yow.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 45.411222730308694,
+        "center_lon": -75.70434813406213
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Red Deer, CA",
+        "system_id": 56,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-yqf.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-yqf.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 52.27464219831504,
+        "center_lon": -113.81169235100758
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Saskatoon, CA",
+        "system_id": 57,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-yxe.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-yxe.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 52.127403278137265,
+        "center_lon": -106.64732632403563
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Vernon, BC, CA",
+        "system_id": 58,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-yve.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-yve.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 50.26753470147414,
+        "center_lon": -119.27239130829005
+    },
+    {
+        "name": "Sobi Hamilton",
+        "location": "Hamilton, CA",
+        "system_id": 59,
+        "url": "https://hamilton.socialbicycles.com/",
+        "station_information_url": "http://hamilton.socialbicycles.com/opendata/station_information.json",
+        "station_status_url": "http://hamilton.socialbicycles.com/opendata/station_status.json",
+        "center_lat": 43.25889272715997,
+        "center_lon": -79.87756898299534
+    },
+    {
+        "name": "Donkey Republic Kreuzlingen",
+        "location": "Kreuzlingen, CH",
+        "system_id": 60,
+        "url": "https://www.donkey.bike/cities/bike-rental-kreuzlingen/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kreuzlingen/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kreuzlingen/en/station_status.json",
+        "center_lat": 47.640073949999994,
+        "center_lon": 9.1913145
+    },
+    {
+        "name": "Donkey Republic Neuchâtel",
+        "location": "Neuchâtel, CH",
+        "system_id": 61,
+        "url": "https://www.donkey.bike/cities/bike-rental-neuchatel/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_neuchatel/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_neuchatel/en/station_status.json",
+        "center_lat": 46.985053959999995,
+        "center_lon": 6.923215760000001
+    },
+    {
+        "name": "Donkey Republic Sion",
+        "location": "Sion, CH",
+        "system_id": 62,
+        "url": "https://www.donkey.bike/cities/bike-rental-sion/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_sion/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_sion/en/station_status.json",
+        "center_lat": 46.18085766,
+        "center_lon": 7.272416730000001
+    },
+    {
+        "name": "Donkey Republic Thun",
+        "location": "Thun, CH",
+        "system_id": 63,
+        "url": "https://www.donkey.bike/cities/bike-rental-thun/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_thun/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_thun/en/station_status.json",
+        "center_lat": 46.75182751111112,
+        "center_lon": 7.626859844444444
+    },
+    {
+        "name": "Donkey Republic Yverdon-les-Bains",
+        "location": "Yverdon Les Bains, CH",
+        "system_id": 64,
+        "url": "https://www.donkey.bike/cities/bike-rental-yverdon-les-bains/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_yverdon-les-bains/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_yverdon-les-bains/en/station_status.json",
+        "center_lat": 46.7818907,
+        "center_lon": 6.64094426
+    },
+    {
+        "name": "Lime Opfikon",
+        "location": "Opfikon, CH",
+        "system_id": 65,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/opfikon/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/opfikon/station_status",
+        "center_lat": 47.4386,
+        "center_lon": 8.5773
+    },
+    {
+        "name": "Lime Zug",
+        "location": "Zug, CH",
+        "system_id": 66,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/zug/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/zug/station_status",
+        "center_lat": 47.1528,
+        "center_lon": 8.516
+    },
+    {
+        "name": "nextbike Switzerland",
+        "location": "CH",
+        "system_id": 67,
+        "url": "https://www.nextbike.ch/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ch/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ch/en/station_status.json",
+        "center_lat": 47.0525554,
+        "center_lon": 8.2444171
+    },
+    {
+        "name": "PubliBike",
+        "location": "CH",
+        "system_id": 68,
+        "url": "https://www.publibike.ch",
+        "station_information_url": "https://api.publibike.ch/v1/gbfs/v2/en/station_information",
+        "station_status_url": "https://api.publibike.ch/v1/gbfs/v2/en/station_status",
+        "center_lat": 46.7299991,
+        "center_lon": 7.75721005
+    },
+    {
+        "name": "Share Birrer",
+        "location": "Switzerland, CH",
+        "system_id": 69,
+        "url": "https://www.share-birrer.ch/",
+        "station_information_url": "https://auto-birrer.ch/station_information",
+        "station_status_url": "https://auto-birrer.ch/station_status",
+        "center_lat": 47.17597122140971,
+        "center_lon": 8.260743367884112
+    },
+    {
+        "name": "sharedmobility.ch",
+        "location": "Switzerland, CH",
+        "system_id": 70,
+        "url": "https://www.sharedmobility.ch/info",
+        "station_information_url": "https://www.sharedmobility.ch/station_information.json",
+        "station_status_url": "https://www.sharedmobility.ch/station_status.json",
+        "center_lat": 46.917732199999996,
+        "center_lon": 7.6494786
+    },
+    {
+        "name": "Bike Itaú - Santiago",
+        "location": "Santiago, CL",
+        "system_id": 71,
+        "url": "https://www.bikesantiago.cl/",
+        "station_information_url": "https://santiago.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://santiago.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": -33.4231565255469,
+        "center_lon": -70.60286232325049
+    },
+    {
+        "name": "Bogotá",
+        "location": "Bogotá, CO",
+        "system_id": 72,
+        "url": "https://tembici.com.co/",
+        "station_information_url": "https://bogota.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://bogota.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 4.65085898,
+        "center_lon": -74.06527292000001
+    },
+    {
+        "name": "nextbike Cyprus",
+        "location": "CY",
+        "system_id": 73,
+        "url": "https://www.nextbike.com.cy/el/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cy/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cy/en/station_status.json",
+        "center_lat": 34.9331066,
+        "center_lon": 33.297815099999994
+    },
+    {
+        "name": "Velespeed",
+        "location": "Nicosia, CY",
+        "system_id": 74,
+        "url": "https://en.velespeed.net/",
+        "station_information_url": "https://nicosia.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://nicosia.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 35.203029599999994,
+        "center_lon": 33.35742478000001
+    },
+    {
+        "name": "nextbike Benešov",
+        "location": "Benešov, CZ",
+        "system_id": 75,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_co/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_co/en/station_status.json",
+        "center_lat": 49.783715111111114,
+        "center_lon": 14.687154333333334
+    },
+    {
+        "name": "nextbike Berounsko",
+        "location": "Berounsko, CZ",
+        "system_id": 76,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_td/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_td/en/station_status.json",
+        "center_lat": 49.95098655555555,
+        "center_lon": 14.043948111111112
+    },
+    {
+        "name": "nextbike Brno",
+        "location": "CZ",
+        "system_id": 77,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_te/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_te/en/station_status.json",
+        "center_lat": 49.21190299999999,
+        "center_lon": 16.598255799999997
+    },
+    {
+        "name": "nextbike Česká Třebová",
+        "location": "Česká Třebová, CZ",
+        "system_id": 78,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nc/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nc/en/station_status.json",
+        "center_lat": 49.9043199,
+        "center_lon": 16.443763699999998
+    },
+    {
+        "name": "nextbike Dvůr Králové",
+        "location": "Dvůr Králové, CZ",
+        "system_id": 79,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tf/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tf/en/station_status.json",
+        "center_lat": 50.429463222222225,
+        "center_lon": 15.808174111111109
+    },
+    {
+        "name": "nextbike Frýdek-Místek",
+        "location": "Frýdek-Místek, CZ",
+        "system_id": 80,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ts/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ts/en/station_status.json",
+        "center_lat": 49.691426,
+        "center_lon": 18.341811999999997
+    },
+    {
+        "name": "nextbike Havířov",
+        "location": "Havířov, CZ",
+        "system_id": 81,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_th/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_th/en/station_status.json",
+        "center_lat": 49.786092000000004,
+        "center_lon": 18.4325719
+    },
+    {
+        "name": "nextbike Hořice",
+        "location": "Hořice, CZ",
+        "system_id": 82,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uf/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uf/en/station_status.json",
+        "center_lat": 50.365036714285715,
+        "center_lon": 15.63701642857143
+    },
+    {
+        "name": "nextbike Hradec Králové",
+        "location": "Hradec Králové, CZ",
+        "system_id": 83,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tl/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tl/en/station_status.json",
+        "center_lat": 50.2143944,
+        "center_lon": 15.8293656
+    },
+    {
+        "name": "nextbike Jablonec",
+        "location": "Jablonec nad Nisou, CZ",
+        "system_id": 84,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ud/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ud/en/station_status.json",
+        "center_lat": 50.7295557,
+        "center_lon": 15.169441800000001
+    },
+    {
+        "name": "nextbike Jihlava",
+        "location": "Jihlava, CZ",
+        "system_id": 85,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tz/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tz/en/station_status.json",
+        "center_lat": 49.403466699999996,
+        "center_lon": 15.5859931
+    },
+    {
+        "name": "nextbike Kladno",
+        "location": "Kladno, CZ",
+        "system_id": 86,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tk/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tk/en/station_status.json",
+        "center_lat": 50.1424477,
+        "center_lon": 14.101434399999999
+    },
+    {
+        "name": "nextbike Klášterec nad Ohří",
+        "location": "Klášterec nad Ohří, CZ",
+        "system_id": 87,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ko/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ko/en/station_status.json",
+        "center_lat": 50.386699799999995,
+        "center_lon": 13.1825953
+    },
+    {
+        "name": "nextbike Liberec",
+        "location": "Liberec, CZ",
+        "system_id": 88,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_xa/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_xa/en/station_status.json",
+        "center_lat": 50.766958699999996,
+        "center_lon": 15.062661400000001
+    },
+    {
+        "name": "nextbike Mladoboleslavsko",
+        "location": "CZ",
+        "system_id": 89,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tq/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tq/en/station_status.json",
+        "center_lat": 50.4329658,
+        "center_lon": 14.9186992
+    },
+    {
+        "name": "nextbike Moravská Třebová",
+        "location": "Moravská Třebová, CZ",
+        "system_id": 90,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_xc/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_xc/en/station_status.json",
+        "center_lat": 49.758827875,
+        "center_lon": 16.659209375
+    },
+    {
+        "name": "nextbike Olomouc",
+        "location": "Olomouc, CZ",
+        "system_id": 91,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ti/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ti/en/station_status.json",
+        "center_lat": 49.5918858,
+        "center_lon": 17.253464200000003
+    },
+    {
+        "name": "nextbike Opava",
+        "location": "Opava, CZ",
+        "system_id": 92,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tj/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tj/en/station_status.json",
+        "center_lat": 49.9375372,
+        "center_lon": 17.899750899999997
+    },
+    {
+        "name": "nextbike Ostrava",
+        "location": "CZ",
+        "system_id": 93,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_to/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_to/en/station_status.json",
+        "center_lat": 49.8043522,
+        "center_lon": 18.242037900000003
+    },
+    {
+        "name": "nextbike Pardubice",
+        "location": "Pardubice, CZ",
+        "system_id": 94,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tm/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tm/en/station_status.json",
+        "center_lat": 50.03728980000001,
+        "center_lon": 15.775654900000001
+    },
+    {
+        "name": "nextbike Pelhřimov",
+        "location": "Pelhřimov, CZ",
+        "system_id": 95,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cq/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cq/en/station_status.json",
+        "center_lat": 49.428889100000006,
+        "center_lon": 15.2218748
+    },
+    {
+        "name": "nextbike Písek",
+        "location": "Písek, CZ",
+        "system_id": 96,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ty/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ty/en/station_status.json",
+        "center_lat": 49.30635529999999,
+        "center_lon": 14.146252199999998
+    },
+    {
+        "name": "nextbike Praha",
+        "location": "CZ",
+        "system_id": 97,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tg/en/station_status.json",
+        "center_lat": 50.08878980000001,
+        "center_lon": 14.434266400000002
+    },
+    {
+        "name": "nextbike Přerov",
+        "location": "Přerov, CZ",
+        "system_id": 98,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nr/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nr/en/station_status.json",
+        "center_lat": 49.454494800000006,
+        "center_lon": 17.453259600000003
+    },
+    {
+        "name": "nextbike Prostejov",
+        "location": "Prostejov, CZ",
+        "system_id": 99,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cz/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cz/en/station_status.json",
+        "center_lat": 49.47360239999999,
+        "center_lon": 17.101704200000004
+    },
+    {
+        "name": "nextbike Rychnovsko",
+        "location": "Rychnovsko, CZ",
+        "system_id": 100,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tx/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tx/en/station_status.json",
+        "center_lat": 50.163830125,
+        "center_lon": 16.274485375
+    },
+    {
+        "name": "nextbike Třebíč",
+        "location": "Třebíč, CZ",
+        "system_id": 101,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tu/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tu/en/station_status.json",
+        "center_lat": 49.2113271,
+        "center_lon": 15.8795003
+    },
+    {
+        "name": "nextbike Uherské Hradiště",
+        "location": "Uherské Hradiště, CZ",
+        "system_id": 102,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tt/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tt/en/station_status.json",
+        "center_lat": 49.0654236,
+        "center_lon": 17.4646629
+    },
+    {
+        "name": "nextbike Vrchlabí",
+        "location": "Vrchlabí, CZ",
+        "system_id": 103,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vr/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vr/en/station_status.json",
+        "center_lat": 50.6225355,
+        "center_lon": 15.61371825
+    },
+    {
+        "name": "nextbike Zlín",
+        "location": "Zlín, CZ",
+        "system_id": 104,
+        "url": "https://www.nextbikeczech.com/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tv/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tv/en/station_status.json",
+        "center_lat": 49.2239622,
+        "center_lon": 17.660278
+    },
+    {
+        "name": "Bergisches e-Bike",
+        "location": "Bergisches e-Bike, DE",
+        "system_id": 105,
+        "url": "https://www.nextbike.de/de/bergisches-ebike/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ac/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ac/en/station_status.json",
+        "center_lat": 50.9755237,
+        "center_lon": 7.1523346000000005
+    },
+    {
+        "name": "Bonn nextbike",
+        "location": "Bonn, DE",
+        "system_id": 106,
+        "url": "https://www.nextbike.de/de/bonn/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bf/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bf/en/station_status.json",
+        "center_lat": 50.7243585,
+        "center_lon": 7.1218919
+    },
+    {
+        "name": "Donkey Republic Bamberg",
+        "location": "Bamberg, DE",
+        "system_id": 107,
+        "url": "https://www.donkey.bike/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_bamberg/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_bamberg/en/station_status.json",
+        "center_lat": 49.899728100000004,
+        "center_lon": 10.90549335
+    },
+    {
+        "name": "Donkey Republic Kiel",
+        "location": "Kiel, DE",
+        "system_id": 108,
+        "url": "https://www.donkey.bike/cities/bike-rental-kiel/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kiel/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kiel/en/station_status.json",
+        "center_lat": 54.328171669999996,
+        "center_lon": 10.09813521
+    },
+    {
+        "name": "Donkey Republic Munich",
+        "location": "Munich, DE",
+        "system_id": 109,
+        "url": "https://www.donkey.bike/cities/bike-rental-munich/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_munich/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_munich/en/station_status.json",
+        "center_lat": 48.1293722,
+        "center_lon": 11.601527
+    },
+    {
+        "name": "EDEKA Grünheide",
+        "location": "Grünheide (Mark), DE",
+        "system_id": 110,
+        "url": "https://www.nextbike.de/de/gruenheide/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ed/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ed/en/station_status.json",
+        "center_lat": 52.404823799999996,
+        "center_lon": 13.795648699999997
+    },
+    {
+        "name": "Eifel e-Bike",
+        "location": "Eifel e-Bike, DE",
+        "system_id": 111,
+        "url": "https://www.nextbike.de/de/eifel-ebike/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_eb/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_eb/en/station_status.json",
+        "center_lat": 50.59318130000001,
+        "center_lon": 6.676321700000001
+    },
+    {
+        "name": "EinfachMobil",
+        "location": "Ortenaukreis, DE",
+        "system_id": 112,
+        "url": "https://www.nextbike.de/einfachmobil/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_eh/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_eh/en/station_status.json",
+        "center_lat": 48.443346899999995,
+        "center_lon": 7.8988569
+    },
+    {
+        "name": "Frelo Freiburg",
+        "location": "Freiburg, DE",
+        "system_id": 113,
+        "url": "https://www.frelo-freiburg.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_df/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_df/en/station_status.json",
+        "center_lat": 47.99918339999999,
+        "center_lon": 7.8432865
+    },
+    {
+        "name": "Graben - ready4green",
+        "location": "Graben, DE",
+        "system_id": 114,
+        "url": "https://www.nextbike.de/de/ready4green/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_da/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_da/en/station_status.json",
+        "center_lat": 48.2000215,
+        "center_lon": 10.845763999999999
+    },
+    {
+        "name": "Heraeus Hanau",
+        "location": "Hanau, DE",
+        "system_id": 115,
+        "url": "https://www.nextbike.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_hg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_hg/en/station_status.json",
+        "center_lat": 50.1318708,
+        "center_lon": 8.931631
+    },
+    {
+        "name": "KVB Rad Germany",
+        "location": "Köln, DE",
+        "system_id": 116,
+        "url": "https://www.kvb-rad.de/de/koeln/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_kg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_kg/en/station_status.json",
+        "center_lat": 50.96412680000001,
+        "center_lon": 6.9665076
+    },
+    {
+        "name": "KVV.nextbike",
+        "location": "DE",
+        "system_id": 117,
+        "url": "https://www.kvv-nextbike.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_fg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_fg/en/station_status.json",
+        "center_lat": 48.9884792,
+        "center_lon": 8.4038141
+    },
+    {
+        "name": "Landkreis Nordsachsen - Deutschland",
+        "location": "Nordsachsen, DE",
+        "system_id": 118,
+        "url": "https://www.nextbike.de/de/schkeuditz/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_lc/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_lc/en/station_status.json",
+        "center_lat": 51.39921433333333,
+        "center_lon": 12.194442
+    },
+    {
+        "name": "Leipzzzig Sandkasten",
+        "location": "Leipzig, DE",
+        "system_id": 119,
+        "url": "https://www.nextbike.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sk/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sk/en/station_status.json",
+        "center_lat": 51.32443725,
+        "center_lon": 12.337833
+    },
+    {
+        "name": "Lime Frankfurt",
+        "location": "Frankfurt, DE",
+        "system_id": 120,
+        "url": "https://www.li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/frankfurt/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/frankfurt/station_status",
+        "center_lat": 50.1338,
+        "center_lon": 8.6945
+    },
+    {
+        "name": "Lime Hamburg",
+        "location": "Hamburg, DE",
+        "system_id": 121,
+        "url": "https://li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/hamburg/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/hamburg/station_status",
+        "center_lat": 53.5564,
+        "center_lon": 10.0412
+    },
+    {
+        "name": "Lime Oberhausen",
+        "location": "Oberhausen, DE",
+        "system_id": 122,
+        "url": "https://www.li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/oberhausen/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/oberhausen/station_status",
+        "center_lat": 51.5376,
+        "center_lon": 6.857
+    },
+    {
+        "name": "Lime Reutlingen",
+        "location": "Reutlingen, DE",
+        "system_id": 123,
+        "url": "https://www.li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/reutlingen/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/reutlingen/station_status",
+        "center_lat": 48.4274,
+        "center_lon": 9.3792
+    },
+    {
+        "name": "Lime Solingen",
+        "location": "Solingen, DE",
+        "system_id": 124,
+        "url": "https://www.li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/solingen/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/solingen/station_status",
+        "center_lat": 51.2259,
+        "center_lon": 7.0906
+    },
+    {
+        "name": "meinRad",
+        "location": "Mainz, DE",
+        "system_id": 125,
+        "url": "https://www.nextbike.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_mz/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_mz/en/station_status.json",
+        "center_lat": 50.000462399999996,
+        "center_lon": 8.2460877
+    },
+    {
+        "name": "meinSiggi",
+        "location": "Bielefeld, DE",
+        "system_id": 126,
+        "url": "https://www.nextbike.de/de/bielefeld/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dg/en/station_status.json",
+        "center_lat": 52.01103450000001,
+        "center_lon": 8.523397800000001
+    },
+    {
+        "name": "metropolradruhr Germany",
+        "location": "DE",
+        "system_id": 127,
+        "url": "https://www.metropolradruhr.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_mr/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_mr/en/station_status.json",
+        "center_lat": 51.4856624,
+        "center_lon": 7.1198636
+    },
+    {
+        "name": "MOBIbike",
+        "location": "Dresden, DE",
+        "system_id": 128,
+        "url": "https://www.nextbike.de/de/dresden/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dx/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dx/en/station_status.json",
+        "center_lat": 51.0396972,
+        "center_lon": 13.803389000000001
+    },
+    {
+        "name": "mobic",
+        "location": "Mobic, DE",
+        "system_id": 129,
+        "url": "https://www.nextbike.de/de/mobic/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_re/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_re/en/station_status.json",
+        "center_lat": 50.8966733,
+        "center_lon": 6.769478600000001
+    },
+    {
+        "name": "MV-Rad",
+        "location": "DE",
+        "system_id": 130,
+        "url": "https://mv-rad.de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_um/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_um/en/station_status.json",
+        "center_lat": 53.89486960000001,
+        "center_lon": 13.203930199999999
+    },
+    {
+        "name": "NEW MöBus nextbike",
+        "location": "Mönchengladbach, DE",
+        "system_id": 131,
+        "url": "https://www.nextbike.de/de/moenchengladbach/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sn/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sn/en/station_status.json",
+        "center_lat": 51.181831200000005,
+        "center_lon": 6.4345221
+    },
+    {
+        "name": "nextbike Berlin",
+        "location": "Berlin, DE",
+        "system_id": 132,
+        "url": "https://www.nextbike.de/de/berlin/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bn/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bn/en/station_status.json",
+        "center_lat": 52.493365,
+        "center_lon": 13.426332300000002
+    },
+    {
+        "name": "nextbike Düsseldorf",
+        "location": "Düsseldorf, DE",
+        "system_id": 133,
+        "url": "https://www.nextbike.de/de/duesseldorf/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dd/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dd/en/station_status.json",
+        "center_lat": 51.22494820000001,
+        "center_lon": 6.787836199999999
+    },
+    {
+        "name": "nextbike Frankfurt",
+        "location": "Frankfurt, DE",
+        "system_id": 134,
+        "url": "https://www.nextbike.de/de/frankfurt/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ff/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ff/en/station_status.json",
+        "center_lat": 50.1061265,
+        "center_lon": 8.6600173
+    },
+    {
+        "name": "nextbike Gießen",
+        "location": "Gießen, DE",
+        "system_id": 135,
+        "url": "https://www.nextbike.de/de/giessen/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ng/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ng/en/station_status.json",
+        "center_lat": 50.580645600000004,
+        "center_lon": 8.685628900000001
+    },
+    {
+        "name": "nextbike Gütersloh",
+        "location": "Gütersloh, DE",
+        "system_id": 136,
+        "url": "https://www.nextbike.de/de/guetersloh/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dj/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dj/en/station_status.json",
+        "center_lat": 51.9076996,
+        "center_lon": 8.397236000000001
+    },
+    {
+        "name": "nextbike Kassel",
+        "location": "Kassel, DE",
+        "system_id": 137,
+        "url": "https://www.nextbike.de/de/kassel/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dk/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dk/en/station_status.json",
+        "center_lat": 51.316891399999996,
+        "center_lon": 9.487824
+    },
+    {
+        "name": "nextbike Leipzig",
+        "location": "Leipzig, DE",
+        "system_id": 138,
+        "url": "https://www.nextbike.de/de/leipzig/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_le/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_le/en/station_status.json",
+        "center_lat": 51.3367753,
+        "center_lon": 12.3732287
+    },
+    {
+        "name": "nextbike Lippstadt",
+        "location": "Lippstadt, DE",
+        "system_id": 139,
+        "url": "https://www.nextbike.de/de/lippstadt/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_li/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_li/en/station_status.json",
+        "center_lat": 51.67309666666667,
+        "center_lon": 8.352617333333335
+    },
+    {
+        "name": "nextbike Marburg",
+        "location": "Marburg, DE",
+        "system_id": 140,
+        "url": "https://www.nextbike.de/de/marburg/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nm/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nm/en/station_status.json",
+        "center_lat": 50.8126183,
+        "center_lon": 8.7708812
+    },
+    {
+        "name": "nextbike Norderstedt",
+        "location": "Norderstedt, DE",
+        "system_id": 141,
+        "url": "https://www.nextbike.de/de/norderstedt/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nn/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nn/en/station_status.json",
+        "center_lat": 53.70040770000001,
+        "center_lon": 10.0076296
+    },
+    {
+        "name": "nextbike Rüsselsheim am Main",
+        "location": "DE",
+        "system_id": 142,
+        "url": "https://www.nextbike.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_do/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_do/en/station_status.json",
+        "center_lat": 49.990043,
+        "center_lon": 8.423154125
+    },
+    {
+        "name": "nextbike Wiesbaden",
+        "location": "Wiesbaden, DE",
+        "system_id": 143,
+        "url": "https://www.nextbike.de/de/wiesbaden/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wn/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wn/en/station_status.json",
+        "center_lat": 50.075707888888886,
+        "center_lon": 8.237270777777777
+    },
+    {
+        "name": "Nibelungen-Bike",
+        "location": "Braunschweig, DE",
+        "system_id": 144,
+        "url": "https://www.nextbike.de/de/braunschweig/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dn/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dn/en/station_status.json",
+        "center_lat": 52.27289879999999,
+        "center_lon": 10.532472699999998
+    },
+    {
+        "name": "OLi-Bike",
+        "location": "Oldenburg, DE",
+        "system_id": 145,
+        "url": "https://www.oli-bike.de/de/oldenburg/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wo/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wo/en/station_status.json",
+        "center_lat": 53.138591500000004,
+        "center_lon": 8.2038534
+    },
+    {
+        "name": "Potsdam Rad",
+        "location": "Potsdam, DE",
+        "system_id": 146,
+        "url": "https://www.nextbike.de/de/potsdam/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dc/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dc/en/station_status.json",
+        "center_lat": 52.386230499999996,
+        "center_lon": 13.054589400000001
+    },
+    {
+        "name": "RSVG-Bike",
+        "location": "RSVG, DE",
+        "system_id": 147,
+        "url": "https://www.nextbike.de/de/rsvg/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rb/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rb/en/station_status.json",
+        "center_lat": 50.781504,
+        "center_lon": 7.207547000000001
+    },
+    {
+        "name": "RVK",
+        "location": "RVK e-Bike, DE",
+        "system_id": 148,
+        "url": "https://www.nextbike.de/de/rvk/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dr/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dr/en/station_status.json",
+        "center_lat": 50.6660888,
+        "center_lon": 7.0321091
+    },
+    {
+        "name": "SAP Walldorf",
+        "location": "Walldorf, DE",
+        "system_id": 149,
+        "url": "https://www.nextbike.de/de/walldorf/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ds/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ds/en/station_status.json",
+        "center_lat": 49.292777666666666,
+        "center_lon": 8.644010833333333
+    },
+    {
+        "name": "sprintRAD",
+        "location": "Hannover, DE",
+        "system_id": 150,
+        "url": "https://www.nextbike.de/de/hannover/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dh/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dh/en/station_status.json",
+        "center_lat": 52.3786072,
+        "center_lon": 9.7287158
+    },
+    {
+        "name": "StadtRad Greifswald",
+        "location": "Greifswald (StadtRad), DE",
+        "system_id": 151,
+        "url": "https://stadtrad-greifswald.de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ug/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ug/en/station_status.json",
+        "center_lat": 54.0908197,
+        "center_lon": 13.402676099999999
+    },
+    {
+        "name": "UsedomRad Germany",
+        "location": "Usedom, DE",
+        "system_id": 152,
+        "url": "https://usedomrad.de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ur/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ur/en/station_status.json",
+        "center_lat": 53.98301560000001,
+        "center_lon": 14.026363800000002
+    },
+    {
+        "name": "VAG_Rad",
+        "location": "Nürnberg, DE",
+        "system_id": 153,
+        "url": "https://www.vagrad.de/de/nuernberg/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dv/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dv/en/station_status.json",
+        "center_lat": 49.470678299999996,
+        "center_lon": 11.0663854
+    },
+    {
+        "name": "Velocity Aachen",
+        "location": "Aachen, DE",
+        "system_id": 154,
+        "url": "https://velocity-aachen.de",
+        "station_information_url": "https://nitro.openvelo.org/aachen/velocity/v2/en/station_information.json",
+        "station_status_url": "https://nitro.openvelo.org/aachen/velocity/v2/en/station_status.json",
+        "center_lat": 50.80634691348786,
+        "center_lon": 6.074074718180887
+    },
+    {
+        "name": "VRNnextbike",
+        "location": "DE",
+        "system_id": 155,
+        "url": "https://www.vrnnextbike.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vn/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vn/en/station_status.json",
+        "center_lat": 49.4364254,
+        "center_lon": 8.4092739
+    },
+    {
+        "name": "westBike",
+        "location": "Erkelenz, DE",
+        "system_id": 156,
+        "url": "https://www.nextbike.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gh/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gh/en/station_status.json",
+        "center_lat": 51.057701300000005,
+        "center_lon": 6.1996809
+    },
+    {
+        "name": "WinsenRad",
+        "location": "Winsen (Luhe), DE",
+        "system_id": 157,
+        "url": "https://www.nextbike.de/de/winsen/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wd/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wd/en/station_status.json",
+        "center_lat": 53.3545553,
+        "center_lon": 10.2035762
+    },
+    {
+        "name": "WK-Bike (Bremen)",
+        "location": "Bremen, DE",
+        "system_id": 158,
+        "url": "https://www.wk-bike.de/de/bremen/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wk/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wk/en/station_status.json",
+        "center_lat": 53.07211149999999,
+        "center_lon": 8.8255486
+    },
+    {
+        "name": "wupsiRad Leverkusen",
+        "location": "Leverkusen, DE",
+        "system_id": 159,
+        "url": "https://www.wupsirad.de/de/leverkusen/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dw/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dw/en/station_status.json",
+        "center_lat": 51.0452315,
+        "center_lon": 7.0277776
+    },
+    {
+        "name": "Donkey Republic Aalborg",
+        "location": "Aalborg, DK",
+        "system_id": 160,
+        "url": "https://www.donkey.bike/cities/bike-rental-aalborg/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_aalborg/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_aalborg/en/station_status.json",
+        "center_lat": 57.0485815,
+        "center_lon": 9.93032248
+    },
+    {
+        "name": "Donkey Republic Aarhus",
+        "location": "Aarhus, DK",
+        "system_id": 161,
+        "url": "https://www.donkey.bike/cities/bike-rental-aarhus/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_aarhus/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_aarhus/en/station_status.json",
+        "center_lat": 56.17202202,
+        "center_lon": 10.20999552
+    },
+    {
+        "name": "Donkey Republic Copenhagen",
+        "location": "Copenhagen, DK",
+        "system_id": 162,
+        "url": "https://www.donkey.bike/cities/bike-rental-copenhagen/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_copenhagen/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_copenhagen/en/station_status.json",
+        "center_lat": 55.67246238,
+        "center_lon": 12.59702788
+    },
+    {
+        "name": "Donkey Republic Frederikshavn",
+        "location": "Frederikshavn, DK",
+        "system_id": 163,
+        "url": "https://www.donkey.bike/cities/bike-rental-frederikshavn/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_frederikshavn/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_frederikshavn/en/station_status.json",
+        "center_lat": 57.43506568,
+        "center_lon": 10.53030498
+    },
+    {
+        "name": "Donkey Republic Glostrup",
+        "location": "Glostrup, DK",
+        "system_id": 164,
+        "url": "https://www.donkey.bike/cities/bike-rental-glostrup/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_glostrup/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_glostrup/en/station_status.json",
+        "center_lat": 55.67542413333334,
+        "center_lon": 12.402115277777776
+    },
+    {
+        "name": "Donkey Republic Hillerød",
+        "location": "Hillerød, DK",
+        "system_id": 165,
+        "url": "https://www.donkey.bike",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_hillerod/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_hillerod/en/station_status.json",
+        "center_lat": 55.9276792,
+        "center_lon": 12.3105353
+    },
+    {
+        "name": "Donkey Republic Klampenborg",
+        "location": "Klampenborg, DK",
+        "system_id": 166,
+        "url": "https://www.donkey.bike/cities/bike-rental-klampenborg/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_klampenborg/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_klampenborg/en/station_status.json",
+        "center_lat": 55.776000566666674,
+        "center_lon": 12.594292199999998
+    },
+    {
+        "name": "Donkey Republic Odense",
+        "location": "Odense, DK",
+        "system_id": 167,
+        "url": "https://www.donkey.bike/cities/bike-rental-odense/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_odense/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_odense/en/station_status.json",
+        "center_lat": 55.394220010000005,
+        "center_lon": 10.387655839999997
+    },
+    {
+        "name": "Donkey Republic Store Heddinge",
+        "location": "Store Heddinge, DK",
+        "system_id": 168,
+        "url": "https://www.donkey.bike/cities/bike-rental-store-heddinge/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_store_heddinge/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_store_heddinge/en/station_status.json",
+        "center_lat": 55.33670472,
+        "center_lon": 12.397120379999999
+    },
+    {
+        "name": "Ambici",
+        "location": "Barcelona, ES",
+        "system_id": 169,
+        "url": "https://www.ambici.cat",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bs/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bs/en/station_status.json",
+        "center_lat": 41.3755849,
+        "center_lon": 2.1126864000000003
+    },
+    {
+        "name": "Bicicoruña",
+        "location": "A Coruña, ES",
+        "system_id": 170,
+        "url": "https://www.bicicoruna.es",
+        "station_information_url": "https://acoruna.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://acoruna.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 43.35655578043641,
+        "center_lon": -8.406831079136811
+    },
+    {
+        "name": "bicimad",
+        "location": "Madrid, ES",
+        "system_id": 171,
+        "url": "https://www.bicimad.com",
+        "station_information_url": "https://madrid.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://madrid.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 40.42760587739817,
+        "center_lon": -3.6906340578916805
+    },
+    {
+        "name": "BiciMAD (unofficial)",
+        "location": "Madrid, ES",
+        "system_id": 172,
+        "url": "https://www.bicimad.com/",
+        "station_information_url": "https://gbfs.bici.madrid/en/station_information.json",
+        "station_status_url": "https://gbfs.bici.madrid/en/station_status.json",
+        "center_lat": 40.439393403,
+        "center_lon": -3.6605893130000005
+    },
+    {
+        "name": "BiciMislata Mislata",
+        "location": "Mislata, ES",
+        "system_id": 173,
+        "url": "https://bicimislata.mibisivalencia.es/en/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ad/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ad/en/station_status.json",
+        "center_lat": 39.47194919999999,
+        "center_lon": -0.4155972
+    },
+    {
+        "name": "Bicing",
+        "location": "Barcelona, ES",
+        "system_id": 174,
+        "url": "https://www.bicing.barcelona/",
+        "station_information_url": "https://barcelona.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://barcelona.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 41.40395768,
+        "center_lon": 2.1679198299999998
+    },
+    {
+        "name": "BiciPalma",
+        "location": "Palma, ES",
+        "system_id": 175,
+        "url": "https://www.bicipalma.com/es/palma/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ea/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ea/en/station_status.json",
+        "center_lat": 39.571575800000005,
+        "center_lon": 2.6424034999999995
+    },
+    {
+        "name": "Bike Barcelona",
+        "location": "Barcelona, ES",
+        "system_id": 176,
+        "url": "https://www.bicing.barcelona/",
+        "station_information_url": "https://barcelona.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://barcelona.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 41.40395768,
+        "center_lon": 2.1679198299999998
+    },
+    {
+        "name": "Bilbaobizi (Bilbao)",
+        "location": "Bilbao, ES",
+        "system_id": 177,
+        "url": "https://www.bilbaobizi.bilbao.eus/eu/bilbao/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bo/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bo/en/station_status.json",
+        "center_lat": 43.2592784,
+        "center_lon": -2.9296623000000004
+    },
+    {
+        "name": "Dbizi",
+        "location": "Donostia, ES",
+        "system_id": 178,
+        "url": "https://www.dbizi.eus",
+        "station_information_url": "https://sansebastian.publicbikesystem.net/customer/ube/gbfs/v1/en/station_information",
+        "station_status_url": "https://sansebastian.publicbikesystem.net/customer/ube/gbfs/v1/en/station_status",
+        "center_lat": 43.311704399999996,
+        "center_lon": -1.9795778
+    },
+    {
+        "name": "ibizi",
+        "location": "Ibiza-City, ES",
+        "system_id": 179,
+        "url": "https://www.nextbike.es/es/ibiza/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ei/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ei/en/station_status.json",
+        "center_lat": 38.9097558,
+        "center_lon": 1.4365653999999999
+    },
+    {
+        "name": "Lovesharing (Canary Islands)",
+        "location": "ES",
+        "system_id": 180,
+        "url": "https://www.lovesharing.com/bikesharing/es/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ls/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ls/en/station_status.json",
+        "center_lat": 28.030079299999993,
+        "center_lon": -15.114929100000001
+    },
+    {
+        "name": "nextbike León",
+        "location": "León, ES",
+        "system_id": 181,
+        "url": "https://www.alsa-nextbike.es/es/leon/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sl/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sl/en/station_status.json",
+        "center_lat": 42.60282255555555,
+        "center_lon": -5.570840777777778
+    },
+    {
+        "name": "Sitycleta (Las Palmas)",
+        "location": "Las Palmas de Gran Canaria, ES",
+        "system_id": 182,
+        "url": "https://www.sitycleta.com/es/laspalmas/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_el/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_el/en/station_status.json",
+        "center_lat": 28.1135847,
+        "center_lon": -15.4336714
+    },
+    {
+        "name": "Valladolid",
+        "location": "Valladolid, ES",
+        "system_id": 183,
+        "url": "https://biki-valladolid.es",
+        "station_information_url": "https://valladolid.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://valladolid.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 41.64203199000001,
+        "center_lon": -4.73435729
+    },
+    {
+        "name": "Donkey Republic Iisalmi",
+        "location": "Iisalmi, FI",
+        "system_id": 184,
+        "url": "https://www.donkey.bike/cities/bike-rental-iisalmi/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_iisalmi/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_iisalmi/en/station_status.json",
+        "center_lat": 63.56076484000001,
+        "center_lon": 27.19499973
+    },
+    {
+        "name": "Donkey Republic Imatra",
+        "location": "Imatra, FI",
+        "system_id": 185,
+        "url": "https://www.donkey.bike/cities/bike-rental-imatra/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_imatra/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_imatra/en/station_status.json",
+        "center_lat": 61.19131317777778,
+        "center_lon": 28.76663665555556
+    },
+    {
+        "name": "Donkey Republic Kotka",
+        "location": "Kotka, FI",
+        "system_id": 186,
+        "url": "https://www.donkey.bike/cities/bike-rental-kotka/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kotka/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kotka/en/station_status.json",
+        "center_lat": 60.48119300999999,
+        "center_lon": 26.89451146
+    },
+    {
+        "name": "Donkey Republic Kouvola",
+        "location": "Kouvola, FI",
+        "system_id": 187,
+        "url": "https://www.donkey.bike/cities/bike-rental-kouvola/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kouvola/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kouvola/en/station_status.json",
+        "center_lat": 60.87571770000001,
+        "center_lon": 26.702859711111113
+    },
+    {
+        "name": "Donkey Republic Lappeenranta",
+        "location": "Lappeenranta, FI",
+        "system_id": 188,
+        "url": "https://www.donkey.bike/cities/bike-rental-lappeenranta/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_lappeenranta/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_lappeenranta/en/station_status.json",
+        "center_lat": 61.05732923000001,
+        "center_lon": 28.162895729999995
+    },
+    {
+        "name": "Donkey Republic Mäntsälä",
+        "location": "Mäntsälä, FI",
+        "system_id": 189,
+        "url": "https://www.donkey.bike/cities/bike-rental-mantsala/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_maentsaelae/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_maentsaelae/en/station_status.json",
+        "center_lat": 60.6384495375,
+        "center_lon": 25.3179669625
+    },
+    {
+        "name": "Donkey Republic Mikkeli",
+        "location": "Mikkeli,FI",
+        "system_id": 190,
+        "url": "https://www.donkey.bike/cities/bike-rental-mikkeli/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_mikkeli/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_mikkeli/en/station_status.json",
+        "center_lat": 61.68846716666667,
+        "center_lon": 27.271054955555552
+    },
+    {
+        "name": "Donkey Republic Porvoo",
+        "location": "Porvoo, FI",
+        "system_id": 191,
+        "url": "https://www.donkey.bike/cities/bike-rental-porvoo/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_porvoo/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_porvoo/en/station_status.json",
+        "center_lat": 60.38516549,
+        "center_lon": 25.661053120000002
+    },
+    {
+        "name": "Donkey Republic Raasepori",
+        "location": "Raasepori, FI",
+        "system_id": 192,
+        "url": "https://www.donkey.bike/cities/bike-rental-raasepori/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_raasepori/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_raasepori/en/station_status.json",
+        "center_lat": 60.0283893,
+        "center_lon": 23.519131928571426
+    },
+    {
+        "name": "Donkey Republic Riihimäki",
+        "location": "Riihimäki, FI",
+        "system_id": 193,
+        "url": "https://www.donkey.bike/cities/bike-rental-riihimaki/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_riihimaki/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_riihimaki/en/station_status.json",
+        "center_lat": 60.738148349999996,
+        "center_lon": 24.780438670000002
+    },
+    {
+        "name": "Donkey Republic Turku",
+        "location": "Turku, FI",
+        "system_id": 194,
+        "url": "https://www.donkey.bike/cities/bike-rental-hyvinkaa/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_turku/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_turku/en/station_status.json",
+        "center_lat": 60.45830358999999,
+        "center_lon": 22.277982299999998
+    },
+    {
+        "name": "Oulu Poland",
+        "location": "Oulu, FI",
+        "system_id": 195,
+        "url": "https://kaupunkipyorat.ouka.fi/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_fo/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_fo/en/station_status.json",
+        "center_lat": 65.0188798,
+        "center_lon": 25.4728531
+    },
+    {
+        "name": "Bird Bordeaux",
+        "location": "Bordeaux, FR",
+        "system_id": 196,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/bordeaux/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/bordeaux/station_status.json",
+        "center_lat": 44.84311367236351,
+        "center_lon": -0.566209657718492
+    },
+    {
+        "name": "Bird Chalonsenchampagne",
+        "location": "Châlons-en-Champagne, FR",
+        "system_id": 197,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/chalonsenchampagne/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/chalonsenchampagne/station_status.json",
+        "center_lat": 48.956763961846356,
+        "center_lon": 4.364851080926734
+    },
+    {
+        "name": "Bird Draguignan",
+        "location": "Draguignan, FR",
+        "system_id": 198,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/draguignan/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/draguignan/station_status.json",
+        "center_lat": 43.53138528117343,
+        "center_lon": 6.466159040456887
+    },
+    {
+        "name": "Bird Larochesuryon",
+        "location": "Roche-sur-Yon, FR",
+        "system_id": 199,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/larochesuryon/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/larochesuryon/station_status.json",
+        "center_lat": 46.6704166,
+        "center_lon": -1.4276613299999998
+    },
+    {
+        "name": "Bird Laval",
+        "location": "Laval, FR",
+        "system_id": 200,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/laval/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/laval/station_status.json",
+        "center_lat": 48.06992507206246,
+        "center_lon": -0.7749090694544221
+    },
+    {
+        "name": "Bird Marseille",
+        "location": "Marseille, FR",
+        "system_id": 201,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/marseille/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/marseille/station_status.json",
+        "center_lat": 43.2889567948274,
+        "center_lon": 5.3917439690636
+    },
+    {
+        "name": "Bird Millau",
+        "location": "Millau, FR",
+        "system_id": 202,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/millau/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/millau/station_status.json",
+        "center_lat": 44.098816491540255,
+        "center_lon": 3.073470498694537
+    },
+    {
+        "name": "Bird Montlucon",
+        "location": "Montluçon, FR",
+        "system_id": 203,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/montlucon/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/montlucon/station_status.json",
+        "center_lat": 46.34502388645252,
+        "center_lon": 2.599164348785842
+    },
+    {
+        "name": "Bird Sarreguemines",
+        "location": "Sarreguemines, FR",
+        "system_id": 204,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/sarreguemines/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/sarreguemines/station_status.json",
+        "center_lat": 49.11021177000001,
+        "center_lon": 7.07362193
+    },
+    {
+        "name": "Bird Vichy",
+        "location": "Vichy, FR",
+        "system_id": 205,
+        "url": "https://bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/vichy/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/vichy/station_status.json",
+        "center_lat": 46.12793275666049,
+        "center_lon": 3.4234833531347335
+    },
+    {
+        "name": "C-Vélo",
+        "location": "Clermont-Ferrand, FR",
+        "system_id": 206,
+        "url": "https://www.c-velo.fr",
+        "station_information_url": "https://clermontferrand.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://clermontferrand.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 45.77770421,
+        "center_lon": 3.093588
+    },
+    {
+        "name": "Donkey Republic Brest",
+        "location": "Brest, FR",
+        "system_id": 207,
+        "url": "https://www.donkey.bike/cities/bike-rental-brest/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_brest/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_brest/en/station_status.json",
+        "center_lat": 48.39095898,
+        "center_lon": -4.48518265
+    },
+    {
+        "name": "Donkey Republic Valenciennes",
+        "location": "Valenciennes,FR",
+        "system_id": 208,
+        "url": "https://www.donkey.bike/cities/bike-rental-valenciennes/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_valenciennes/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_valenciennes/en/station_status.json",
+        "center_lat": 50.343986920000006,
+        "center_lon": 3.51704144
+    },
+    {
+        "name": "Libélo",
+        "location": "Valence, FR",
+        "system_id": 209,
+        "url": "https://www.vrd-mobilites.fr/velo/",
+        "station_information_url": "https://valence.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://valence.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 44.9331320084,
+        "center_lon": 4.908441300000001
+    },
+    {
+        "name": "Lime Marseille",
+        "location": "Marseille, FR",
+        "system_id": 210,
+        "url": "https://www.li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/marseille/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/marseille/station_status",
+        "center_lat": 43.3909,
+        "center_lon": 5.4266
+    },
+    {
+        "name": "Lime Paris",
+        "location": "Paris, FR",
+        "system_id": 211,
+        "url": "https://li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/paris/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/paris/station_status",
+        "center_lat": 48.829,
+        "center_lon": 2.3898
+    },
+    {
+        "name": "Vélopop",
+        "location": "Avignon, FR",
+        "system_id": 212,
+        "url": "https://www.velopop.fr/",
+        "station_information_url": "https://avignon-gbfs.klervi.net/gbfs/en/station_information.json",
+        "station_status_url": "https://avignon-gbfs.klervi.net/gbfs/en/station_status.json",
+        "center_lat": 43.94137185734942,
+        "center_lon": 4.825441105466774
+    },
+    {
+        "name": "Vélivert (Saint-Étienne)",
+        "location": "Saint-Étienne, FR",
+        "system_id": 213,
+        "url": "https://api.sigma.fifteen.eu",
+        "station_information_url": "https://api.saint-etienne-metropole.fr/velivert/api/station_information.json",
+        "station_status_url": "https://api.saint-etienne-metropole.fr/velivert/api/station_status.json",
+        "center_lat": 45.458228000000005,
+        "center_lon": 4.405745999999999
+    },
+    {
+        "name": "Voi Marseille",
+        "location": "Marseille, FR",
+        "system_id": 214,
+        "url": "https://www.voiscooters.com/",
+        "station_information_url": "https://api.voiapp.io/gbfs/fr/6bb6b5dc-1cda-4da7-9216-d3023a0bc54a/v2/station_information.json",
+        "station_status_url": "https://api.voiapp.io/gbfs/fr/6bb6b5dc-1cda-4da7-9216-d3023a0bc54a/v2/station_status.json",
+        "center_lat": 43.2908039,
+        "center_lon": 5.400051200000002
+    },
+    {
+        "name": "BelfastBikes",
+        "location": "Belfast, GB",
+        "system_id": 215,
+        "url": "https://www.belfastbikes.co.uk/en/belfast/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bu/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bu/en/station_status.json",
+        "center_lat": 54.5917338,
+        "center_lon": -5.9154839
+    },
+    {
+        "name": "Beryl - BCP",
+        "location": "Bournemouth/Christchurch/Poole, GB",
+        "system_id": 216,
+        "url": "https://beryl.cc/scheme/bournemouth-christchurch-and-poole",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/BCP/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/BCP/station_status.json",
+        "center_lat": 50.7449912,
+        "center_lon": -1.8779721999999999
+    },
+    {
+        "name": "Beryl - Brighton",
+        "location": "Brighton, GB",
+        "system_id": 217,
+        "url": "https://beryl.cc/",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Brighton/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Brighton/station_status.json",
+        "center_lat": 50.83324739999999,
+        "center_lon": -0.1454099
+    },
+    {
+        "name": "Beryl - Cornwall",
+        "location": "Cornwall, GB",
+        "system_id": 218,
+        "url": "https://beryl.cc/scheme/cornwall",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Cornwall/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Cornwall/station_status.json",
+        "center_lat": 50.2301014,
+        "center_lon": -5.1174611
+    },
+    {
+        "name": "Beryl - Greater Manchester",
+        "location": "Manchester, GB",
+        "system_id": 219,
+        "url": "https://beryl.cc/scheme/greater-manchester",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Greater_Manchester/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Greater_Manchester/station_status.json",
+        "center_lat": 53.46979650000001,
+        "center_lon": -2.2483855999999998
+    },
+    {
+        "name": "Beryl  - Hackney Cargo Bike",
+        "location": "Hackney, GB",
+        "system_id": 220,
+        "url": "https://beryl.cc/",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Hackney_Cargo_Bike/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Hackney_Cargo_Bike/station_status.json",
+        "center_lat": 51.53779675,
+        "center_lon": -0.0747645
+    },
+    {
+        "name": "Beryl - Hereford",
+        "location": "Hereford, GB",
+        "system_id": 221,
+        "url": "https://beryl.cc/scheme/hereford",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Hereford/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Hereford/station_status.json",
+        "center_lat": 52.05572600000001,
+        "center_lon": -2.7052742999999997
+    },
+    {
+        "name": "Beryl - Hertsmere",
+        "location": "Hertsmere, GB",
+        "system_id": 222,
+        "url": "https://beryl.cc/scheme/hertsmere",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Hertsmere/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Hertsmere/station_status.json",
+        "center_lat": 51.65934888888889,
+        "center_lon": -0.27097944444444444
+    },
+    {
+        "name": "Beryl - Isle of Wight",
+        "location": "Isle of Wight, GB",
+        "system_id": 223,
+        "url": "https://beryl.cc/scheme/isle-wight",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Isle_of_Wight/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Isle_of_Wight/station_status.json",
+        "center_lat": 50.7119276,
+        "center_lon": -1.2286730000000001
+    },
+    {
+        "name": "Beryl - Leeds",
+        "location": "Leeds, GB",
+        "system_id": 224,
+        "url": "https://beryl.cc/",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Leeds/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Leeds/station_status.json",
+        "center_lat": 53.7992459,
+        "center_lon": -1.546708
+    },
+    {
+        "name": "Beryl - Norwich",
+        "location": "Norwich, GB",
+        "system_id": 225,
+        "url": "https://beryl.cc/scheme/norwich",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Norwich/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Norwich/station_status.json",
+        "center_lat": 52.6230634,
+        "center_lon": 1.266333
+    },
+    {
+        "name": "Beryl - Plymouth",
+        "location": "Plymouth, GB",
+        "system_id": 226,
+        "url": "https://beryl.cc/scheme/plymouth",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Plymouth/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Plymouth/station_status.json",
+        "center_lat": 50.3923888,
+        "center_lon": -4.156557599999999
+    },
+    {
+        "name": "Beryl - Portsmouth",
+        "location": "Portsmouth, GB",
+        "system_id": 227,
+        "url": "https://beryl.cc/scheme/portsmouth",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Portsmouth/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Portsmouth/station_status.json",
+        "center_lat": 50.806449,
+        "center_lon": -1.0775764
+    },
+    {
+        "name": "Beryl - Southampton",
+        "location": "Southampton, GB",
+        "system_id": 228,
+        "url": "https://beryl.cc/scheme/southampton",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Southampton/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Southampton/station_status.json",
+        "center_lat": 50.9126196,
+        "center_lon": -1.4029872000000003
+    },
+    {
+        "name": "Beryl - Watford",
+        "location": "Watford, GB",
+        "system_id": 229,
+        "url": "https://beryl.cc/scheme/watford",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Watford/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Watford/station_status.json",
+        "center_lat": 51.662581300000014,
+        "center_lon": -0.39994949999999996
+    },
+    {
+        "name": "Beryl - West Midlands",
+        "location": "West Midlands, GB",
+        "system_id": 230,
+        "url": "https://beryl.cc/scheme/west-midlands",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/West_Midlands/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/West_Midlands/station_status.json",
+        "center_lat": 52.44839549999999,
+        "center_lon": -1.7444959
+    },
+    {
+        "name": "Beryl - Westminster Cargo Bike",
+        "location": "Westminster, GB",
+        "system_id": 231,
+        "url": "https://beryl.cc/",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Westminster_Cargo_Bike/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Westminster_Cargo_Bike/station_status.json",
+        "center_lat": 51.5151775,
+        "center_lon": -0.17589075
+    },
+    {
+        "name": "Beryl - Wool",
+        "location": "Wool, GB",
+        "system_id": 232,
+        "url": "https://beryl.cc/scheme/wool",
+        "station_information_url": "https://beryl-gbfs-production.web.app/v2_2/Wool/station_information.json",
+        "station_status_url": "https://beryl-gbfs-production.web.app/v2_2/Wool/station_status.json",
+        "center_lat": 50.68765242857143,
+        "center_lon": -2.240789142857143
+    },
+    {
+        "name": "Co-bikes",
+        "location": "Exeter, GB",
+        "system_id": 233,
+        "url": "https://www.co-bikes.co.uk/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_eu/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_eu/en/station_status.json",
+        "center_lat": 50.76253166666666,
+        "center_lon": -3.312351222222222
+    },
+    {
+        "name": "Demoland",
+        "location": "GB",
+        "system_id": 234,
+        "url": "https://www.nextbike.de/de/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tb/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tb/en/station_status.json",
+        "center_lat": 49.4148926,
+        "center_lon": 7.819690199999999
+    },
+    {
+        "name": "Donkey Republic Cheltenham Spa",
+        "location": "Cheltenham Spa, GB",
+        "system_id": 235,
+        "url": "https://www.donkey.bike/cities/bike-rental-cheltenham-spa/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_cheltenham_spa/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_cheltenham_spa/en/station_status.json",
+        "center_lat": 51.9268747,
+        "center_lon": -2.0414678
+    },
+    {
+        "name": "Donkey Republic Cirencester",
+        "location": "Cirencester, GB",
+        "system_id": 236,
+        "url": "https://www.donkey.bike/cities/bike-rental-cirencester/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_cirencester/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_cirencester/en/station_status.json",
+        "center_lat": 51.71697396666667,
+        "center_lon": -1.9678415000000002
+    },
+    {
+        "name": "Donkey Republic Kingham",
+        "location": "Kingham, GB",
+        "system_id": 237,
+        "url": "https://www.donkey.bike/cities/bike-rental-kingham/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kingham/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_kingham/en/station_status.json",
+        "center_lat": 51.9021863,
+        "center_lon": -1.6287342
+    },
+    {
+        "name": "Donkey Republic Moreton In Marsh",
+        "location": "Moreton In Marsh, GB",
+        "system_id": 238,
+        "url": "https://www.donkey.bike/cities/bike-rental-moreton-in-marsh/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_moreton_in_marsh/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_moreton_in_marsh/en/station_status.json",
+        "center_lat": 51.9921879,
+        "center_lon": -1.7006395
+    },
+    {
+        "name": "Donkey Republic Oxford",
+        "location": "Oxford, GB",
+        "system_id": 239,
+        "url": "https://www.donkey.bike/cities/bike-rental-oxford/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_oxford/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_oxford/en/station_status.json",
+        "center_lat": 51.76804075555555,
+        "center_lon": -1.2580453666666667
+    },
+    {
+        "name": "Donkey Republic The Cotswold Water Park",
+        "location": "The Cotswold Water Park, GB",
+        "system_id": 240,
+        "url": "https://www.donkey.bike/cities/bike-rental-the-cotswold-water-park/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_the_cotswold_water_park/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_the_cotswold_water_park/en/station_status.json",
+        "center_lat": 51.6708751,
+        "center_lon": -1.9005878
+    },
+    {
+        "name": "Donkey Republic Worthing",
+        "location": "Worthing, GB",
+        "system_id": 241,
+        "url": "https://www.donkey.bike/cities/bike-rental-worthing/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_worthing/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_worthing/en/station_status.json",
+        "center_lat": 50.8126045,
+        "center_lon": -0.3722183777777777
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Newcastle, GB",
+        "system_id": 242,
+        "url": "https://www.rideneuron.com",
+        "station_information_url": "https://mds-global-ncl.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-ncl.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": 54.98621510482028,
+        "center_lon": -1.615031283573931
+    },
+    {
+        "name": "nextbike Stirling",
+        "location": "Stirling, GB",
+        "system_id": 243,
+        "url": "https://www.nextbike.co.uk/en/stirling/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uk/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uk/en/station_status.json",
+        "center_lat": 56.1426306,
+        "center_lon": -3.9304705999999996
+    },
+    {
+        "name": "OVO Bikes Cardiff & Vale of Glamorgan",
+        "location": "GB",
+        "system_id": 244,
+        "url": "https://www.nextbike.co.uk/en/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uc/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uc/en/station_status.json",
+        "center_lat": 51.482510000000005,
+        "center_lon": -3.1790665000000002
+    },
+    {
+        "name": "OVO Bikes Glasgow",
+        "location": "Glasgow, GB",
+        "system_id": 245,
+        "url": "https://www.nextbike.co.uk/en/glasgow/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gg/en/station_status.json",
+        "center_lat": 55.85500879999999,
+        "center_lon": -4.252729200000001
+    },
+    {
+        "name": "Santander Cycles - Brunel",
+        "location": "Brunel University, GB",
+        "system_id": 246,
+        "url": "https://www.nextbike.co.uk/en/brunel-university/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ub/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ub/en/station_status.json",
+        "center_lat": 51.529623111111114,
+        "center_lon": -0.47289733333333334
+    },
+    {
+        "name": "Santander Cycles - Milton Keynes",
+        "location": "Milton Keynes, GB",
+        "system_id": 247,
+        "url": "https://www.nextbike.co.uk/en/milton-keynes/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ku/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ku/en/station_status.json",
+        "center_lat": 52.033278499999994,
+        "center_lon": -0.7430842
+    },
+    {
+        "name": "Santander Cycles - Swansea",
+        "location": "Swansea University, GB",
+        "system_id": 248,
+        "url": "https://www.nextbike.co.uk/en/swansea-university/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uu/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uu/en/station_status.json",
+        "center_lat": 51.59912419999999,
+        "center_lon": -3.9509314000000004
+    },
+    {
+        "name": "eMobi (Croatia)",
+        "location": "Osijek, HR",
+        "system_id": 249,
+        "url": "https://www.nextbike.hr/hr/osijek/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_em/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_em/en/station_status.json",
+        "center_lat": 45.548814666666665,
+        "center_lon": 18.68736133333333
+    },
+    {
+        "name": "Grad Drniš (Croatia)",
+        "location": "Drniš, HR",
+        "system_id": 250,
+        "url": "https://www.nextbike.hr/hr/drnis/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gd/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gd/en/station_status.json",
+        "center_lat": 43.86985633333333,
+        "center_lon": 16.117076666666666
+    },
+    {
+        "name": "Grad Ivanić-Grad (Croatia)",
+        "location": "Ivanic Grad, HR",
+        "system_id": 251,
+        "url": "https://www.nextbike.hr/hr/ivanicgrad/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ig/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ig/en/station_status.json",
+        "center_lat": 45.7035446,
+        "center_lon": 16.387390399999997
+    },
+    {
+        "name": "Grad Karlovac (Croatia)",
+        "location": "Karlovac, HR",
+        "system_id": 252,
+        "url": "https://www.nextbike.hr/hr/karlovac/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_kc/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_kc/en/station_status.json",
+        "center_lat": 45.488592,
+        "center_lon": 15.552171900000001
+    },
+    {
+        "name": "Grad Križevci (Croatia)",
+        "location": "Križevci, HR",
+        "system_id": 253,
+        "url": "https://www.nextbike.hr/hr/krizevci/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gk/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gk/en/station_status.json",
+        "center_lat": 46.02428330000001,
+        "center_lon": 16.543705799999998
+    },
+    {
+        "name": "Grad Makarska (Croatia)",
+        "location": "Makarska, HR",
+        "system_id": 254,
+        "url": "https://www.nextbike.hr/hr/makarska/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ma/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ma/en/station_status.json",
+        "center_lat": 43.294821,
+        "center_lon": 17.018203
+    },
+    {
+        "name": "Grad Metković (Croatia)",
+        "location": "Metković, HR",
+        "system_id": 255,
+        "url": "https://www.nextbike.hr/hr/metkovic/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cm/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cm/en/station_status.json",
+        "center_lat": 45.29028240000001,
+        "center_lon": 18.7972946
+    },
+    {
+        "name": "Grad Pula (Croatia)",
+        "location": "Pula, HR",
+        "system_id": 256,
+        "url": "https://www.nextbike.hr/hr/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gs/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gs/en/station_status.json",
+        "center_lat": 44.8881534,
+        "center_lon": 13.850159
+    },
+    {
+        "name": "Grad Šibenik (Croatia)",
+        "location": "Šibenik, HR",
+        "system_id": 257,
+        "url": "https://www.nextbike.hr/hr/sibenik/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bc/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bc/en/station_status.json",
+        "center_lat": 43.734086300000016,
+        "center_lon": 15.896267700000001
+    },
+    {
+        "name": "Grad Sisak (Croatia)",
+        "location": "Sisak, HR",
+        "system_id": 258,
+        "url": "https://www.nextbike.hr/hr/sisak/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cs/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cs/en/station_status.json",
+        "center_lat": 45.481257199999995,
+        "center_lon": 16.372944999999998
+    },
+    {
+        "name": "Grad Slavonski Brod (Croatia)",
+        "location": "Slavonski Brod, HR",
+        "system_id": 259,
+        "url": "https://www.nextbike.hr/hr/slavonskibrod/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sb/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sb/en/station_status.json",
+        "center_lat": 45.15289666666666,
+        "center_lon": 18.019697
+    },
+    {
+        "name": "Grad Split (Croatia)",
+        "location": "HR",
+        "system_id": 260,
+        "url": "https://www.nextbike.hr/hr/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gt/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gt/en/station_status.json",
+        "center_lat": 43.527882000000005,
+        "center_lon": 16.4596432
+    },
+    {
+        "name": "Grad Velika Gorica (Croatia)",
+        "location": "Velika Gorica, HR",
+        "system_id": 261,
+        "url": "https://www.nextbike.hr/hr/velikagorica/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cg/en/station_status.json",
+        "center_lat": 45.71427825,
+        "center_lon": 16.0574275
+    },
+    {
+        "name": "Grad Vukovar (Croatia)",
+        "location": "Vukovar, HR",
+        "system_id": 262,
+        "url": "https://www.nextbike.hr/hr/vukovar/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vu/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vu/en/station_status.json",
+        "center_lat": 45.3650085,
+        "center_lon": 18.983573
+    },
+    {
+        "name": "Grad Zadar (Croatia)",
+        "location": "Zadar, HR",
+        "system_id": 263,
+        "url": "https://www.nextbike.hr/hr/zadar/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_zd/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_zd/en/station_status.json",
+        "center_lat": 44.11176425000001,
+        "center_lon": 15.235425125
+    },
+    {
+        "name": "Grad Zaprešić (Croatia)",
+        "location": "Zaprešić, HR",
+        "system_id": 264,
+        "url": "https://www.nextbike.hr/hr/zapresic/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sg/en/station_status.json",
+        "center_lat": 45.858376571428565,
+        "center_lon": 15.803307142857145
+    },
+    {
+        "name": "Hvar",
+        "location": "Stari Grad , HR",
+        "system_id": 265,
+        "url": "https://www.nextbike.hr/hr/starigrad/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ol/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ol/en/station_status.json",
+        "center_lat": 43.182346499999994,
+        "center_lon": 16.583909499999997
+    },
+    {
+        "name": "Jastrebarsko (Croatia)",
+        "location": "Jastrebarsko, HR",
+        "system_id": 266,
+        "url": "https://www.nextbike.hr/hr/jastrebarsko/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cj/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cj/en/station_status.json",
+        "center_lat": 45.672296,
+        "center_lon": 15.64863
+    },
+    {
+        "name": "nextbike Croatia",
+        "location": "HR",
+        "system_id": 267,
+        "url": "https://www.nextbike.hr/hr/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_hr/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_hr/en/station_status.json",
+        "center_lat": 45.5383379,
+        "center_lon": 16.1979712
+    },
+    {
+        "name": "Općina Brinje (Croatia)",
+        "location": "Brinje, HR",
+        "system_id": 268,
+        "url": "https://www.nextbike.hr/hr/brinje/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_br/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_br/en/station_status.json",
+        "center_lat": 45.0021115,
+        "center_lon": 15.129193
+    },
+    {
+        "name": "Općina Pitomača (Croatia)",
+        "location": "Pitomača, HR",
+        "system_id": 269,
+        "url": "https://www.nextbike.hr/hr/pitomaca/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_se/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_se/en/station_status.json",
+        "center_lat": 45.952364,
+        "center_lon": 17.234042
+    },
+    {
+        "name": "Donkey Republic Budapest",
+        "location": "Budapest, HU",
+        "system_id": 270,
+        "url": "https://www.donkey.bike/cities/bike-rental-budapest/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_budapest/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_budapest/en/station_status.json",
+        "center_lat": 47.49835474,
+        "center_lon": 19.064702150000002
+    },
+    {
+        "name": "MOL Bubi",
+        "location": "Budapest, HU",
+        "system_id": 271,
+        "url": "https://molbubi.hu/hu/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bh/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bh/en/station_status.json",
+        "center_lat": 47.512996300000005,
+        "center_lon": 19.0553746
+    },
+    {
+        "name": "Castletroy Bikes (Ireland)",
+        "location": "Castleroy, IE",
+        "system_id": 272,
+        "url": "https://www.nextbike.de/en/limerick/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_lm/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_lm/en/station_status.json",
+        "center_lat": 52.66916970000001,
+        "center_lon": -8.5702398
+    },
+    {
+        "name": "Navan Bikes (Ireland)",
+        "location": "Navan, IE",
+        "system_id": 273,
+        "url": "https://www.nextbike.de/en/navan/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ll/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ll/en/station_status.json",
+        "center_lat": 53.6477287,
+        "center_lon": -6.679331500000001
+    },
+    {
+        "name": "Lime Tel Aviv",
+        "location": "Tel Aviv, IL",
+        "system_id": 274,
+        "url": "https://li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/tel_aviv/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/tel_aviv/station_status",
+        "center_lat": 32.0583,
+        "center_lon": 34.8075
+    },
+    {
+        "name": "Donkey Republic Reykjavik",
+        "location": "Reykjavik",
+        "system_id": 275,
+        "url": "https://www.donkey.bike/cities/bike-rental-reykjavik/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_reykjavik/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_reykjavik/en/station_status.json",
+        "center_lat": 64.1419773,
+        "center_lon": -21.9205747
+    },
+    {
+        "name": "ARVAL",
+        "location": "Scandicci, IT",
+        "system_id": 276,
+        "url": "https://www.nextbike.it/it/arval/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ia/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ia/en/station_status.json",
+        "center_lat": 43.758023,
+        "center_lon": 11.169215
+    },
+    {
+        "name": "Lime Rome",
+        "location": "Rome, IT",
+        "system_id": 277,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/rome/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/rome/station_status",
+        "center_lat": 41.8102,
+        "center_lon": 12.6923
+    },
+    {
+        "name": "Lime Verona",
+        "location": "Verona, IT",
+        "system_id": 278,
+        "url": "https://www.li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/verona/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/verona/station_status",
+        "center_lat": 45.4459,
+        "center_lon": 10.9966
+    },
+    {
+        "name": "nextbike Bergamo",
+        "location": "Bergamo, IT",
+        "system_id": 279,
+        "url": "https://www.nextbike.it/it/bergamo/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ib/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ib/en/station_status.json",
+        "center_lat": 45.694272,
+        "center_lon": 9.659168500000002
+    },
+    {
+        "name": "nextbike LV",
+        "location": "Rīga, LV",
+        "system_id": 280,
+        "url": "https://www.nextbike.lv/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_lv/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_lv/en/station_status.json",
+        "center_lat": 56.9543848,
+        "center_lon": 24.127594499999997
+    },
+    {
+        "name": "MonaBike",
+        "location": "Monaco, MC",
+        "system_id": 281,
+        "url": "https://monabike.mc/",
+        "station_information_url": "https://monaco.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://monaco.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 43.73433776,
+        "center_lon": 7.42138038
+    },
+    {
+        "name": "Ecobici",
+        "location": "Mexico City, MX",
+        "system_id": 282,
+        "url": "https://www.ecobici.cdmx.gob.mx",
+        "station_information_url": "https://gbfs.mex.lyftbikes.com/gbfs/en/station_information.json",
+        "station_status_url": "https://gbfs.mex.lyftbikes.com/gbfs/en/station_status.json",
+        "center_lat": 19.415118889336632,
+        "center_lon": -99.16330197023692
+    },
+    {
+        "name": "Mibici Guadalajara",
+        "location": "Guadalajara, MX",
+        "system_id": 283,
+        "url": "https://www.mibici.net/en/",
+        "station_information_url": "https://guadalajara.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://guadalajara.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 20.678955419018596,
+        "center_lon": -103.36838170497374
+    },
+    {
+        "name": "Cykl",
+        "location": "Wageningen, NL",
+        "system_id": 284,
+        "url": "https://www.cykl.nl/",
+        "station_information_url": "https://www.cykl.nl/gbfs/en/station_information.json",
+        "station_status_url": "https://www.cykl.nl/gbfs/en/station_status.json",
+        "center_lat": 51.982245,
+        "center_lon": 5.664744
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Christchurch, NZ",
+        "system_id": 285,
+        "url": "https://www.rideneuron.com/",
+        "station_information_url": "https://mds-global-chc.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-chc.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -43.53065937746103,
+        "center_lon": 172.63478227603693
+    },
+    {
+        "name": "Neuron Mobility",
+        "location": "Dunedin, NZ",
+        "system_id": 286,
+        "url": "https://www.rideneuron.com/",
+        "station_information_url": "https://mds-global-dud.neuron-mobility.com/gbfs/2/en/station_information",
+        "station_status_url": "https://mds-global-dud.neuron-mobility.com/gbfs/2/en/station_status",
+        "center_lat": -45.87693796615768,
+        "center_lon": 170.50487686238313
+    },
+    {
+        "name": "Kołobrzeski Rower Miejski Poland",
+        "location": "Kołobrzeg, PL",
+        "system_id": 287,
+        "url": "https://kolobrzeskirower.pl/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_kr/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_kr/en/station_status.json",
+        "center_lat": 54.177245600000006,
+        "center_lon": 15.568553099999999
+    },
+    {
+        "name": "ŁoKeR - Łomża",
+        "location": "Łomża, PL",
+        "system_id": 288,
+        "url": "https://lomzarower.pl/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_oa/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_oa/en/station_status.json",
+        "center_lat": 53.16516275,
+        "center_lon": 22.066816375
+    },
+    {
+        "name": "Rowerowe Łódzkie Poland (RL)",
+        "location": "PL",
+        "system_id": 289,
+        "url": "https://www.rowerowelodzkie.pl/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pw/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pw/en/station_status.json",
+        "center_lat": 51.77447430000001,
+        "center_lon": 19.431593999999997
+    },
+    {
+        "name": "VETURILO Poland",
+        "location": "PL",
+        "system_id": 290,
+        "url": "https://www.veturilo.waw.pl/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vw/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vw/en/station_status.json",
+        "center_lat": 52.23151509999999,
+        "center_lon": 21.018226
+    },
+    {
+        "name": "WRM nextbike Poland",
+        "location": "Wrocław, PL",
+        "system_id": 291,
+        "url": "https://www.wroclawskirower.pl/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pl/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pl/en/station_status.json",
+        "center_lat": 51.110868700000005,
+        "center_lon": 16.995144
+    },
+    {
+        "name": "Bird Cascais",
+        "location": "Cascais, PT",
+        "system_id": 292,
+        "url": "https://www.bird.co",
+        "station_information_url": "https://mds.bird.co/gbfs/v2/public/cascais/station_information.json",
+        "station_status_url": "https://mds.bird.co/gbfs/v2/public/cascais/station_status.json",
+        "center_lat": 38.70974579999999,
+        "center_lon": -9.370836399999998
+    },
+    {
+        "name": "Buzau VeloCity",
+        "location": "Buzau, RO",
+        "system_id": 293,
+        "url": "https://www.velocitybuzau.ro/ro/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bv/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bv/en/station_status.json",
+        "center_lat": 45.1515582,
+        "center_lon": 26.8210578
+    },
+    {
+        "name": "Drobeta Velopark",
+        "location": "Drobeta, RO",
+        "system_id": 294,
+        "url": "https://www.nextbike.ro/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rd/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rd/en/station_status.json",
+        "center_lat": 44.560563,
+        "center_lon": 24.3703015
+    },
+    {
+        "name": "nextbike Romania",
+        "location": "Focșani, RO",
+        "system_id": 295,
+        "url": "https://nextbike.ro/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nw/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nw/en/station_status.json",
+        "center_lat": 45.676889,
+        "center_lon": 27.177972
+    },
+    {
+        "name": "Saturn",
+        "location": "Saturn, RO",
+        "system_id": 296,
+        "url": "https://www.nextbike.ro/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rs/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rs/en/station_status.json",
+        "center_lat": 43.828458499999996,
+        "center_lon": 28.586320999999998
+    },
+    {
+        "name": "Sibiu BikeCity",
+        "location": "Sibiu, RO",
+        "system_id": 297,
+        "url": "https://bikecity.sibiu.ro",
+        "station_information_url": "https://sibiu.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://sibiu.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 45.786771894018955,
+        "center_lon": 24.153955660509336
+    },
+    {
+        "name": "Topoloveni Bike",
+        "location": "Topoloveni, RO",
+        "system_id": 298,
+        "url": "https://www.nextbike.ro/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rt/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rt/en/station_status.json",
+        "center_lat": 44.81489766666667,
+        "center_lon": 25.082339666666666
+    },
+    {
+        "name": "Velo Sântana",
+        "location": "Sântana, RO",
+        "system_id": 299,
+        "url": "https://velosantana.ro",
+        "station_information_url": "https://santana.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://santana.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 46.34434750974476,
+        "center_lon": 21.50464165152435
+    },
+    {
+        "name": "Donkey Republic Malmö",
+        "location": "Malmö, SE",
+        "system_id": 300,
+        "url": "https://www.donkey.bike/cities/bike-rental-malmo/",
+        "station_information_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_malmoe/en/station_information.json",
+        "station_status_url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_malmoe/en/station_status.json",
+        "center_lat": 55.59594704999999,
+        "center_lon": 12.999294780000003
+    },
+    {
+        "name": "Styr & Ställ (Sweden, Göteborg)",
+        "location": "Göteborg, SE",
+        "system_id": 301,
+        "url": "https://styrochstall.se/sv/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_zg/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_zg/en/station_status.json",
+        "center_lat": 57.692505499999996,
+        "center_lon": 11.985521300000002
+    },
+    {
+        "name": "Nomago Bikes - GO2GO",
+        "location": "Nova Gorica, SI",
+        "system_id": 302,
+        "url": "https://bikes.nomago.si/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ce/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ce/en/station_status.json",
+        "center_lat": 45.96182019999999,
+        "center_lon": 13.6490734
+    },
+    {
+        "name": "Nomago Bikes - GO2GO Gorizia",
+        "location": "Gorizia, SI",
+        "system_id": 303,
+        "url": "https://bikes.nomago.si/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cd/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cd/en/station_status.json",
+        "center_lat": 45.940536333333334,
+        "center_lon": 13.616872333333333
+    },
+    {
+        "name": "Nomago Bikes - KOLESCE",
+        "location": "SI",
+        "system_id": 304,
+        "url": "https://bikes.nomago.si/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cn/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cn/en/station_status.json",
+        "center_lat": 46.2402853,
+        "center_lon": 15.267162500000001
+    },
+    {
+        "name": "Nomago Bikes - KRANJSKA GORA",
+        "location": "Kranjska Gora, SI",
+        "system_id": 305,
+        "url": "https://bikes.nomago.si/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ck/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ck/en/station_status.json",
+        "center_lat": 46.48214,
+        "center_lon": 13.78198
+    },
+    {
+        "name": "Nomago Bikes -  LJUBLJANA",
+        "location": "Ljubljana, SI",
+        "system_id": 306,
+        "url": "https://bikes.nomago.si/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cc/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cc/en/station_status.json",
+        "center_lat": 46.058348699999996,
+        "center_lon": 14.517084800000001
+    },
+    {
+        "name": "Nomago Bikes - PORTOROZ",
+        "location": "Portorož, SI",
+        "system_id": 307,
+        "url": "https://bikes.nomago.si/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cl/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cl/en/station_status.json",
+        "center_lat": 45.505144,
+        "center_lon": 13.597416
+    },
+    {
+        "name": "Nomago Bikes - SLOVENIA",
+        "location": "Kranjska Gora, SI",
+        "system_id": 308,
+        "url": "https://bikes.nomago.si/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cx/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cx/en/station_status.json",
+        "center_lat": 46.0078835,
+        "center_lon": 15.308771499999999
+    },
+    {
+        "name": "Nomago Bikes - ZANAPREJ",
+        "location": "Zagorje ob Savi, SI",
+        "system_id": 309,
+        "url": "https://bikes.nomago.si/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cf/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cf/en/station_status.json",
+        "center_lat": 46.13739628571428,
+        "center_lon": 14.981063285714285
+    },
+    {
+        "name": "BikeKIA",
+        "location": "Žilina, SK",
+        "system_id": 310,
+        "url": "https://bikekia.sk/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ak/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ak/en/station_status.json",
+        "center_lat": 49.212949200000004,
+        "center_lon": 18.7520946
+    },
+    {
+        "name": "AAR Bike",
+        "location": "Konya, TR",
+        "system_id": 311,
+        "url": "https://aarbike.com.tr/",
+        "station_information_url": "https://app.linkalock.com/api/gbfs/D2uRLGw8vBa2FJxa8/station_information.json",
+        "station_status_url": "https://app.linkalock.com/api/gbfs/D2uRLGw8vBa2FJxa8/station_status.json",
+        "center_lat": 37.8869606,
+        "center_lon": 32.4779101
+    },
+    {
+        "name": "KARBIS Turkey",
+        "location": "İzmir, TR",
+        "system_id": 312,
+        "url": "https://www.nextbike.com.tr/tr/Seferihisar/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tr/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tr/en/station_status.json",
+        "center_lat": 38.45914425,
+        "center_lon": 27.10445875
+    },
+    {
+        "name": "nextbike Konya",
+        "location": "Konya, TR",
+        "system_id": 313,
+        "url": "https://www.nextbike.com.tr/tr/konya/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nk/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nk/en/station_status.json",
+        "center_lat": 37.860409000000004,
+        "center_lon": 32.467761
+    },
+    {
+        "name": "nextbike Kiev",
+        "location": "Kiev, UA",
+        "system_id": 314,
+        "url": "https://www.nextbike.ua/uk/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nu/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nu/en/station_status.json",
+        "center_lat": 49.32581088888889,
+        "center_lon": 24.408032222222218
+    },
+    {
+        "name": "nextbike Vinnitsa (Ukraine)",
+        "location": "Vinnytsia, UA",
+        "system_id": 315,
+        "url": "https://www.nextbike.ua/uk/Vinnytsia/",
+        "station_information_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uv/en/station_information.json",
+        "station_status_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uv/en/station_status.json",
+        "center_lat": 49.22986522222223,
+        "center_lon": 28.436560444444442
+    },
+    {
+        "name": "Austin B-cycle",
+        "location": "Austin, TX",
+        "system_id": 316,
+        "url": "http://austinbcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_austin/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_austin/station_status.json",
+        "center_lat": 30.260756999999995,
+        "center_lon": -97.741366
+    },
+    {
+        "name": "Aventura BCycle",
+        "location": "Aventura, FL",
+        "system_id": 317,
+        "url": "https://aventura.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_aventura/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_aventura/station_status.json",
+        "center_lat": 25.956488,
+        "center_lon": -80.13635
+    },
+    {
+        "name": "Bay Wheels",
+        "location": "San Francisco Bay Area, CA",
+        "system_id": 318,
+        "url": "https://www.baywheels.com/",
+        "station_information_url": "https://gbfs.lyft.com/gbfs/2.3/bay/en/station_information.json",
+        "station_status_url": "https://gbfs.lyft.com/gbfs/2.3/bay/en/station_status.json",
+        "center_lat": 37.711716896151756,
+        "center_lon": -122.25352122358068
+    },
+    {
+        "name": "Bike Chattanooga",
+        "location": "Chattanooga, TN",
+        "system_id": 319,
+        "url": "https://www.bikechattanooga.com/",
+        "station_information_url": "https://chattanooga.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://chattanooga.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 35.043594399999996,
+        "center_lon": -85.30713810000002
+    },
+    {
+        "name": "BikeLNK",
+        "location": "Lincoln, NE",
+        "system_id": 320,
+        "url": "https://bikelnk.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_bikelnk/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_bikelnk/station_status.json",
+        "center_lat": 40.816551000000004,
+        "center_lon": -96.699038
+    },
+    {
+        "name": "Bikeshare Kona",
+        "location": "Kona, HI",
+        "system_id": 321,
+        "url": "https://hawaiiislandbikeshare.org/",
+        "station_information_url": "https://kona.publicbikesystem.net/customer/ube/gbfs/v1/en/station_information",
+        "station_status_url": "https://kona.publicbikesystem.net/customer/ube/gbfs/v1/en/station_status",
+        "center_lat": 19.663114158033544,
+        "center_lon": -155.52169406734023
+    },
+    {
+        "name": "BIKETOWN",
+        "location": "Portland, OR",
+        "system_id": 322,
+        "url": "https://www.biketownpdx.com/",
+        "station_information_url": "https://gbfs.lyft.com/gbfs/2.3/pdx/en/station_information.json",
+        "station_status_url": "https://gbfs.lyft.com/gbfs/2.3/pdx/en/station_status.json",
+        "center_lat": 45.537586157999996,
+        "center_lon": -122.67686533000001
+    },
+    {
+        "name": "Biki",
+        "location": "Honolulu, HI",
+        "system_id": 323,
+        "url": "https://gobiki.org/",
+        "station_information_url": "https://honolulu.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://honolulu.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 21.29389432,
+        "center_lon": -157.84359066000002
+    },
+    {
+        "name": "Boulder BCycle",
+        "location": "Boulder, CO",
+        "system_id": 324,
+        "url": "https://boulder.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_boulder/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_boulder/station_status.json",
+        "center_lat": 40.013493,
+        "center_lon": -105.263258
+    },
+    {
+        "name": "Blue Bikes",
+        "location": "Boston, MA",
+        "system_id": 325,
+        "url": "https://www.bluebikes.com/",
+        "station_information_url": "https://gbfs.lyft.com/gbfs/1.1/bos/en/station_information.json",
+        "station_status_url": "https://gbfs.lyft.com/gbfs/1.1/bos/en/station_status.json",
+        "center_lat": 42.35978701201321,
+        "center_lon": -71.05080110718919
+    },
+    {
+        "name": "Boaz Bikes",
+        "location": "Detroit, MI",
+        "system_id": 326,
+        "url": "https://www.boazbikes.com/",
+        "station_information_url": "https://gbsf.movatic.co/en/1.1/576347857979998215/station_information",
+        "station_status_url": "https://gbsf.movatic.co/en/1.1/576347857979998215/station_status",
+        "center_lat": 33.04243,
+        "center_lon": -96.71775
+    },
+    {
+        "name": "Broward B-cycle",
+        "location": "Fort Lauderdale, FL",
+        "system_id": 327,
+        "url": "https://broward.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_broward/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_broward/station_status.json",
+        "center_lat": 26.10772,
+        "center_lon": -80.114363
+    },
+    {
+        "name": "Bublr Bikes",
+        "location": "Milwaukee, WI",
+        "system_id": 328,
+        "url": "https://bublrbikes.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_bublr/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_bublr/station_status.json",
+        "center_lat": 43.043772000000004,
+        "center_lon": -87.91033300000001
+    },
+    {
+        "name": "Capital Bike Share",
+        "location": "Washington, DC",
+        "system_id": 329,
+        "url": "http://www.capitalbikeshare.com",
+        "station_information_url": "https://gbfs.lyft.com/gbfs/2.3/dca-cabi/en/station_information.json",
+        "station_status_url": "https://gbfs.lyft.com/gbfs/2.3/dca-cabi/en/station_status.json",
+        "center_lat": 38.930517629635986,
+        "center_lon": -77.05018726971173
+    },
+    {
+        "name": "Charlotte B-cycle",
+        "location": "Charlotte, NC",
+        "system_id": 330,
+        "url": "https://charlotte.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_charlotte/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_charlotte/station_status.json",
+        "center_lat": 35.221067000000005,
+        "center_lon": -80.83897300000001
+    },
+    {
+        "name": "Cincy Red Bike",
+        "location": "Cincinnati, OH",
+        "system_id": 331,
+        "url": "https://www.cincyredbike.org",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_cincyredbike/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_cincyredbike/station_status.json",
+        "center_lat": 39.108235,
+        "center_lon": -84.51364199999999
+    },
+    {
+        "name": "Citi Bike",
+        "location": "NYC, NY",
+        "system_id": 332,
+        "url": "https://www.citibikenyc.com",
+        "station_information_url": "https://gbfs.lyft.com/gbfs/2.3/bkn/en/station_information.json",
+        "station_status_url": "https://gbfs.lyft.com/gbfs/2.3/bkn/en/station_status.json",
+        "center_lat": 40.74376728365224,
+        "center_lon": -73.94108207746999
+    },
+    {
+        "name": "Clarksville B-cycle",
+        "location": "Clarksville, TN",
+        "system_id": 333,
+        "url": "https://clarksville.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_clarksville/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_clarksville/station_status.json",
+        "center_lat": 36.534906,
+        "center_lon": -87.362034
+    },
+    {
+        "name": "Clemson BikeShare",
+        "location": "Clemson, SC",
+        "system_id": 334,
+        "url": "https://clemson.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_clemson/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_clemson/station_status.json",
+        "center_lat": 34.67872,
+        "center_lon": -82.83356222222221
+    },
+    {
+        "name": "CoGo",
+        "location": "Columbus, OH",
+        "system_id": 335,
+        "url": "http://www.cogobikeshare.com/",
+        "station_information_url": "https://gbfs.lyft.com/gbfs/2.3/cmh/en/station_information.json",
+        "station_status_url": "https://gbfs.lyft.com/gbfs/2.3/cmh/en/station_status.json",
+        "center_lat": 39.98448275,
+        "center_lon": -82.98233887
+    },
+    {
+        "name": "Des Moines B-cycle",
+        "location": "Des Moines, IA",
+        "system_id": 336,
+        "url": "https://desmoines.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_desmoines/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_desmoines/station_status.json",
+        "center_lat": 41.588987,
+        "center_lon": -93.630552
+    },
+    {
+        "name": "Lyft Scooters Chicago",
+        "location": "Chicago, IL",
+        "system_id": 337,
+        "url": "https://www.divvybikes.com",
+        "station_information_url": "https://gbfs.lyft.com/gbfs/2.3/chi/en/station_information.json",
+        "station_status_url": "https://gbfs.lyft.com/gbfs/2.3/chi/en/station_status.json",
+        "center_lat": 41.910955200000004,
+        "center_lon": -87.6879198
+    },
+    {
+        "name": "El Paso B-cycle",
+        "location": "El Paso, TX",
+        "system_id": 338,
+        "url": "https://elpaso.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_elpaso/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_elpaso/station_status.json",
+        "center_lat": 31.768601999999998,
+        "center_lon": -106.497298
+    },
+    {
+        "name": "Encinitas BCycle",
+        "location": "Encinitias, CA",
+        "system_id": 339,
+        "url": "https://encinitas.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_encinitas/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_encinitas/station_status.json",
+        "center_lat": 33.04676500000001,
+        "center_lon": -117.29193899999999
+    },
+    {
+        "name": "Explore Bike Share",
+        "location": "Memphis, TN",
+        "system_id": 340,
+        "url": "https://explorebikeshare.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_memphis/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_memphis/station_status.json",
+        "center_lat": 35.14243777777778,
+        "center_lon": -90.00417222222221
+    },
+    {
+        "name": "Fort Worth Bike Sharing",
+        "location": "Fort Worth, TX",
+        "system_id": 341,
+        "url": "https://fortworth.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_fortworth/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_fortworth/station_status.json",
+        "center_lat": 32.738783999999995,
+        "center_lon": -97.34444099999999
+    },
+    {
+        "name": "GREENbike",
+        "location": "Salt Lake City, UT",
+        "system_id": 342,
+        "url": "https://greenbikeslc.org",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_greenbikeslc/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_greenbikeslc/station_status.json",
+        "center_lat": 40.853898,
+        "center_lon": -111.90705
+    },
+    {
+        "name": "Greenville B-cycle",
+        "location": "Greenville, SC",
+        "system_id": 343,
+        "url": "https://greenville.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_greenville/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_greenville/station_status.json",
+        "center_lat": 34.848396,
+        "center_lon": -82.40068699999999
+    },
+    {
+        "name": "Heartland B-cycle",
+        "location": "Omaha, NE",
+        "system_id": 344,
+        "url": "https://heartland.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_heartland/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_heartland/station_status.json",
+        "center_lat": 41.256102,
+        "center_lon": -95.96175100000002
+    },
+    {
+        "name": "Houston B-cycle",
+        "location": "Houston, TX",
+        "system_id": 345,
+        "url": "https://houston.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_houston/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_houston/station_status.json",
+        "center_lat": 29.741214000000003,
+        "center_lon": -95.385525
+    },
+    {
+        "name": "Indego",
+        "location": "Philadelphia, PA",
+        "system_id": 346,
+        "url": "https://www.rideindego.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_indego/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_indego/station_status.json",
+        "center_lat": 39.967114,
+        "center_lon": -75.168871
+    },
+    {
+        "name": "Indy - Pacers Bikeshare",
+        "location": "Indianapolis, IN",
+        "system_id": 347,
+        "url": "https://www.pacersbikeshare.org",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_pacersbikeshare/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_pacersbikeshare/station_status.json",
+        "center_lat": 39.788103,
+        "center_lon": -86.16175899999999
+    },
+    {
+        "name": "Jackson County",
+        "location": "Jackson, MI",
+        "system_id": 348,
+        "url": "https://jacksoncounty.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_jacksoncounty/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_jacksoncounty/station_status.json",
+        "center_lat": 42.20805,
+        "center_lon": -84.43922
+    },
+    {
+        "name": "Lime Arlington",
+        "location": "Arlington, VA",
+        "system_id": 349,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/arlington/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/arlington/station_status",
+        "center_lat": 38.8811,
+        "center_lon": -77.1024
+    },
+    {
+        "name": "Lime Chicago",
+        "location": "Chicago, IL",
+        "system_id": 350,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/chicago/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/chicago/station_status",
+        "center_lat": 41.8484,
+        "center_lon": -87.6934
+    },
+    {
+        "name": "Lime Cleveland",
+        "location": "Cleveland, OH",
+        "system_id": 351,
+        "url": "https://li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/cleveland/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/cleveland/station_status",
+        "center_lat": 41.6201,
+        "center_lon": -81.6752
+    },
+    {
+        "name": "Lime Colorado Springs",
+        "location": "Colorado Springs, CO, US",
+        "system_id": 352,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/colorado_springs/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/colorado_springs/station_status",
+        "center_lat": 38.825,
+        "center_lon": -104.6911
+    },
+    {
+        "name": "Lime Detroit",
+        "location": "Detroit, MI",
+        "system_id": 353,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/detroit/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/detroit/station_status",
+        "center_lat": 42.3642,
+        "center_lon": -83.1381
+    },
+    {
+        "name": "Lime Grand Rapids",
+        "location": "Grand Rapid, MI",
+        "system_id": 354,
+        "url": "https://li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/grand_rapids/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/grand_rapids/station_status",
+        "center_lat": 43.0034,
+        "center_lon": -85.7612
+    },
+    {
+        "name": "Lime Louisville",
+        "location": "Louisville, KY",
+        "system_id": 355,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/louisville/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/louisville/station_status",
+        "center_lat": 38.1985,
+        "center_lon": -85.7324
+    },
+    {
+        "name": "Lime New York",
+        "location": "New York, NY",
+        "system_id": 356,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/new_york/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/new_york/station_status",
+        "center_lat": 40.918,
+        "center_lon": -74.0899
+    },
+    {
+        "name": "Lime Oakland",
+        "location": "Oakland, CA",
+        "system_id": 357,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/oakland/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/oakland/station_status",
+        "center_lat": 37.7903,
+        "center_lon": -122.2287
+    },
+    {
+        "name": "Lime Portland",
+        "location": "Portland, OR",
+        "system_id": 358,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/portland/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/portland/station_status",
+        "center_lat": 45.5439,
+        "center_lon": -122.6272
+    },
+    {
+        "name": "Lime San Francisco",
+        "location": "San Francisco, CA",
+        "system_id": 359,
+        "url": "https://li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/san_francisco/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/san_francisco/station_status",
+        "center_lat": 37.7432,
+        "center_lon": -122.5152
+    },
+    {
+        "name": "Lime San Jose",
+        "location": "San Jose,CA",
+        "system_id": 360,
+        "url": "https://www.li.me",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/san_jose/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/san_jose/station_status",
+        "center_lat": 37.2739,
+        "center_lon": -121.9824
+    },
+    {
+        "name": "Lime Seattle",
+        "location": "Seattle, WA",
+        "system_id": 361,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/seattle/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/seattle/station_status",
+        "center_lat": 47.6137,
+        "center_lon": -122.3395
+    },
+    {
+        "name": "Lime Washington DC",
+        "location": "Washington, DC",
+        "system_id": 362,
+        "url": "https://www.li.me/",
+        "station_information_url": "https://data.lime.bike/api/partners/v2/gbfs/washington_dc/station_information",
+        "station_status_url": "https://data.lime.bike/api/partners/v2/gbfs/washington_dc/station_status",
+        "center_lat": 38.8944,
+        "center_lon": -77.0144
+    },
+    {
+        "name": "Lyft Scooters Denver",
+        "location": "Denver, CO",
+        "system_id": 363,
+        "url": "https://www.lyft.com/",
+        "station_information_url": "https://gbfs.lyft.com/gbfs/2.3/den/en/station_information.json",
+        "station_status_url": "https://gbfs.lyft.com/gbfs/2.3/den/en/station_status.json",
+        "center_lat": 39.750806221,
+        "center_lon": -104.98643315
+    },
+    {
+        "name": "Madison B-cycle",
+        "location": "Madison, WI",
+        "system_id": 364,
+        "url": "https://madison.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_madison/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_madison/station_status.json",
+        "center_lat": 43.064312,
+        "center_lon": -89.412319
+    },
+    {
+        "name": "Metro Bike Share",
+        "location": "Los Angeles, CA",
+        "system_id": 365,
+        "url": "https://bikeshare.metro.net",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_lametro/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_lametro/station_status.json",
+        "center_lat": 34.06086899999999,
+        "center_lon": -118.28173399999999
+    },
+    {
+        "name": "Mogo Detroit",
+        "location": "Detroit, MI",
+        "system_id": 366,
+        "url": "https://mogodetroit.org/",
+        "station_information_url": "https://detroit.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://detroit.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 42.3874384,
+        "center_lon": -83.0894122
+    },
+    {
+        "name": "Nashville BCycle",
+        "location": "Nashville, TN",
+        "system_id": 367,
+        "url": "https://nashville.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_nashville/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_nashville/station_status.json",
+        "center_lat": 36.150048,
+        "center_lon": -86.796306
+    },
+    {
+        "name": "PeaceHealth Rides",
+        "location": "Eugene, OR",
+        "system_id": 368,
+        "url": "https://www.peacehealthrides.com/",
+        "station_information_url": "http://peacehealthrides.com/opendata/station_information.json",
+        "station_status_url": "http://peacehealthrides.com/opendata/station_status.json",
+        "center_lat": 44.048651547416895,
+        "center_lon": -123.07972763478756
+    },
+    {
+        "name": "Pogoh",
+        "location": "Pittsburgh, PA",
+        "system_id": 369,
+        "url": "https://pogoh.com/",
+        "station_information_url": "https://pittsburgh.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://pittsburgh.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 40.44831878552195,
+        "center_lon": -79.95748958695371
+    },
+    {
+        "name": "Redding Bikeshare",
+        "location": "Redding, CA",
+        "system_id": 370,
+        "url": "https://shastalivingstreets.org/redding-bikeshare/",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_redding/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_redding/station_status.json",
+        "center_lat": 40.584924444444454,
+        "center_lon": -122.39102555555554
+    },
+    {
+        "name": "Reddy Bikeshare",
+        "location": "Buffalo, NY",
+        "system_id": 371,
+        "url": "https://reddybikeshare.socialbicycles.com",
+        "station_information_url": "http://reddybikeshare.socialbicycles.com/opendata/station_information.json",
+        "station_status_url": "http://reddybikeshare.socialbicycles.com/opendata/station_status.json",
+        "center_lat": 42.97842597056898,
+        "center_lon": -78.9092393964529
+    },
+    {
+        "name": "RTC Bike Share",
+        "location": "Las Vegas, NV",
+        "system_id": 372,
+        "url": "https://rtcbikeshare.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_rtcbikeshare/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_rtcbikeshare/station_status.json",
+        "center_lat": 36.16113888888889,
+        "center_lon": -115.15131222222223
+    },
+    {
+        "name": "San Antonio B-cycle",
+        "location": "San Antonio, TX",
+        "system_id": 373,
+        "url": "https://sanantonio.bcycle.com/",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_sanantonio/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_sanantonio/station_status.json",
+        "center_lat": 29.395472222222224,
+        "center_lon": -98.47929111111111
+    },
+    {
+        "name": "Santa Barbara BCycle",
+        "location": "Santa Barbara, CA",
+        "system_id": 374,
+        "url": "https://santabarbara.bcycle.com",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_santabarbara/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_santabarbara/station_status.json",
+        "center_lat": 34.420038,
+        "center_lon": -119.701219
+    },
+    {
+        "name": "Santa Cruz BCycle",
+        "location": "Santa Cruz, CA",
+        "system_id": 375,
+        "url": "https://santacruz.bcycle.com/",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_santacruz/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_santacruz/station_status.json",
+        "center_lat": 36.98162,
+        "center_lon": -122.044365
+    },
+    {
+        "name": "SBU Wolf Ride Bike Share",
+        "location": "Stony Brook, NY",
+        "system_id": 376,
+        "url": "https://www.stonybrook.edu/commcms/sustainability/transportation/_Wolf_Ride_Bike_Share/",
+        "station_information_url": "https://stonybrook.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://stonybrook.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 40.91225540000001,
+        "center_lon": -73.1248022
+    },
+    {
+        "name": "Tugo",
+        "location": "Tucson, AZ",
+        "system_id": 377,
+        "url": "https://tugobikeshare.com/",
+        "station_information_url": "https://tucson.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://tucson.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 32.22986398051461,
+        "center_lon": -110.96457782322723
+    },
+    {
+        "name": "Valentine Bike Share",
+        "location": "Valentine, NE",
+        "system_id": 378,
+        "url": "https://heartlandbikeshare.org",
+        "station_information_url": "https://gbfs.bcycle.com/bcycle_valentine/station_information.json",
+        "station_status_url": "https://gbfs.bcycle.com/bcycle_valentine/station_status.json",
+        "center_lat": 42.8715,
+        "center_lon": -100.5507
+    },
+    {
+        "name": "WE-cycle",
+        "location": "Aspen, CO",
+        "system_id": 379,
+        "url": "https://www.we-cycle.org",
+        "station_information_url": "https://aspen.publicbikesystem.net/customer/gbfs/v2/en/station_information",
+        "station_status_url": "https://aspen.publicbikesystem.net/customer/gbfs/v2/en/station_status",
+        "center_lat": 39.40027344444444,
+        "center_lon": -107.21592755555555
+    }
+]

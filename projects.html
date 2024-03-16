@@ -4,6 +4,7 @@
     <head>
         <title>Alex's Website</title>
         <link rel="stylesheet" href="./swag.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -13,9 +14,8 @@
             <div id="column">
 
                 <h1>Projects</h1>
-                <hr class="hidden"/>
 
-                    <a href="./index.html"  class="content-block-title"> &lt; home</a>
+                    <a href="./index.html"  class="content-block-title"> &lt; back</a>
 
             </div>
 
@@ -41,17 +41,12 @@
 
                 projectInner.appendChild(projectTitle)
 
-                try {
-                    p.tags.forEach(label => {
-                        const tag = document.createElement("div")
-                        tag.className = "project-tag"
-                        tag.textContent = label
-                        projectInner.appendChild(tag)
-                    })
-                }
-                catch {
-
-                }
+                p.tags.forEach(label => {
+                    const tag = document.createElement("div")
+                    tag.className = "project-tag"
+                    tag.textContent = label + "   "
+                    projectInner.appendChild(tag)
+                })
 
                 project.appendChild(projectInner)
                 projects.appendChild(project)
