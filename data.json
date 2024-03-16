@@ -4,18 +4,20 @@
             "title" : "Plastic Mart",
             "description" : "Woodworking, waste",
             "tags" : ["Sculpture"],
+            "link" : "/error.html",
             "imgs" : ["./img/plasticmart.png"],
             "featured" : true
         },
         {
             "title" : "bikesharemap",
             "tags" : ["SwiftUI", "WatchOS"],
-            "link" : "/error.html"
+            "link" : "/projects/bikesharemap/bikesharemap.html"
         },
         {
             "title" : "Métro, Boulot, Dodo",
             "description" : "Vinyl installation",
             "tags" : ["Sculpture"],
+            "link" : "/error.html",
             "imgs" : ["./img/metroboulotdodo.png"],
             "featured" : true
         },
@@ -23,6 +25,7 @@
             "title" : "partyreg.colorado.edu",
             "description" : "Full-stack web application",
             "tags" : ["Node.js", "Docker", "React"],
+            "link" : "/error.html",
             "imgs" : ["./img/partyreg.png"],
             "featured" : true
         },
@@ -30,16 +33,19 @@
             "title" : "New Parts",
             "description" : "Plastic, concrete, and wax casts",
             "tags" : ["Sculpture"],
+            "link" : "/error.html",
             "imgs" : ["./img/newparts.jpg"]
         },
         {
             "title" : "Loft(ish) Bed",
             "tags" : ["Woodworking", "CAD"],
+            "link" : "/error.html",
             "imgs" : ["./img/loftishbed.jpg"]
         },
         {
             "title" : "FPV Drone Bag",
             "tags" : ["Product Design"],
+            "link" : "/error.html",
             "imgs" : ["./img/fpvbag.jpg"]
         }
     ]

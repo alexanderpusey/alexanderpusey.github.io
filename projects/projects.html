@@ -3,7 +3,7 @@
 
     <head>
         <title>Alex's Website</title>
-        <link rel="stylesheet" href="./swag.css">
+        <link rel="stylesheet" href="/swag.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -15,7 +15,7 @@
 
                 <h1>Projects</h1>
 
-                    <a href="./index.html"  class="content-block-title"> &lt; back</a>
+                    <a href="/index.html"  class="content-block-title"> &lt; back</a>
 
             </div>
 
@@ -59,7 +59,7 @@
 
         async function getData() {
             try {
-                const response = await fetch("./data.json")
+                const response = await fetch("/data.json")
                 const json = await response.json()
                 data = json
             }
