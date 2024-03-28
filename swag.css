@@ -173,32 +173,28 @@ ul {
 }
 
 /* projects menu */
-.project-block {
-    cursor: pointer;
-    background-color: var(--secondaryColor);
-}
-.project-block a {
+#projects {
     width: 100%;
-    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+.project-block {
+    height: 120px;
+    width: calc(100% / 3);
 }
 
 .project-block img {
-    padding-top: 10px;
-    padding-bottom: 3px;
     object-fit: cover;
-    height: 300px;
-    min-width: 300px;
+    width: 100%;
+    height: 100%;
 }
-
-.project-title {
-    font-size: medium;
-    margin-right: auto;
-    color: var(--white);
-}
-.project-block:hover .project-title{
+/* .project-block:hover .project-title{
     color: var(--highlightColor);
     text-decoration: underline;
-}
+} */
 .project-tag {
     display: inline;
     font-size: x-small;
@@ -206,18 +202,13 @@ ul {
     color: var(--backgroundColor);
 }
 
-.project-page img {
-    margin: 10px 0 10px 0;
-    height: auto;
-    width: 100%;
-}
 
 /* mailbox */
 #mailbox-notification {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 9px;
 }
 
 #mailbox-notification:hover {
@@ -305,14 +296,14 @@ ul {
     font-size: small;
     margin-top: 1px;
     margin-left: 2px;
-    color: var(--white);
+    color: var(--secondaryColor);
     display: flex;
     align-items: center; 
-    gap: 6px;
+    gap: 5px;
 }
 
 #status-dot {
-    margin-top: 1px;
+    margin-top: 3px;
     height: 7px;
     width: 7px;
     background-color: var(--highlightColor);
