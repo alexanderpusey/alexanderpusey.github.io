@@ -15,8 +15,12 @@
 
                 <h1>Projects</h1>
 
-                    <a href="/index.html"  class="content-block-title"> &lt; back</a>
+                <a href="/index.html"  class="content-block-title"> &lt; back</a>
 
+                <div id="row">
+
+                </div>
+                
             </div>
 
         </div>
@@ -24,7 +28,7 @@
     </body>
 
     <script>
-        const projects = document.getElementById("column")
+        const projects = document.getElementById("row")
 
         function populateProjects() {
             data.projects.forEach(p => {
@@ -34,6 +38,15 @@
 
                 const projectInner = document.createElement("a")
                 projectInner.href = p.link
+
+                try {
+                    const projectImage = document.createElement("img")
+                    projectImage.src = p.imgs[0]
+                    projectInner.appendChild(projectImage)
+                }
+                catch {
+                    
+                }
 
                 const projectTitle = document.createElement("p")
                 projectTitle.className = "project-title"

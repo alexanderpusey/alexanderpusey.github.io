@@ -39,7 +39,17 @@ ul {
     display: flex;
     justify-content: center;
 }
+.page-centered-y {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .hidden {
+    display: none;
+}
+
+.invisible {
     opacity: 0;
 }
 
@@ -47,6 +57,11 @@ ul {
 #column {
     width: 400px;
     margin: 50px 10px 0 10px;
+}
+#row {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
 }
 .content-block {
     margin: 12px 0 12px 0;
@@ -121,17 +136,8 @@ ul {
     z-index: 0;
     border-radius: 2px;
 }
-#project-overlay {
-    position: absolute;
-    display: none;
-    color: var(--white);
-    background-color: var(--secondaryColor);
-    padding: 10px;
-    z-index: 1;
-    border: 1px solid var(--white);
-}
-#project-gallery-item:hover #project-overlay {
-    display:block;
+#project-gallery-image:hover {
+    border: 2px solid var(--highlightColor);
 }
 #gallery-footer {
     padding: 5px 0 5px 0;
@@ -175,6 +181,15 @@ ul {
     width: 100%;
     height: 100%;
 }
+
+.project-block img {
+    padding-top: 10px;
+    padding-bottom: 3px;
+    object-fit: cover;
+    height: 300px;
+    min-width: 300px;
+}
+
 .project-title {
     font-size: medium;
     margin-right: auto;
@@ -198,8 +213,23 @@ ul {
 }
 
 /* mailbox */
-.mailbox {
-    
+#mailbox-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+#mailbox-notification:hover {
+    cursor: pointer;
+}
+
+#mailbox-notification img {
+    height: 17px;
+}
+
+#mailbox-notification p {
+    color: var(--white)
 }
 
 .mailbox-tabs {
@@ -217,8 +247,6 @@ ul {
     cursor: pointer;
     color: var(--white);
     z-index: 1;
-    /* box-shadow: -3px 3px rgba(0, 0, 0, 0.263); */
-    
 }
 
 .unselected-tab {
@@ -273,10 +301,28 @@ ul {
     color: var(--black)
 }
 
+.mailbox-server-status {
+    font-size: small;
+    margin-top: 1px;
+    margin-left: 2px;
+    color: var(--white);
+    display: flex;
+    align-items: center; 
+    gap: 6px;
+}
+
+#status-dot {
+    margin-top: 1px;
+    height: 7px;
+    width: 7px;
+    background-color: var(--highlightColor);
+    border-radius: 50%;
+}
+
 /* media queries */
 @media (max-width: 500px) {
     #column {
         margin-top: 15px;
         width: 95%;
     }
-}
+} 

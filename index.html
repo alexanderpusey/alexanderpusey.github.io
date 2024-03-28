@@ -27,23 +27,35 @@
                             <li id="aboutnav">
                                 <a href="./about.html">[*] About</a>
                             </li>
+                            <!-- <li id="mailnav">
+                                <a>[1] Mailbox</a>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
 
-                <!-- <div class="mailbox">
+                <div class="content-block" id="mailbox-notification">
+                    <img src="/img/mail.png">
+                    <p>1 Unread Message</p>
+                </div>
+
+                <div class="hidden" id="mailbox">
                     <div class="mailbox-tabs">
-                        <div class="mailbox-tab">Mailbox</div>
-                        <div class="mailbox-tab unselected-tab">Sent</div>
+                        <div class="mailbox-tab" id="mailbox-tab">Mailbox</div>
+                        <div class="mailbox-tab unselected-tab" id="sent-tab">Sent</div>
                     </div>
                     <div id="mailbox-inbox-labels">
                         <div style="margin-left: 30px">Name</div>
                         <div>Subject</div>
                     </div>
                     <div class="mailbox-inbox">
-                        <div class="mailbox-message selec">  alex                 welcome to my website </div>
+                        <div class="mailbox-message">  alex                 welcome to my website </div>
                     </div>
-                </div> -->
+                    <div class="mailbox-server-status">
+                        <div id="status-dot"></div>
+                        <p id="status-text">server online</p>
+                    </div>
+                </div>
 
                 <div class="content-block">
                     <div id="project-gallery">
@@ -129,12 +141,65 @@
             projectImage.alt = item.title
             projectLink.href = item.link
             galleryPosition.textContent = "[" + (index + 1) + "/" + featured_projects.length + "]"
-            updatedText = item.title + "<br>" + item.description
-            projectDescription.innerHTML = updatedText
         }
 
         //mailbox
-        
+        const mailboxNotification = document.getElementById("mailbox-notification")
+        const mailbox = document.getElementById("mailbox")
+        const statusText = document.getElementById("status-text")
+        const statusDot = document.getElementById("status-dot")
+
+        var mail = []
+
+        mailboxNotification.addEventListener("click", async function() {
+            mailboxNotification.style.display = "none"
+            mailbox.style.display = "block"
+            mail = await getMail()
+        })
+
+        async function getMail() {
+            try {
+                const mailResponse = await fetch("http://localhost:3000/mail/")
+                const mail = await mailResponse.json()
+                changeServerStatus(true)
+                return mail
+            }
+            catch(error) {
+                console.log(error)
+                changeServerStatus(false)
+            }
+        }
+
+        function changeServerStatus(status) {
+            if (status) {
+                statusText.textContent = "server online"
+                statusDot.style.backgroundColor = "#bcff36"
+            }
+            else {
+                statusText.textContent = "server offline"
+                statusDot.style.backgroundColor = "#c22813"
+            }
+        }
+
+        const mailboxTab = document.getElementById("mailbox-tab")
+        const sentTab = document.getElementById("sent-tab")
+        sentTab.addEventListener("click", function () {
+            changeTab(sentTab, mailboxTab)
+        })
+        mailboxTab.addEventListener("click", function () {
+            changeTab(mailboxTab, sentTab)
+        })
+
+        function changeTab(clickedTab, otherTab) {
+            if (clickedTab.classList.contains("unselected-tab")) {
+                clickedTab.classList.remove("unselected-tab")
+                otherTab.classList.add("unselected-tab")
+            }
+            else {
+                mailboxNotification.style.display = "flex"
+                mailbox.style.display = "none"
+            }
+        }
 
         //instantiating
         var featured_projects

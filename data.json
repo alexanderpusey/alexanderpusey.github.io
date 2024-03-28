@@ -1,24 +1,26 @@
 {
     "projects" : [
         {
-            "title" : "Plastic Mart",
-            "description" : "Woodworking, waste",
-            "tags" : ["Sculpture"],
-            "link" : "/error.html",
-            "imgs" : ["./img/plasticmart.png"],
-            "featured" : true
-        },
-        {
             "title" : "bikesharemap",
             "tags" : ["SwiftUI", "WatchOS"],
-            "link" : "/projects/bikesharemap/bikesharemap.html"
+            "link" : "/projects/bikesharemap/bikesharemap.html",
+            "imgs" : ["/img/bikesharemap.png"],
+            "featured" : false
+        },
+        {
+            "title" : "Plastic Mart",
+            "description" : "Woodworking, waste",
+            "tags" : ["Woodworking"],
+            "link" : "/error.html",
+            "imgs" : ["/img/plasticmart.png"],
+            "featured" : true
         },
         {
             "title" : "Métro, Boulot, Dodo",
             "description" : "Vinyl installation",
-            "tags" : ["Sculpture"],
+            "tags" : ["Vinyl"],
             "link" : "/error.html",
-            "imgs" : ["./img/metroboulotdodo.png"],
+            "imgs" : ["/img/metroboulotdodo.png"],
             "featured" : true
         },
         {
@@ -26,7 +28,15 @@
             "description" : "Full-stack web application",
             "tags" : ["Node.js", "Docker", "React"],
             "link" : "/error.html",
-            "imgs" : ["./img/partyreg.png"],
+            "imgs" : ["/img/partyreg.png"],
+            "featured" : true
+        },
+        {
+            "title" : "Pokéwatch",
+            "description": "pokewalker-inspired apple watch case",
+            "tags" : ["3d Printing"],
+            "link" : "/error.html",
+            "imgs" : ["/img/pokewatch.png"],
             "featured" : true
         },
         {
@@ -34,19 +44,19 @@
             "description" : "Plastic, concrete, and wax casts",
             "tags" : ["Sculpture"],
             "link" : "/error.html",
-            "imgs" : ["./img/newparts.jpg"]
+            "imgs" : ["/img/newparts.jpg"]
         },
         {
             "title" : "Loft(ish) Bed",
             "tags" : ["Woodworking", "CAD"],
             "link" : "/error.html",
-            "imgs" : ["./img/loftishbed.jpg"]
+            "imgs" : ["/img/loftishbed.jpg"]
         },
         {
             "title" : "FPV Drone Bag",
             "tags" : ["Product Design"],
             "link" : "/error.html",
-            "imgs" : ["./img/fpvbag.jpg"]
+            "imgs" : ["/img/fpvbag.jpg"]
         }
     ]
 
