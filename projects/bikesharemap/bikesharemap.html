@@ -5,19 +5,32 @@
         <title>Alex's Website</title>
         <link rel="stylesheet" href="/swag.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-itunes-app" content="app-id=6479473158">
     </head>
 
     <body>
 
-        <div class="page-centered-x">
+        <div class="documentation">
 
-            <div id="column">
-                <h1>bikesharemap</h1>
-                <a href="/index.html" class="content-block-title"> &lt; home</a>
-                <p>Documentation under development, please check back later...</p>
+            <h1>bikesharemap</h1>
+            <a href="/pages/projects.html" class="content-block-title"> &lt; projects</a>
+            <p>Since losing my iPhone atop a snowy mountain in December of 2023, and much to the annoyance of my friends and family, I've opted to use a cellular enabled Apple Watch as my primary mobile device. One of the first hurdles I encountered when making this switch was no longer having access to BCycle's IOS app which is needed to unlock bikeshare bikes. I was curious to whether there were any bikeshare companies that had implemented WatchOS apps so I scoured the App Store and was surprised not to find a single one that had. Upon discovering this, I knew I wanted to build an app of my own.</p>
+            <div class="media-gallery">
+                <img src="/media/bikesharemap.png">
             </div>
+            <p>Now, as much as I would have loved to make an app that could unlock bikes, I knew from the get-go that this would require authenticated access to BCycle's servers — something I wasn’t getting. Although this unfortunate reality neutralized my original motivation for making the app, I still had other functionality I wanted to develop and was getting pretty accustomed to unlocking bikes with a physical card anyways. Put differently, I was in too deep and had begun the process of rationalization.</p>
+            <p>Even though unlock was impossible, I still went ahead and designed and coded a mock unlocking UI which uses the rotation of the Apple Watch’s digital crown to “select” a bike from a dock. The footage seen below is from an early prototype version of the app.</p>
+            <div class="media-gallery ">
+                <img src="/media/uidesign.png">
+                <img src="/media/unlockdesign.png">
+                <video controls autoplay loop>
+                    <source src="/media/unlock.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p>Being the bikeshare nerd that I am, I was already familiar with the General Bikeshare Feed Specification (GBFS) which is an open data standard for shard mobility systems. The common adoption of GBFS amongst bike share providers inspired me to make a system-agnostic bike share app which can display the live service maps of 300+ global bike share systems.</p>
 
         </div>
+
 
     </body>
 

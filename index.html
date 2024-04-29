@@ -18,58 +18,35 @@
                 </a>
                 <hr/>
 
-                <div class="content-block">
-                    <div id="nav-menu">
+                <div class="content-block shadowed">
+                    <div class="reverseshadowed" id="nav-menu">
                         <ul>
                             <li id="projectsnav">
-                                <a href="/projects/projects.html">[*] Projects</a>
+                                <a href="/pages/projects.html">[*] Projects</a>
                             </li>
                             <li id="aboutnav">
-                                <a href="./about.html">[*] About</a>
+                                <a href="/pages/about.html">[*] About</a>
+                            </li>
+                            <li id="mailboxnav">
+                                <a href="/pages/mailbox.html">[1] Mailbox</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="content-block" id="mailbox-notification">
-                    <img src="/img/mail.png">
-                    <p>1 Unread Message</p>
-                </div>
-
-                <div class="hidden" id="mailbox">
-                    <div class="mailbox-tabs">
-                        <div class="mailbox-tab" id="mailbox-tab">Mailbox</div>
-                        <div class="mailbox-tab unselected-tab" id="sent-tab">Sent</div>
-                    </div>
-                    <div id="mailbox-inbox-labels">
-                        <div style="margin-left: 30px">Name</div>
-                        <div>Subject</div>
-                    </div>
-                    <div class="mailbox-inbox">
-                        <div class="mailbox-message">  alex                 welcome to my website </div>
-                    </div>
-                    <div class="mailbox-server-status">
-                        <div id="status-dot"></div>
-                        <p id="status-text">server online</p>
-                    </div>
-                </div>
-
-                <div class="content-block">
+                <div class="content-block shadowed">
                     <div id="project-gallery">
                         <button id="gallery-prev" class="gallery-button">&lt</button>
-                        <a id="project-link">
+                        <a class="reverseshadowed" id="project-link">
                             <div id="project-gallery-item">
-                                <div id="project-overlay">
-                                    <p id="project-description"></p>
-                                </div>
-                                <img id="project-gallery-image"src="./img/restingpermitted.jpg">
+                                <img id="project-gallery-image"src="./media/restingpermitted.jpg">
                             </div>
                         </a>
                         <button id="gallery-next" class="gallery-button"">&gt</button>
                     </div>
                     <div id="gallery-footer">
                         <p id="gallery-position"></p>
-                        <a href="/projects/projects.html" id="all-projects-link">all projects</a>
+                        <a href="/pages/projects.html" id="all-projects-link">all projects</a>
                     </div>
                 </div>
 
@@ -80,17 +57,21 @@
     </body>
 
     <script>
-
         //navigation menu
         const projects = document.getElementById("projectsnav")
         const about = document.getElementById("aboutnav")
+        const mailboxnav = document.getElementById("mailboxnav")
 
         projects.addEventListener("click", function () {
-            window.open("/projects/projects.html", "_self")
+            window.open("/pages/projects.html", "_self")
         })
 
         about.addEventListener("click", function () {
-            window.open("./about.html", "_self")
+            window.open("/pages/about.html", "_self")
+        })
+
+        mailboxnav.addEventListener("click", function () {
+            window.open("/pages/mailbox.html", "_self")
         })
 
         //project gallery
@@ -140,66 +121,9 @@
             galleryPosition.textContent = "[" + (index + 1) + "/" + featured_projects.length + "]"
         }
 
-        //mailbox
-        const mailboxNotification = document.getElementById("mailbox-notification")
-        const mailbox = document.getElementById("mailbox")
-        const statusText = document.getElementById("status-text")
-        const statusDot = document.getElementById("status-dot")
-
-        var mail = []
-
-        mailboxNotification.addEventListener("click", async function() {
-            mailboxNotification.style.display = "none"
-            mailbox.style.display = "block"
-            mail = await getMail()
-        })
-
-        async function getMail() {
-            try {
-                const mailResponse = await fetch("http://localhost:3000/mail/")
-                const mail = await mailResponse.json()
-                changeServerStatus(true)
-                return mail
-            }
-            catch(error) {
-                console.log(error)
-                changeServerStatus(false)
-            }
-        }
-
-        function changeServerStatus(status) {
-            if (status) {
-                statusText.textContent = "server online"
-                statusDot.style.backgroundColor = "#bcff36"
-            }
-            else {
-                statusText.textContent = "server offline"
-                statusDot.style.backgroundColor = "#c22813"
-            }
-        }
-
-        const mailboxTab = document.getElementById("mailbox-tab")
-        const sentTab = document.getElementById("sent-tab")
-        sentTab.addEventListener("click", function () {
-            changeTab(sentTab, mailboxTab)
-        })
-        mailboxTab.addEventListener("click", function () {
-            changeTab(mailboxTab, sentTab)
-        })
-
-        function changeTab(clickedTab, otherTab) {
-            if (clickedTab.classList.contains("unselected-tab")) {
-                clickedTab.classList.remove("unselected-tab")
-                otherTab.classList.add("unselected-tab")
-            }
-            else {
-                mailboxNotification.style.display = "flex"
-                mailbox.style.display = "none"
-            }
-        }
-
         //instantiating
         var featured_projects
+        var mail
 
         async function getData() {
             try {

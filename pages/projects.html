@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Alex's Website</title>
+        <link rel="stylesheet" href="/swag.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div class="page-centered-x">
+
+            <div id="column">
+
+                <div class="content-block shadowed">
+                <a href="/index.html"  class="content-block-title"> &lt; back</a>
+
+                    <div id="projects" class="reverseshadowed"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+    <script>
+        const projects = document.getElementById("projects")
+
+        function populateProjects() {
+            data.projects.forEach(p => {
+
+                const project = document.createElement("div")
+                project.className = "project-block"
+
+                const projectInner = document.createElement("a")
+                projectInner.href = p.link
+
+                try {
+                    const projectImage = document.createElement("img")
+                    projectImage.className = "project-img"
+                    projectImage.src = p.imgs[0]
+                    projectInner.appendChild(projectImage)
+                }
+                catch {
+                    
+                }
+
+                project.appendChild(projectInner)
+                projects.appendChild(project)
+
+            })
+        }
+
+        //instantiating
+        var data
+
+        async function getData() {
+            try {
+                const response = await fetch("/data.json")
+                const json = await response.json()
+                data = json
+            }
+            catch(error) {
+                console.error('Error getting json', error)
+            }
+        }
+
+        getData().then(() => {
+            populateProjects()
+        })
+
+    </script>
+
+</html>

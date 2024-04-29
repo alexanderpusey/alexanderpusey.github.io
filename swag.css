@@ -1,8 +1,8 @@
 :root {
-    --backgroundColor: rgb(175, 175, 175);
-    --titleColor: rgb(194, 40, 19);
-    --secondaryColor: rgba(77, 75, 103);
-    --highlightColor: rgb(188, 255, 54);
+    --backgroundColor: rgb(191, 191, 191);
+    --titleColor: rgb(207, 44, 77);
+    --secondaryColor: rgb(77, 75, 103);
+    --highlightColor: yellowgreen;
     --white: rgb(230, 230, 230);
     --black: black;
 }
@@ -19,8 +19,11 @@ body {
 hr {
     margin-top: -7px;
     margin-bottom: -5px;
-    border: 1px solid var(--highlightColor);
+    border: 2px solid var(--highlightColor);
+    border-bottom: 1px solid rgb(136, 175, 59);
+    border-right: 2px solid rgb(136, 175, 59);
     border-radius: 2px;
+    
 }
 h1 {
     font-family: Luminari, fantasy;
@@ -48,9 +51,20 @@ ul {
 .hidden {
     display: none;
 }
-
 .invisible {
     opacity: 0;
+}
+.shadowed {
+    border-top: 2px solid rgb(168, 165, 214);
+    border-left: 2px solid rgb(109, 107, 138);
+    border-bottom: 2px solid rgb(48, 45, 74);
+    border-right: 2px solid rgb(64, 59, 96);
+}
+.reverseshadowed {
+    border-bottom: 2px solid rgb(168, 165, 214);
+    border-right: 2px solid rgb(109, 107, 138);
+    border-top: 2px solid rgb(48, 45, 74);
+    border-left: 2px solid rgb(64, 59, 96);
 }
 
 /* layout */
@@ -67,7 +81,7 @@ ul {
     margin: 12px 0 12px 0;
     padding: 5px 10px 5px 10px;
     background-color: var(--secondaryColor);
-    border-radius: 2px;
+    border-radius: 5px;
 }
 .content-block p {
     color: var(--white);
@@ -166,59 +180,78 @@ ul {
 }
 #about-me img {
     height: 150px;
-    padding: 5px;
+    /* padding: 5px; */
 }
 #about-text p {
     padding-bottom: 5px;
 }
+#about-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7px;
+}
+#about-links a {
+    margin-top: -5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+}
 
-/* projects menu */
+/* projects page */
 #projects {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 8px;
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-start;
 }
+
 .project-block {
     height: 120px;
     width: calc(100% / 3);
+    background-color: var(--highlightColor);
 }
 
-.project-block img {
+.project-img {
+    z-index: -1;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-/* .project-block:hover .project-title{
-    color: var(--highlightColor);
-    text-decoration: underline;
-} */
-.project-tag {
-    display: inline;
-    font-size: x-small;
-    font-weight: bold;
-    color: var(--backgroundColor);
+
+.project-img:hover {
+    opacity: 0.7;
 }
 
-
-/* mailbox */
-#mailbox-notification {
+/* project documentation */
+.documentation {
+    background-color: rgb(249, 242, 228);
+    font-family: 'Times New Roman';
+    font-size: large;
+    padding: 10px 100px 10px 100px ;
+}
+.documentation p {
+    padding: 15px 0px 15px 0px;
+}
+.documentation a {
+    color: black;
+}
+.media-gallery {
+    padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 9px;
+    gap: 10px;
+    height: 500px;
+    width: 100%;
 }
 
-#mailbox-notification:hover {
-    cursor: pointer;
-}
-
-#mailbox-notification img {
-    height: 17px;
-}
-
+/* mailbox */
 #mailbox-notification p {
     color: var(--white)
 }
@@ -256,7 +289,7 @@ ul {
     gap: 150px;
 }
 
-.mailbox-inbox {
+#mailbox-inbox {
     background-color: var(--backgroundColor);
     border-bottom: 15px solid var(--secondaryColor);
     border-left: 7px solid var(--secondaryColor);
@@ -292,11 +325,29 @@ ul {
     color: var(--black)
 }
 
+#message {
+    display: flex;
+    flex-direction: column
+}
+
+#message-content {
+    width: 80%;
+    background-color: var(--backgroundColor);
+}
+
+#reply-button {
+    height: 10px;
+}
+
+#reply-button img {
+    height: 50px;
+}
+
 .mailbox-server-status {
     font-size: small;
     margin-top: 1px;
     margin-left: 2px;
-    color: var(--secondaryColor);
+    color: var(--white);
     display: flex;
     align-items: center; 
     gap: 5px;

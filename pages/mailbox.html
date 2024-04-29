@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Alex's Website</title>
+        <link rel="stylesheet" href="/swag.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div class="page-centered-x">
+
+            <div id="column">
+                <a href="/index.html" class="content-block-title"> &lt; back</a>
+                <div id="mailbox">
+                    <div class="mailbox-tabs">
+                        <div class="mailbox-tab" id="mailbox-tab">Mailbox</div>
+                        <div class="mailbox-tab unselected-tab" id="sent-tab">Sent</div>
+                    </div>
+                    <div id="mailbox-inbox-labels">
+                        <div style="margin-left: 30px">Name</div>
+                        <div>Subject</div>
+                    </div>
+                    <div id="mailbox-inbox">
+                    </div>
+                    <div class="mailbox-server-status">
+                        <div id="status-dot"></div>
+                        <p id="status-text">server online</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+    <script>
+        //mailbox
+        const mailbox = document.getElementById("mailbox")
+        const statusText = document.getElementById("status-text")
+        const statusDot = document.getElementById("status-dot")
+        const mailboxInbox = document.getElementById("mailbox-inbox")
+        const message = document.getElementById("message")
+        const messageContent = document.getElementById("message-content")
+
+        async function getMail() {
+            try {
+                const mailResponse = await fetch("http://localhost:3000/mail/")
+                const mail = await mailResponse.json()
+                changeServerStatus(true)
+                return mail
+            }
+            catch(error) {
+                console.log(error)
+                changeServerStatus(false)
+            }
+        }
+
+        function changeServerStatus(status) {
+            if (status) {
+                statusText.textContent = "server online"
+                statusDot.style.backgroundColor = "#bcff36"
+            }
+            else {
+                statusText.textContent = "server offline"
+                statusDot.style.backgroundColor = "#c22813"
+            }
+        }
+
+        const mailboxTab = document.getElementById("mailbox-tab")
+        const sentTab = document.getElementById("sent-tab")
+        sentTab.addEventListener("click", function () {
+            changeTab(sentTab, mailboxTab)
+        })
+        mailboxTab.addEventListener("click", function () {
+            changeTab(mailboxTab, sentTab)
+        })
+
+        function changeTab(clickedTab, otherTab) {
+            if (clickedTab.classList.contains("unselected-tab")) {
+                clickedTab.classList.remove("unselected-tab")
+                otherTab.classList.add("unselected-tab")
+            }
+            else {
+                mailboxNotification.style.display = "flex"
+                mailbox.style.display = "none"
+            }
+        }
+
+        function updateMailbox(mail) {
+            mail.map(msg => {
+                const message = document.createElement("div")
+                message.className = "mailbox-message"
+                message.id = msg.id
+                message.textContent = `   ${msg.sender}               ${msg.subject}`
+                mailboxInbox.append(message)
+
+                message.addEventListener("click", function() {
+                    openMessage(message.id)
+                })
+
+            })
+        }
+
+        function openMessage(id) {
+            mailbox.style.display = "none"
+            message.style.display = "block"
+            messageContent.textContent = mail[id].content
+        }
+
+
+        async function getData() {
+            try {
+                mail = await getMail()
+            }
+            catch(error) {
+                console.error('Error getting json', error)
+            }
+        }
+
+        getData().then(() => {
+            updateMailbox(mail)
+        })
+
+
+    </script>
+
+</html>
