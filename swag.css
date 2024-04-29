@@ -240,7 +240,8 @@ ul {
     padding: 15px 0px 15px 0px;
 }
 .documentation a {
-    color: black;
+    color: blue;
+    text-decoration: underline;
 }
 .media-gallery {
     padding: 10px;
