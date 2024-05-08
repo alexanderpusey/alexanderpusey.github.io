@@ -26,6 +26,7 @@
                     <div class="mailbox-server-status">
                         <div id="status-dot"></div>
                         <p id="status-text">server online</p>
+                        <p id="question-button">?</p>
                     </div>
                 </div>
                 <div id="message">
@@ -46,6 +47,29 @@
                         <img id="reply-button-img" src="/media/replyman.png"/>
                         <p id="reply-button-text">Reply</p>
                     </div>
+                </div>
+                <div id="mailbox-documentation">
+                    <h2>Mailbox Client</h2>
+                    <img src="/media/youvegotmail2.jpg"
+                    <p>The movie You've Got Mail (1998) tells a modern love story between two booksellers. The pair first chat anonymously via AOLS's dial-up internet service. Towards the middle of the story the strangers come to discover they're rivals in business. One owns a small boutique store that's being driven out of business by the corporate company the other works for. Surprise surprise, they fall in love anyways.</p>
+                    <img src="/media/youvegotmail.jpg">
+                    <p>You've Got Mail's extremely idealistic picture of technological communication made me wonder "why can't it be more like this?" How have our gargantuan efforts since 1998 to expand the capabilities and scale of digital communication only resulted in a more fragmented society? My goal for this project was to try and create an adaptation of AOL Messenger and hopefully recapture some of the old intimacy of digital communcation that's been lost to faster-paced means.</p>
+                    <p>To achieve this I started by collecting reference images of AOL messenger that I could use to inform my design. Surprisingly I couldn't find that many good images of the program and ended up having to infer a lot of the design.</p>
+                    <img src="/media/youvegotmail3.png">
+                    <p>Once I had a general design scheme I was happy with I started fleshing out the navigational Javascript. This kind of UI is just asking to be coded using a Javascript framework such as React. Staying with the low-tech theme of my website and the project at hand, I abstained.</p>
+                    <p>Now onto the "fun" stuff. I had a lot of internal debate over how I wanted the flow of conversation and user authentication to go. I ultimately opted for no authentication for simplicity's sake; also having users sign up for and log into a personal website is completely obscene.</p>
+                    <img src="/media/ec2rds.png">
+                    <p>As for deployment I wanted to host the mail server in the cloud and opted to use both AWS EC2 and RDS to host the middleware and database. I initially was using Docker to automate deployment but chose to abandon it when I realized it was only helping me spend more time in misery.</p>
+                    <p>I connected to the MYSQL RDS instance from inside the Amazon Linux EC2 instance and provisioned the database using a Node.js script. This exercise in command line programming was a reminder that I need to learn new vi shortcuts to improve my development speeds.</p>
+                    <p>From then on it was a matter of writing some middleware functions that mapped specific network requests to certain database queries. Once I was interfacing with the database through the API I made significant changes to the client-side Javascript to better manage the state of the UI. This would have been a lot easier using React, but look ma, no packages!</p>
+                    <p>Finally, I ran my program using pm2, a process manager for Node.js. This library allowed me to keep the middleware program running even after I terminated my ssh session.</p>
+                    <video controls autoplay loop>
+                        <source src="/media/mailbox.mov" type="video/mp4">
+                    </video>
+                    <video controls autoplay loop>
+                        <source src="/media/mysql.mov" type="video/mp4">
+                    </video>
+                    <p>Above you can see the mailbox in use as well as the resulting message being reflected in the MYSQL backend. I am disappointed to say it doesn't work in production quite yet as my Express API is communicating over HTTP rather than HTTPS and is being blocked by the browser. I should have foreseen happening earlier but unfortunately didn't and don't have the time to fix it.</p>
                 </div>
             </div>
 
@@ -71,6 +95,23 @@
         const replyButton = document.getElementById("reply-button")
         const replyButtonImg = document.getElementById("reply-button-img")
         const replyButtonText = document.getElementById("reply-button-text")
+
+
+        // documentation button
+        var documentationOpen = false
+        const mailboxDocumentation = document.getElementById('mailbox-documentation')
+        const questionButton = document.getElementById('question-button')
+
+        mailboxDocumentation.style.display == "none"
+
+        questionButton.addEventListener("click", function() {
+            if (mailboxDocumentation.style.display == "none" || mailboxDocumentation.style.display == "") {
+                mailboxDocumentation.style.display = "block"
+            }
+            else {
+                mailboxDocumentation.style.display = "none"
+            }
+        })
 
         var replyMode = false
         var sentMode = false
@@ -222,9 +263,14 @@
         }
 
         getData().then(() => {
-            if (mail.length > 0) {
+            try {
+                if (mail.length > 0) {
                 const audio = new Audio('/media/youvegotmail.mp3')
                 audio.play()
+            }
+            }
+            catch {
+
             }
             updateMailbox(mail)
         })

@@ -15,12 +15,6 @@
             "featured" : false
         },
         {
-            "title" : "You've got mail!",
-            "link" : "/projects/youvegotmail/youvegotmail.html",
-            "imgs" : ["/media/youvegotmail.png"],
-            "featured" : false
-        },
-        {
             "title" : "Plastic Mart",
             "description" : "Woodworking, waste",
             "tags" : ["Woodworking"],
