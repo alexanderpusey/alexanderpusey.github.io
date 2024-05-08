@@ -1,8 +1,8 @@
 {
     "projects" : [
         {
-            "title" : "Auto-adjusting Bike Share Seatpost",
-            "tags" : ["Machining", "Welding"],
+            "title" : "Auto-adjusting Seatpost",
+            "tags" : ["Machining", "Product Design"],
             "link" : "/projects/bikeshareseat/bikeshareseat.html",
             "imgs" : [""],
             "featured" : false
@@ -12,6 +12,12 @@
             "tags" : ["SwiftUI", "WatchOS"],
             "link" : "/projects/bikesharemap/bikesharemap.html",
             "imgs" : ["/media/bikesharemap.png"],
+            "featured" : false
+        },
+        {
+            "title" : "You've got mail!",
+            "link" : "/projects/youvegotmail/youvegotmail.html",
+            "imgs" : ["/media/youvegotmail.png"],
             "featured" : false
         },
         {

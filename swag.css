@@ -250,6 +250,7 @@ ul {
     gap: 10px;
     height: 500px;
     width: 100%;
+    overflow-x: scroll;
 }
 
 /* mailbox */
