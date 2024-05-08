@@ -22,11 +22,29 @@
                         <div style="margin-left: 30px">Name</div>
                         <div>Subject</div>
                     </div>
-                    <div id="mailbox-inbox">
-                    </div>
+                    <div id="mailbox-inbox"></div>
                     <div class="mailbox-server-status">
                         <div id="status-dot"></div>
                         <p id="status-text">server online</p>
+                    </div>
+                </div>
+                <div id="message">
+                    <div id="message-content">
+                        <div id="address-box">
+                            <p id="address-to">To: </p>
+                            <p id="address-from">From: </p>
+                            <p id="address-subject">Subj: </p>
+                        </div>
+                        <div id="message-content-box">
+
+                        </div>
+                        <textarea autofocus id="message-reply-box">
+
+                        </textarea>
+                    </div>
+                    <div id="reply-button">
+                        <img id="reply-button-img" src="/media/replyman.png"/>
+                        <p id="reply-button-text">Reply</p>
                     </div>
                 </div>
             </div>
@@ -41,18 +59,55 @@
         const statusText = document.getElementById("status-text")
         const statusDot = document.getElementById("status-dot")
         const mailboxInbox = document.getElementById("mailbox-inbox")
-        const message = document.getElementById("message")
         const messageContent = document.getElementById("message-content")
+        const message = document.getElementById("message")
+        const messageContentBox = document.getElementById("message-content-box")
+        const messageReplyBox = document.getElementById("message-reply-box")
+
+        const addressTo = document.getElementById("address-to")
+        const addressFrom = document.getElementById("address-from")
+        const addressSubject = document.getElementById("address-subject")
+
+        const replyButton = document.getElementById("reply-button")
+        const replyButtonImg = document.getElementById("reply-button-img")
+        const replyButtonText = document.getElementById("reply-button-text")
+
+        var replyMode = false
+        var sentMode = false
+
+        replyButton.addEventListener("click", function () {
+            if (!replyMode) {
+                reply()
+                replyMode = true
+            } 
+            else {
+                send()
+                replyMode = false
+            }
+        })
 
         async function getMail() {
             try {
-                const mailResponse = await fetch("http://localhost:3000/mail/")
+                const mailResponse = await fetch("http://54.234.252.31:3000/mail")
                 const mail = await mailResponse.json()
                 changeServerStatus(true)
                 return mail
             }
             catch(error) {
-                console.log(error)
+                console.error(error)
+                changeServerStatus(false)
+            }
+        }
+
+        async function getSentMail() {
+            try {
+                const mailResponse = await fetch("http://54.234.252.31:3000/sent")
+                const mail = await mailResponse.json()
+                changeServerStatus(true)
+                return mail
+            }
+            catch(error) {
+                console.error(error)
                 changeServerStatus(false)
             }
         }
@@ -77,36 +132,83 @@
             changeTab(mailboxTab, sentTab)
         })
 
-        function changeTab(clickedTab, otherTab) {
+        async function changeTab(clickedTab, otherTab) {
             if (clickedTab.classList.contains("unselected-tab")) {
                 clickedTab.classList.remove("unselected-tab")
                 otherTab.classList.add("unselected-tab")
             }
-            else {
-                mailboxNotification.style.display = "flex"
-                mailbox.style.display = "none"
+            if (clickedTab.id == "sent-tab") {
+                sentMode = true
+                mailboxInbox.innerHTML = ''
+                getSentMail().then(mail => updateMailbox(mail))
+            }
+            if (clickedTab.id == "mailbox-tab") {
+                sentMode = false
+                mailboxInbox.innerHTML = ''
+                getMail().then(mail => updateMailbox(mail))
             }
         }
+
+        var selectedMsg = null
 
         function updateMailbox(mail) {
             mail.map(msg => {
                 const message = document.createElement("div")
                 message.className = "mailbox-message"
                 message.id = msg.id
-                message.textContent = `   ${msg.sender}               ${msg.subject}`
+                message.textContent = `   ${msg.sender}                  ${msg.subject}`
                 mailboxInbox.append(message)
 
                 message.addEventListener("click", function() {
-                    openMessage(message.id)
+                    selectedMsg = msg
+                    openMessage()
                 })
 
             })
         }
 
-        function openMessage(id) {
+        function openMessage() {
+
+            replyButtonImg.src = "/media/replyman.png"
+            replyButtonText.textContent = "Reply"
+            messageReplyBox.style.display = "none"
+            messageReplyBox.value = ""
+            messageContentBox.style.display = "block"
+
+            if (sentMode) {
+                replyButtonImg.style.display = "none"
+                replyButtonText.style.display = "none"
+            }
+                
             mailbox.style.display = "none"
-            message.style.display = "block"
-            messageContent.textContent = mail[id].content
+            message.style.display = "flex"
+
+            addressTo.textContent = `To: ${selectedMsg.reciever}`
+            addressFrom.textContent = `From: ${selectedMsg.sender}`
+            addressSubject.textContent = `Subj: ${selectedMsg.subject}`
+            messageContentBox.textContent = selectedMsg.content
+        }
+
+        function reply() {
+            replyButtonImg.src = "/media/sendicon.png"
+            replyButtonText.textContent = "Send"
+            addressTo.textContent = `To: Alex`
+            addressFrom.textContent = `From: Visitor`
+            addressSubject.textContent = `Subj: ${selectedMsg.subject}`
+            messageContentBox.style.display = 'none'
+            messageReplyBox.style.display = 'block'
+            messageReplyBox.focus()
+        }
+
+        async function send() {
+            replyMessage = messageReplyBox.value
+            fetch(`http://54.234.252.31:3000/send/${replyMessage}`)
+            .then(
+                message.style.display = "none",
+                mailbox.style.display = "block",
+                changeTab(sentTab, mailboxTab)
+            )
+
         }
 
 
@@ -120,6 +222,10 @@
         }
 
         getData().then(() => {
+            if (mail.length > 0) {
+                const audio = new Audio('/media/youvegotmail.mp3')
+                audio.play()
+            }
             updateMailbox(mail)
         })
 

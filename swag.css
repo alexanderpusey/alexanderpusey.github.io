@@ -253,11 +253,10 @@ ul {
 }
 
 /* mailbox */
-#mailbox-notification p {
-    color: var(--white)
-}
+
 
 .mailbox-tabs {
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     gap: 2px;
@@ -327,16 +326,55 @@ ul {
 }
 
 #message {
-    display: flex;
-    flex-direction: column
+    margin-top: 5px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 15px solid var(--secondaryColor);
+    border-bottom: 15px solid var(--secondaryColor);
+    border-left: 7px solid var(--secondaryColor);
+    border-right: 7px solid var(--secondaryColor);
+    border-radius: 0px 0px 2px 2px;
 }
 
 #message-content {
     width: 80%;
     background-color: var(--backgroundColor);
+    max-height: 300px;
+    padding: 5px;
+}
+
+#address-box {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+#message-content-box {
+    padding: 3px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#message-reply-box {
+    padding: 5px;
+    font-family: monospace;
+    font-size: medium;
+    resize: none;
+    display: none;
+    width: 96%;
+    height: 70px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 }
 
 #reply-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
     height: 10px;
 }
 

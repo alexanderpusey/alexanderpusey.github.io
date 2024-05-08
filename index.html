@@ -28,7 +28,7 @@
                                 <a href="/pages/about.html">[*] About</a>
                             </li>
                             <li id="mailboxnav">
-                                <a href="/pages/mailbox.html">[1] Mailbox</a>
+                                <a id="mailbox-notification" href="/pages/mailbox.html">[*] Mailbox</a>
                             </li>
                         </ul>
                     </div>
@@ -61,6 +61,7 @@
         const projects = document.getElementById("projectsnav")
         const about = document.getElementById("aboutnav")
         const mailboxnav = document.getElementById("mailboxnav")
+        const mailboxnavtext = document.getElementById("mailbox-notification")
 
         projects.addEventListener("click", function () {
             window.open("/pages/projects.html", "_self")
@@ -73,6 +74,12 @@
         mailboxnav.addEventListener("click", function () {
             window.open("/pages/mailbox.html", "_self")
         })
+
+        function updateMailNotification(mailcount) {
+            if (mailcount > 0) {
+                mailboxnavtext.textContent = `[${mailcount}] Mailbox`
+            }
+        }
 
         //project gallery
         const prevButton = document.getElementById("gallery-prev")
@@ -124,12 +131,18 @@
         //instantiating
         var featured_projects
         var mail
+        var mailcount
 
         async function getData() {
             try {
                 const response = await fetch("./data.json")
                 const json = await response.json()
                 featured_projects = json.projects.filter((project) => project.featured === true)
+
+                const mailresponse = await fetch("http://54.234.252.31:3000/mail")
+                const mail = await mailresponse.json()
+                
+                mailcount = mail.length
             }
             catch(error) {
                 console.error('Error getting json', error)
@@ -138,6 +151,7 @@
 
         getData().then(() => {
             updateGallery(galleryIndex)
+            updateMailNotification(mailcount)
         })
 
 
