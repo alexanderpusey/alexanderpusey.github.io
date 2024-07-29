@@ -1,53 +1,180 @@
 <!doctype html>
-<html>
-
+<html lang="en">
     <head>
+        
         <title>Alex's Website</title>
-        <link rel="stylesheet" href="./swag.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                background: none;
+                font-family: Courier;
+                text-decoration: none;
+                color: inherit;
+
+                --backgroundColor: rgb(13, 13, 13);
+                --secondaryColor: rgb(77, 75, 103);
+                --highlightColor: yellowgreen;
+                --white: rgb(230, 230, 230);
+                --black: black;
+
+                --columnwidth: 455px;
+                --moduleinteriorratio: 0.86;
+            }
+
+            @media (max-width: 400px) {
+            * {
+                --columnwidth: 90%;
+            }
+            .column {
+                margin: 20px;
+                }
+            } 
+
+            body {
+                background-color: var(--backgroundColor);
+            }
+
+            .page-centered-x {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .column {
+                margin: 57px;
+                width: var(--columnwidth)
+            }
+
+            .title {
+                color: var(--white);
+                font-family: luminari;
+                font-size: 27px;
+            }
+
+            hr {
+                width: 100%;
+                margin: -7px 0 10px 0; 
+                
+                border: 2px solid var(--highlightColor);
+                border-bottom: 1px solid rgb(136, 175, 59);
+                border-right: 2px solid rgb(136, 175, 59);
+                border-radius: 2px;
+            }
+
+            .module {
+                /* vertical spacing between modules */
+                margin: 0 0 15px 0;
+                /* top and bottom module padding */
+                padding: 13px 0 13px 0;
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                color: var(--white);
+                background-color: var(--secondaryColor);
+
+                border-radius: 5px;
+
+                border-top: 2px solid rgb(168, 165, 214);
+                border-left: 2px solid rgb(109, 107, 138);
+                border-bottom: 2px solid rgb(48, 45, 74);
+                border-right: 2px solid rgb(64, 59, 96);
+            }
+            
+            .module > div {
+                background-color: var(--backgroundColor);
+                /* module interior width */
+                width: calc(var(--moduleinteriorratio) * 100%);
+                border-radius: 5px;
+
+                border-bottom: 2px solid rgb(168, 165, 214);
+                border-right: 2px solid rgb(109, 107, 138);
+                border-top: 2px solid rgb(48, 45, 74);
+                border-left: 2px solid rgb(64, 59, 96);
+            }
+
+            .navitem {
+                padding: 2px 0 5px 3px;
+                font-size: 14px;
+            }
+
+            .navitem:hover {
+                background-color: var(--highlightColor);
+                color: var(--black);
+                text-decoration: underline;
+            }
+
+            .gallery {
+                width: 100%;
+                /* to achieve 4:3 aspect ratio gallery images*/
+                height: calc((var(--moduleinteriorratio) * 3/4) * var(--columnwidth));
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .gallery:hover {
+                border: 1px solid var(--highlightColor);
+            }
+
+            .gallery > img {
+                width: 100%;
+                height: 100%;
+                border-radius: 3px;
+            }
+
+            .gallery-footer {
+                padding-top: 9px;
+                width: 95%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-size: 13px;
+            }
+         </style>
+
     </head>
+
 
     <body>
 
         <div class="page-centered-x">
 
-            <div id="column">
+            <div class="column">
 
-                <a href="./index.html">
-                    <h1>alexanderpusey.github.io</h1>
-                </a>
-                <hr/>
+                <h1 class="title">alexanderpusey.github.io</h1>
+                <hr>
 
-                <div class="content-block shadowed">
-                    <div class="reverseshadowed" id="nav-menu">
-                        <ul>
-                            <li id="projectsnav">
-                                <a href="/pages/projects.html">[*] Projects</a>
-                            </li>
-                            <li id="aboutnav">
-                                <a href="/pages/about.html">[*] About</a>
-                            </li>
-                            <li id="mailboxnav">
-                                <a id="mailbox-notification" href="/pages/mailbox.html">[*] Mailbox</a>
-                            </li>
-                        </ul>
+                <div class="module">
+                    <div>
+                        <div class="navitem">
+                            <a href="projects.html">[*] Projects</a>
+                        </div>
+                        <div class="navitem">
+                            <a href="about.html">[*] About</a>
+                        </div>
+                        <div class="navitem">
+                            <a href="blog.html">[*] Blog</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="content-block shadowed">
-                    <div id="project-gallery">
-                        <button id="gallery-prev" class="gallery-button">&lt</button>
-                        <a class="reverseshadowed" id="project-link">
-                            <div id="project-gallery-item">
-                                <img id="project-gallery-image"src="./media/restingpermitted.jpg">
-                            </div>
-                        </a>
-                        <button id="gallery-next" class="gallery-button"">&gt</button>
+                <!-- top and bottom padding adjustment -->
+                <div class="module" style="padding: 16px 0 12px 0">
+                    <div class="gallery">
+                        <img src="media/metroboulotdodo.png">
                     </div>
-                    <div id="gallery-footer">
-                        <p id="gallery-position"></p>
-                        <a href="/pages/projects.html" id="all-projects-link">all projects</a>
-                    </div>
+                    <span class="gallery-footer">
+                        <div>[1/4]</div>
+                        <div>all projects</div>
+                    </span>
                 </div>
 
             </div>
@@ -56,109 +183,10 @@
 
     </body>
 
+
     <script>
-        //navigation menu
-        const projects = document.getElementById("projectsnav")
-        const about = document.getElementById("aboutnav")
-        const mailboxnav = document.getElementById("mailboxnav")
-        const mailboxnavtext = document.getElementById("mailbox-notification")
-
-        projects.addEventListener("click", function () {
-            window.open("/pages/projects.html", "_self")
-        })
-
-        about.addEventListener("click", function () {
-            window.open("/pages/about.html", "_self")
-        })
-
-        mailboxnav.addEventListener("click", function () {
-            window.open("/pages/mailbox.html", "_self")
-        })
-
-        function updateMailNotification(mailcount) {
-            if (mailcount > 0) {
-                mailboxnavtext.textContent = `[${mailcount}] Mailbox`
-            }
-        }
-
-        //project gallery
-        const prevButton = document.getElementById("gallery-prev")
-        const nextButton = document.getElementById("gallery-next")
-        const projectImage = document.getElementById("project-gallery-image")
-        const projectDescription = document.getElementById("project-description")
-        const projectLink = document.getElementById("project-link")
-        const galleryPosition = document.getElementById("gallery-position")
-        let galleryIndex = 0
-
-        prevButton.addEventListener("click", function () {
-            galleryIndex--
-            updateGallery(galleryIndex)
-        })
-
-        nextButton.addEventListener("click", function() {
-            galleryIndex++
-            updateGallery(galleryIndex)
-        })
-
-        function updateGallery(index) {
-
-            if (index === 0) {
-                prevButton.style.opacity = 0
-                prevButton.style.cursor = "default"
-                prevButton.disabled = true
-            }
-            else if (index === (featured_projects.length -1)) {
-                nextButton.style.opacity = 0
-                nextButton.style.cursor = "default"
-                nextButton.disabled = true
-            }
-            else {
-                prevButton.style.opacity = 100
-                prevButton.disabled = false
-                prevButton.style.cursor = "pointer"
-                nextButton.style.opacity = 100
-                nextButton.disabled = false
-                nextButton.style.cursor = "pointer"
-            }
-
-            let item = featured_projects[index]
-            projectImage.src = item.imgs[0]
-            projectImage.alt = item.title
-            projectLink.href = item.link
-            galleryPosition.textContent = "[" + (index + 1) + "/" + featured_projects.length + "]"
-        }
-
-        //instantiating
-        var featured_projects
-        var mail
-        var mailcount
-
-        async function getData() {
-            try {
-                const response = await fetch("./data.json")
-                const json = await response.json()
-                featured_projects = json.projects.filter((project) => project.featured === true)
-
-                const mailresponse = await fetch("http://54.234.252.31:3000/mail")
-                const mail = await mailresponse.json()
-                
-                mailcount = mail.length
-            }
-            catch(error) {
-                console.error('Error getting json', error)
-            }
-        }
-
-        getData().then(() => {
-            updateGallery(galleryIndex)
-            updateMailNotification(mailcount)
-        })
-
 
     </script>
 
-    <noscript>
-
-    </noscript>
 
 </html>
