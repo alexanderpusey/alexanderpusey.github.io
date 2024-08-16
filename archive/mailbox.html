@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Alex's Website</title>
+        <link rel="stylesheet" href="/swag.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div class="page-centered-x">
+
+            <div id="column">
+                <a href="/index.html" class="content-block-title"> &lt; back</a>
+                <div id="mailbox">
+                    <div class="mailbox-tabs">
+                        <div class="mailbox-tab" id="mailbox-tab">Mailbox</div>
+                        <div class="mailbox-tab unselected-tab" id="sent-tab">Sent</div>
+                    </div>
+                    <div id="mailbox-inbox-labels">
+                        <div style="margin-left: 30px">Name</div>
+                        <div>Subject</div>
+                    </div>
+                    <div id="mailbox-inbox"></div>
+                    <div class="mailbox-server-status">
+                        <div id="status-dot"></div>
+                        <p id="status-text">server online</p>
+                        <p id="question-button">?</p>
+                    </div>
+                </div>
+                <div id="message">
+                    <div id="message-content">
+                        <div id="address-box">
+                            <p id="address-to">To: </p>
+                            <p id="address-from">From: </p>
+                            <p id="address-subject">Subj: </p>
+                        </div>
+                        <div id="message-content-box">
+
+                        </div>
+                        <textarea autofocus id="message-reply-box">
+
+                        </textarea>
+                    </div>
+                    <div id="reply-button">
+                        <img id="reply-button-img" src="/media/replyman.png"/>
+                        <p id="reply-button-text">Reply</p>
+                    </div>
+                </div>
+                <div id="mailbox-documentation">
+                    <h2>Mailbox Client</h2>
+                    <img src="/media/youvegotmail2.jpg"
+                    <p>The movie You've Got Mail (1998) tells a modern love story between two booksellers. The pair first chat anonymously via AOLS's dial-up internet service. Towards the middle of the story the strangers come to discover they're rivals in business. One owns a small boutique store that's being driven out of business by the corporate company the other works for. Surprise surprise, they fall in love anyways.</p>
+                    <img src="/media/youvegotmail.jpg">
+                    <p>You've Got Mail's extremely idealistic picture of technological communication made me wonder "why can't it be more like this?" How have our gargantuan efforts since 1998 to expand the capabilities and scale of digital communication only resulted in a more fragmented society? My goal for this project was to try and create an adaptation of AOL Messenger and hopefully recapture some of the old intimacy of digital communcation that's been lost to faster-paced means.</p>
+                    <p>To achieve this I started by collecting reference images of AOL messenger that I could use to inform my design. Surprisingly I couldn't find that many good images of the program and ended up having to infer a lot of the design.</p>
+                    <img src="/media/youvegotmail3.png">
+                    <p>Once I had a general design scheme I was happy with I started fleshing out the navigational Javascript. This kind of UI is just asking to be coded using a Javascript framework such as React. Staying with the low-tech theme of my website and the project at hand, I abstained.</p>
+                    <p>Now onto the "fun" stuff. I had a lot of internal debate over how I wanted the flow of conversation and user authentication to go. I ultimately opted for no authentication for simplicity's sake; also having users sign up for and log into a personal website is completely obscene.</p>
+                    <img src="/media/ec2rds.png">
+                    <p>As for deployment I wanted to host the mail server in the cloud and opted to use both AWS EC2 and RDS to host the middleware and database. I initially was using Docker to automate deployment but chose to abandon it when I realized it was only helping me spend more time in misery.</p>
+                    <p>I connected to the MYSQL RDS instance from inside the Amazon Linux EC2 instance and provisioned the database using a Node.js script. This exercise in command line programming was a reminder that I need to learn new vi shortcuts to improve my development speeds.</p>
+                    <p>From then on it was a matter of writing some middleware functions that mapped specific network requests to certain database queries. Once I was interfacing with the database through the API I made significant changes to the client-side Javascript to better manage the state of the UI. This would have been a lot easier using React, but look ma, no packages!</p>
+                    <p>Finally, I ran my program using pm2, a process manager for Node.js. This library allowed me to keep the middleware program running even after I terminated my ssh session.</p>
+                    <video controls autoplay loop>
+                        <source src="/media/mailbox.mov" type="video/mp4">
+                    </video>
+                    <video controls autoplay loop>
+                        <source src="/media/mysql.mov" type="video/mp4">
+                    </video>
+                    <p>Above you can see the mailbox in use as well as the resulting message being reflected in the MYSQL backend. I am disappointed to say it doesn't work in production quite yet as my Express API is communicating over HTTP rather than HTTPS and is being blocked by the browser. I should have foreseen happening earlier but unfortunately didn't and don't have the time to fix it.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+    <script>
+        //mailbox
+        const mailbox = document.getElementById("mailbox")
+        const statusText = document.getElementById("status-text")
+        const statusDot = document.getElementById("status-dot")
+        const mailboxInbox = document.getElementById("mailbox-inbox")
+        const messageContent = document.getElementById("message-content")
+        const message = document.getElementById("message")
+        const messageContentBox = document.getElementById("message-content-box")
+        const messageReplyBox = document.getElementById("message-reply-box")
+
+        const addressTo = document.getElementById("address-to")
+        const addressFrom = document.getElementById("address-from")
+        const addressSubject = document.getElementById("address-subject")
+
+        const replyButton = document.getElementById("reply-button")
+        const replyButtonImg = document.getElementById("reply-button-img")
+        const replyButtonText = document.getElementById("reply-button-text")
+
+
+        // documentation button
+        var documentationOpen = false
+        const mailboxDocumentation = document.getElementById('mailbox-documentation')
+        const questionButton = document.getElementById('question-button')
+
+        mailboxDocumentation.style.display == "none"
+
+        questionButton.addEventListener("click", function() {
+            if (mailboxDocumentation.style.display == "none" || mailboxDocumentation.style.display == "") {
+                mailboxDocumentation.style.display = "block"
+            }
+            else {
+                mailboxDocumentation.style.display = "none"
+            }
+        })
+
+        var replyMode = false
+        var sentMode = false
+
+        replyButton.addEventListener("click", function () {
+            if (!replyMode) {
+                reply()
+                replyMode = true
+            } 
+            else {
+                send()
+                replyMode = false
+            }
+        })
+
+        async function getMail() {
+            try {
+                const mailResponse = await fetch("http://54.234.252.31:3000/mail")
+                const mail = await mailResponse.json()
+                changeServerStatus(true)
+                return mail
+            }
+            catch(error) {
+                console.error(error)
+                changeServerStatus(false)
+            }
+        }
+
+        async function getSentMail() {
+            try {
+                const mailResponse = await fetch("http://54.234.252.31:3000/sent")
+                const mail = await mailResponse.json()
+                changeServerStatus(true)
+                return mail
+            }
+            catch(error) {
+                console.error(error)
+                changeServerStatus(false)
+            }
+        }
+
+        function changeServerStatus(status) {
+            if (status) {
+                statusText.textContent = "server online"
+                statusDot.style.backgroundColor = "#bcff36"
+            }
+            else {
+                statusText.textContent = "server offline"
+                statusDot.style.backgroundColor = "#c22813"
+            }
+        }
+
+        const mailboxTab = document.getElementById("mailbox-tab")
+        const sentTab = document.getElementById("sent-tab")
+        sentTab.addEventListener("click", function () {
+            changeTab(sentTab, mailboxTab)
+        })
+        mailboxTab.addEventListener("click", function () {
+            changeTab(mailboxTab, sentTab)
+        })
+
+        async function changeTab(clickedTab, otherTab) {
+            if (clickedTab.classList.contains("unselected-tab")) {
+                clickedTab.classList.remove("unselected-tab")
+                otherTab.classList.add("unselected-tab")
+            }
+            if (clickedTab.id == "sent-tab") {
+                sentMode = true
+                mailboxInbox.innerHTML = ''
+                getSentMail().then(mail => updateMailbox(mail))
+            }
+            if (clickedTab.id == "mailbox-tab") {
+                sentMode = false
+                mailboxInbox.innerHTML = ''
+                getMail().then(mail => updateMailbox(mail))
+            }
+        }
+
+        var selectedMsg = null
+
+        function updateMailbox(mail) {
+            mail.map(msg => {
+                const message = document.createElement("div")
+                message.className = "mailbox-message"
+                message.id = msg.id
+                message.textContent = `   ${msg.sender}                  ${msg.subject}`
+                mailboxInbox.append(message)
+
+                message.addEventListener("click", function() {
+                    selectedMsg = msg
+                    openMessage()
+                })
+
+            })
+        }
+
+        function openMessage() {
+
+            replyButtonImg.src = "/media/replyman.png"
+            replyButtonText.textContent = "Reply"
+            messageReplyBox.style.display = "none"
+            messageReplyBox.value = ""
+            messageContentBox.style.display = "block"
+
+            if (sentMode) {
+                replyButtonImg.style.display = "none"
+                replyButtonText.style.display = "none"
+            }
+                
+            mailbox.style.display = "none"
+            message.style.display = "flex"
+
+            addressTo.textContent = `To: ${selectedMsg.reciever}`
+            addressFrom.textContent = `From: ${selectedMsg.sender}`
+            addressSubject.textContent = `Subj: ${selectedMsg.subject}`
+            messageContentBox.textContent = selectedMsg.content
+        }
+
+        function reply() {
+            replyButtonImg.src = "/media/sendicon.png"
+            replyButtonText.textContent = "Send"
+            addressTo.textContent = `To: Alex`
+            addressFrom.textContent = `From: Visitor`
+            addressSubject.textContent = `Subj: ${selectedMsg.subject}`
+            messageContentBox.style.display = 'none'
+            messageReplyBox.style.display = 'block'
+            messageReplyBox.focus()
+        }
+
+        async function send() {
+            replyMessage = messageReplyBox.value
+            fetch(`http://54.234.252.31:3000/send/${replyMessage}`)
+            .then(
+                message.style.display = "none",
+                mailbox.style.display = "block",
+                changeTab(sentTab, mailboxTab)
+            )
+
+        }
+
+
+        async function getData() {
+            try {
+                mail = await getMail()
+            }
+            catch(error) {
+                console.error('Error getting json', error)
+            }
+        }
+
+        getData().then(() => {
+            try {
+                if (mail.length > 0) {
+                const audio = new Audio('/media/youvegotmail.mp3')
+                audio.play()
+            }
+            }
+            catch {
+
+            }
+            updateMailbox(mail)
+        })
+
+
+    </script>
+
+</html>
