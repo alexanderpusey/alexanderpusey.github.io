@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
     <head>
-        
+
         <title>Alex's Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-         <style>
+        <style>
             * {
                 margin: 0;
                 padding: 0;
@@ -19,19 +19,18 @@
                 --secondaryColor: rgb(77, 75, 103);
                 --highlightColor: yellowgreen;
                 --white: rgb(230, 230, 230);
-                --black: black;
 
                 --columnwidth: 455px;
                 --moduleinteriorratio: 0.86;
             }
-
-            @media (max-width: 400px) {
-            * {
-                --columnwidth: 90%;
-            }
-            .column {
-                margin: 20px;
+            
+            @media (max-width: 500px) {
+                * {
+                    --columnwidth: 90%;
                 }
+                .column {
+                    margin: 10px;
+                    }
             } 
 
             body {
@@ -68,7 +67,7 @@
 
             .module {
                 /* vertical spacing between modules */
-                margin: 0 0 15px 0;
+                margin: 0 0 13px 0;
                 /* top and bottom module padding */
                 padding: 13px 0 13px 0;
                 width: 100%;
@@ -105,12 +104,6 @@
                 font-size: 14px;
             }
 
-            .navitem:hover {
-                background-color: var(--highlightColor);
-                color: var(--black);
-                text-decoration: underline;
-            }
-
             .gallery {
                 width: 100%;
                 /* to achieve 4:3 aspect ratio gallery images*/
@@ -118,10 +111,6 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-            }
-
-            .gallery:hover {
-                border: 1px solid var(--highlightColor);
             }
 
             .gallery > img {
@@ -138,10 +127,22 @@
                 justify-content: space-between;
                 font-size: 13px;
             }
+
+            /* animations */
+            @keyframes blink {
+                50% {
+                    background-color: var(--highlightColor);
+                    color: var(--backgroundColor);
+                    text-decoration: underline;
+                }
+            }
+            .blinking {
+                animation: blink 1s step-start 0s infinite;
+            }
+
          </style>
 
     </head>
-
 
     <body>
 
@@ -149,19 +150,21 @@
 
             <div class="column">
 
-                <h1 class="title">alexanderpusey.github.io</h1>
+                <a href="https://alexanderpusey.github.io/">
+                    <h1 class="title">alexanderpusey.github.io</h1>
+                </a>
                 <hr>
 
                 <div class="module">
-                    <div>
+                    <div id="navmenu">
                         <div class="navitem">
                             <a href="projects.html">[*] Projects</a>
                         </div>
                         <div class="navitem">
-                            <a href="about.html">[*] About</a>
+                            <a href="blog.html">[*] Blog</a>
                         </div>
                         <div class="navitem">
-                            <a href="blog.html">[*] Blog</a>
+                            <a href="about.html">[*] About</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +176,7 @@
                     </div>
                     <span class="gallery-footer">
                         <div>[1/4]</div>
-                        <div>all projects</div>
+                        <a href="projects.html"><div>all projects</div></a>
                     </span>
                 </div>
 
@@ -185,8 +188,42 @@
 
 
     <script>
+        let navMenu = document.getElementById("navmenu")
+        let style = getComputedStyle(document.body)
+        let maxWidth = 500
+        let pageWidth = window.innerWidth
 
+        for (child of navMenu.children) {
+            child.addEventListener("click", (e) => {
+                console.log("clicked")
+            })
+        }
+
+        // big screen
+        if (pageWidth > maxWidth) {
+            navMenu.children[0].classList.add("blinking")
+        }
+        // small screen
+        else {
+
+        }
+
+        document.addEventListener("keydown", (e) => {
+            switch (e.key) {
+                case "ArrowUp":
+                    break
+                case "ArrowDown":
+                    break
+                case "ArrowRight":
+                    break
+                case "ArrowLeft":
+                    break
+                case "Enter":
+                    break
+                case "Tab":
+                    break
+            }
+        })
     </script>
-
 
 </html>
