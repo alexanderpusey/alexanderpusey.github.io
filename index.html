@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 
-        <title>Alex's Website</title>
+        <title>alexanderpusey.github.io</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <style>
@@ -102,15 +102,17 @@
             .navitem {
                 padding: 2px 0 5px 3px;
                 font-size: 14px;
+                cursor: pointer;
             }
 
             .gallery {
                 width: 100%;
-                /* to achieve 4:3 aspect ratio gallery images*/
+                /* to achieve 4:3 aspect ratio gallery images */
                 height: calc((var(--moduleinteriorratio) * 3/4) * var(--columnwidth));
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                cursor: pointer;
             }
 
             .gallery > img {
@@ -175,8 +177,8 @@
                         <img src="media/metroboulotdodo.png">
                     </div>
                     <span class="gallery-footer">
-                        <div>[1/4]</div>
-                        <a href="projects.html"><div>all projects</div></a>
+                        <div id="project-counter">[1/4]</div>
+                        <a href="projects.html"><div id="all-projects">all projects</div></a>
                     </span>
                 </div>
 
@@ -186,22 +188,36 @@
 
     </body>
 
-
     <script>
-        let navMenu = document.getElementById("navmenu")
         let style = getComputedStyle(document.body)
         let maxWidth = 500
         let pageWidth = window.innerWidth
 
-        for (child of navMenu.children) {
-            child.addEventListener("click", (e) => {
-                console.log("clicked")
-            })
+        let arrowSelection = 0
+        let tabSelection = 0
+
+        let navMenu = document.getElementById("navmenu")
+        let projects = []
+        let allProjectsLink = document.getElementById("all-projects")
+
+        async function getTing(address) {
+            result = null
+            await fetch(address)
+                .then(res => res.json())
+                .then(json => {result = json})
+            return result
         }
+
+        selections = 
+        [
+            navMenu.children,
+            projects,
+            allProjectsLink
+        ]
 
         // big screen
         if (pageWidth > maxWidth) {
-            navMenu.children[0].classList.add("blinking")
+            selections[arrowSelection][tabSelection].classList.add("blinking")
         }
         // small screen
         else {
@@ -224,6 +240,18 @@
                     break
             }
         })
+
+        function handleKey(key) {
+
+        }
+
+        async function main() {
+            projects = await getTing('/data.json')
+            console.log(projects.projects)
+        }
+
+        main()
+
     </script>
 
 </html>
