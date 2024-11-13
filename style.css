@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-family: Courier;
+    text-decoration: none;
+    color: inherit;
+
+    /* color scheme 1 */
+    /* --backgroundColor: rgb(21, 21, 21);
+    --secondaryColor: rgb(77, 75, 103);
+    --highlightColor: yellowgreen;
+    --white: rgb(230, 230, 230);
+    --moduleBorder1: rgb(168, 165, 214);
+    --moduleBorder2: rgb(109, 107, 138);
+    --moduleBorder3: rgb(64, 59, 96); 
+    --moduleBorder4: rgb(48, 45, 74);
+    --hrBorder: rgb(136, 175, 59); */
+
+    /* color scheme 2 */
+    --backgroundColor: rgb(253, 249, 200);
+    --highlightColor: rgb(0, 0, 0);
+    --moduleBorder1: rgb(0, 0, 0);
+    --moduleBorder2: rgb(0, 0, 0);
+    --moduleBorder3: rgb(0, 0, 0); 
+    --moduleBorder4: rgb(0, 0, 0);
+
+    --columnwidth: 455px;
+    --moduleinteriorratio: 0.86;
+}
+
+@media (max-width: 500px) {
+    * {
+        --columnwidth: 90%;
+    }
+    .column {
+        margin: 10px;
+        }
+} 
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+.page-centered-x {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column {
+    margin: 57px;
+    width: var(--columnwidth)
+}
+
+.title {
+    color: var(--white);
+    font-family: luminari;
+    font-size: 27px;
+}
+
+hr {
+    width: 100%;
+    margin: -7px 0 10px 0; 
+    
+    border: 1px solid var(--highlightColor);
+    border-bottom: 1px solid var(--hrBorder);
+    border-right: 1px solid var(--hrBorder);
+}
+
+.module {
+    /* vertical spacing between modules */
+    margin: 0 0 13px 0;
+    /* top and bottom module padding */
+    padding: 13px 0 13px 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--white);
+    background-color: var(--secondaryColor);
+
+    border-top: 1px solid var(--moduleBorder1);
+    border-left: 1px solid var(--moduleBorder2);
+    border-bottom: 1px solid var(--moduleBorder4);
+    border-right: 1px solid var(--moduleBorder3);
+
+    border-radius: 5px;
+}
+
+.module > div {
+    background-color: var(--backgroundColor);
+    /* module interior width */
+    width: calc(var(--moduleinteriorratio) * 100%);
+
+    border-bottom: 1px solid var(--moduleBorder1);
+    border-right: 1px solid var(--moduleBorder2);
+    border-top: 1px solid var(--moduleBorder4);
+    border-left: 1px solid var(--moduleBorder3);
+}
+
+.navitem {
+    padding: 2px 0 5px 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.gallery {
+    width: 100%;
+    /* to achieve 4:3 aspect ratio gallery images */
+    height: calc((var(--moduleinteriorratio) * 3/4) * var(--columnwidth) + 1px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gallery > img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-footer {
+    padding-top: 9px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+#all-projects {
+    cursor: pointer;
+}
+
+#all-projects:hover {
+    text-decoration: underline;
+}
+
+
+/* animations */
+@keyframes blink {
+    50% {
+        background-color: var(--highlightColor);
+        color: var(--backgroundColor);
+        text-decoration:underline;
+    }
+}
+.blinking {
+    animation: blink 1s step-start 0s infinite;
+}
