@@ -15,10 +15,24 @@
                 text-decoration: none;
                 color: inherit;
 
-                --backgroundColor: rgb(13, 13, 13);
+                /* color scheme 1 */
+                /* --backgroundColor: rgb(21, 21, 21);
                 --secondaryColor: rgb(77, 75, 103);
                 --highlightColor: yellowgreen;
                 --white: rgb(230, 230, 230);
+                --moduleBorder1: rgb(168, 165, 214);
+                --moduleBorder2: rgb(109, 107, 138);
+                --moduleBorder3: rgb(64, 59, 96); 
+                --moduleBorder4: rgb(48, 45, 74);
+                --hrBorder: rgb(136, 175, 59); */
+
+                /* color scheme 2 */
+                --backgroundColor: rgb(255, 255, 255);
+                --highlightColor: rgb(0, 0, 0);
+                --moduleBorder1: rgb(0, 0, 0);
+                --moduleBorder2: rgb(0, 0, 0);
+                --moduleBorder3: rgb(0, 0, 0); 
+                --moduleBorder4: rgb(0, 0, 0);
 
                 --columnwidth: 455px;
                 --moduleinteriorratio: 0.86;
@@ -59,10 +73,10 @@
                 width: 100%;
                 margin: -7px 0 10px 0; 
                 
-                border: 2px solid var(--highlightColor);
-                border-bottom: 1px solid rgb(136, 175, 59);
-                border-right: 2px solid rgb(136, 175, 59);
-                border-radius: 2px;
+                border: 1px solid var(--highlightColor);
+                border-bottom: 1px solid var(--hrBorder);
+                border-right: 1px solid var(--hrBorder);
+                border-radius: 1px;
             }
 
             .module {
@@ -81,10 +95,10 @@
 
                 border-radius: 5px;
 
-                border-top: 2px solid rgb(168, 165, 214);
-                border-left: 2px solid rgb(109, 107, 138);
-                border-bottom: 2px solid rgb(48, 45, 74);
-                border-right: 2px solid rgb(64, 59, 96);
+                border-top: 1px solid var(--moduleBorder1);
+                border-left: 1px solid var(--moduleBorder2);
+                border-bottom: 1px solid var(--moduleBorder4);
+                border-right: 1px solid var(--moduleBorder3);
             }
             
             .module > div {
@@ -93,10 +107,10 @@
                 width: calc(var(--moduleinteriorratio) * 100%);
                 border-radius: 5px;
 
-                border-bottom: 2px solid rgb(168, 165, 214);
-                border-right: 2px solid rgb(109, 107, 138);
-                border-top: 2px solid rgb(48, 45, 74);
-                border-left: 2px solid rgb(64, 59, 96);
+                border-bottom: 1px solid var(--moduleBorder1);
+                border-right: 1px solid var(--moduleBorder2);
+                border-top: 1px solid var(--moduleBorder4);
+                border-left: 1px solid var(--moduleBorder3);
             }
 
             .navitem {
@@ -129,6 +143,7 @@
                 justify-content: space-between;
                 font-size: 13px;
             }
+            
 
             /* animations */
             @keyframes blink {
