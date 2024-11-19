@@ -18,10 +18,8 @@
                     <h1 class="title">alexanderpusey.github.io</h1>
                 </a>
 
-                <!-- <hr> -->
-
                 <div class="module">
-                    <div id="navmenu">
+                    <div id="navmenu" class="interiorBorder">
                         <div class="navitem">
                             <a href="projects.html">[*] Projects</a>
                         </div>
@@ -36,11 +34,11 @@
 
                 <!-- top and bottom padding adjustment -->
                 <div class="module" style="padding: 16px 0 12px 0">
-                    <div class="gallery">
+                    <div class="gallery interiorBorder">
                         <img src="media/metroboulotdodo.png">
                     </div>
                     <span class="gallery-footer">
-                        <div id="project-counter">[1/4]</div>
+                        <div id="project-counter"><< >></div>
                         <a href="projects.html"><div id="all-projects">all projects</div></a>
                     </span>
                 </div>
@@ -49,66 +47,80 @@
 
         </div>
 
+        <span tabindex="1" ></span>
+        <span tabindex="2"></span>
+
     </body>
 
     <!-- <audio controls autoplay src="/media/.wav"></audio> -->
 
     <script>
-        let style = getComputedStyle(document.body)
-        let maxWidth = 500
-        let pageWidth = window.innerWidth
 
-        let arrowSelection = 0
-        let tabSelection = 0
-
-        let navMenu = document.getElementById("navmenu")
-        let projects = []
-        let allProjectsLink = document.getElementById("all-projects")
-
-        async function fetchSomething(address) {
-            await fetch(address)
-                .then(res => res.json())
-                .then(json => {result = json})
-            return result
-        }
-
-        selections = 
-        [
-            navMenu.children,
-            projects,
-            allProjectsLink
-        ]
-
-        // big screen
-        if (pageWidth > maxWidth) {
-            // show blinking
-            selections[arrowSelection][tabSelection].classList.add("blinking")
-        }
-        // small screen
-        else {
-            // don't blink
-        }
-
-        document.addEventListener("keydown", (e) => {
-            switch (e.key) {
-                case "ArrowUp":
-                    break
-                case "ArrowDown":
-                    break
-                case "ArrowRight":
-                    break
-                case "ArrowLeft":
-                    break
-                case "Enter":
-                    break
-                case "Tab":
-                    break
+        class Selection {
+            constructor(selections, select, next) {
+                this.selections = selections 
+                this.select =  select
+                this.next = next
             }
-        })
+        }
 
         async function main() {
-            projects = await fetchSomething('/data.json')
-            console.log(projects.projects)
+            // get featured projects
+            datajson = await fetch('data.json').then(res => res.json())
+            featuredProjects = await datajson.projects.filter(project => project.featured)
+
+            // get module selection HTML
+            let navmenu = document.getElementById("navmenu")
+            let gallery = document.getElementsByClassName("gallery")[0]
+            let projectlink = document.getElementById("all-projects")
+
+            // selection tree
+            selections = [
+                new Selection(["big ting"], () => {
+                    navmenu.classList.remove("interiorBorder")
+                    navmenu.classList.add("selectedBorder")
+                }, () => {
+                    navmenu.classList.remove("selectedBorder")
+                    navmenu.classList.add("interiorBorder")
+                    return 1
+                }),
+                new Selection(["nothing"], () => {
+                    gallery.classList.remove("interiorBorder")
+                    gallery.classList.add("selectedBorder")
+                }, () => {
+                    gallery.classList.remove("selectedBorder")
+                    gallery.classList.add("interiorBorder")
+                    return 2
+                }),
+                new Selection(["nothing"], () => {
+                    projectlink.style.textDecoration = "underline"
+                }, () => {
+                    projectlink.style.textDecoration = "none"
+                    return 0
+                })
+            ]
+            
+            selectedModule = selections[0]
+            selectedModule.select()
+
+            document.addEventListener("keydown", (e) => {
+                e.preventDefault()
+                switch (e.key) {
+                    case "ArrowUp":
+                        break   
+                    case "ArrowDown":
+                        break
+                    case "ArrowRight":
+                        break
+                    case "ArrowLeft":
+                        break
+                    case "Enter":
+                        break   
+                    case "Tab":
+                        selectedModule = selections[selectedModule.next()]
+                        selectedModule.select()
+                }
+            })
         }
 
         main()
