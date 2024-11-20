@@ -43,4 +43,13 @@
 
     </body>
 
+    <script>
+        document.addEventListener("keydown", (e) => {
+            e.preventDefault()
+            if (e.key == "Escape") {
+                window.open('/index.html', '_self')
+            }
+        })
+    </script>
+
 </html>

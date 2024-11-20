@@ -58,62 +58,132 @@
 
     <script>
 
-
-        class NavSelection {
-            constructor(outerElements) {
-                this.outerElements = outerElements
+        class Selection {
+            constructor(data, init, deinit, HTMLElements, keyEvent) {
+                this.data = data
+                this.init = init
+                this.deinit = deinit
+                this.HTMLElements = HTMLElements
+                this.keyEvent = keyEvent
             }
 
             create() {
-                for (const [key, element] of Object.entries(this.outerElements)) {
+                this.init()
+                for (const [key, element] of Object.entries(this.HTMLElements)) {
                     element.HTML.classList.remove(...element.defaultStyle)
                     element.HTML.classList.add(...element.style)
                 }
             }
 
             destroy() {
-                for (const [key, element] of Object.entries(this.outerElements)) {
+                this.deinit()
+                for (const [key, element] of Object.entries(this.HTMLElements)) {
                     element.HTML.classList.remove(...element.style)
                     element.HTML.classList.add(...element.defaultStyle)
                 }
             }
         }
 
-        selections = [
-            new NavSelection(
-                [
-                    {HTML: document.getElementById('navmenu'), defaultStyle: ['interiorBorder'], style: ['selectedBorder']},
-                ],
-            ),
-            new NavSelection(
-                [
-                    {HTML: document.getElementsByClassName('gallery')[0], defaultStyle: ['interiorBorder'], style: ['selectedBorder']},
-                    {HTML: document.getElementById('project-counter'), defaultStyle: ['none'], style: ['underline']},
-                ],
-            ),
-            new NavSelection(
-                [
-                    {HTML: document.getElementById('all-projects'), defaultStyle: ['none'], style: ['underline']},
-                ],
-            ),
-        ]
+        async function main() {
 
-        moduleIndex = 0
-        maxModuleIndex = selections.length - 1
-        selections[moduleIndex].create()
-    
-        document.addEventListener("keydown", (e) => {
-            e.preventDefault()
-            if (e.key == "Tab") {
-                selections[moduleIndex].destroy()
-                if (moduleIndex == maxModuleIndex) { moduleIndex = 0 }
-                else { moduleIndex++ }
-                selections[moduleIndex].create()
-            }
-            else {
-                selections[moduleIndex].keyEvent(e.key)
-            }
-        })
+            let navMenu = document.getElementById('navmenu')
+            let navItems = [...navMenu.children].map((item) => new Selection (
+                item.querySelector('a').getAttribute('href'),
+                function() {},
+                function() {},
+                [
+                    {HTML: item, defaultStyle: ['none'], style: ['blinking']},
+                ],
+                function() {}
+            ))
+
+            datajson = await fetch('data.json').then(res => res.json())
+            featuredProjects = await datajson.projects.filter(project => project.featured)
+            
+            selections = [
+                new Selection (
+                    navItems,
+                    function () { 
+                        if (!this.index) {
+                            this.index = 0
+                        }
+                        this.maxIndex = this.data.length - 1
+                        navItems[this.index].create() 
+                    },
+                    function () { navItems[this.index].destroy() },
+                    [ {HTML: navMenu, defaultStyle: ['interiorBorder'], style: ['selectedBorder']} ],
+                    function (key) {
+                        switch (key) {
+                            case "ArrowDown":
+                                navItems[this.index].destroy()
+                                if (this.index == this.maxIndex) {this.index = 0}
+                                else {this.index++}
+                                navItems[this.index].create()
+                                break
+                            case "ArrowUp":
+                                navItems[this.index].destroy()
+                                if (this.index == 0) {this.index = this.maxIndex}
+                                else {this.index--}
+                                navItems[this.index].create()
+                                break
+                            case "Enter":
+                                window.open(navItems[this.index].data, '_self')
+                                break
+                        }
+                    }
+                ),
+                new Selection (
+                    featuredProjects,
+                    function() {
+                        if (!this.index) {
+                            this.index = 0
+                        }
+                        this.maxIndex = this.data.length - 1
+                        this.img = this.HTMLElements[0].HTML.querySelector('img')
+                        this.img.src = this.data[this.index].img
+                    },
+                    function() {},
+                    [ {HTML: document.getElementsByClassName('gallery')[0], defaultStyle: ['interiorBorder'], style: ['selectedBorder']} ],
+                    function(key) {
+                        switch (key) {
+                            case "ArrowRight":
+                                if (this.index == this.maxIndex) {this.index = 0}
+                                else {this.index++}
+                                this.img.src = this.data[this.index].img
+                                break
+                            case "ArrowLeft":
+                                if (this.index == 0) {this.index = this.maxIndex}
+                                else {this.index--}
+                                this.img.src = this.data[this.index].img
+                                break
+                            case "Enter":
+                                window.open(this.data[this.index].link, "_self")
+                                break
+                        }
+                    }
+                )
+            ]
+
+            moduleIndex = 0
+            maxModuleIndex = selections.length - 1
+            selections[moduleIndex].create()
+        
+            document.addEventListener("keydown", (e) => {
+                e.preventDefault()
+                if (e.key == "Tab") {
+                    selections[moduleIndex].destroy()
+                    if (moduleIndex == maxModuleIndex) { moduleIndex = 0 }
+                    else { moduleIndex++ }
+                    selections[moduleIndex].create()
+                }
+                else {
+                    selections[moduleIndex].keyEvent(e.key)
+                }
+            })
+
+        }
+
+        main()
 
     </script>
 
