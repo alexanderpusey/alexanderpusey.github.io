@@ -7,6 +7,9 @@
     text-decoration: none;
     color: inherit;
 
+    --columnwidth: 455px;
+    --moduleinteriorratio: 0.86;
+
     /* color scheme 1 */
     /* --backgroundColor: rgb(21, 21, 21);
     --secondaryColor: rgb(77, 75, 103);
@@ -19,18 +22,15 @@
     --hrBorder: rgb(136, 175, 59); */
 
     /* color scheme 2 */
-    --backgroundColor: rgb(54	50	120	);
-    
+    --backgroundColor: rgb(61, 60, 86);
     --secondaryColor: rgb(187, 187, 187);
     --title: rgb(187, 187, 187);
-
     --moduleBorder1: rgb(255, 255, 255);
     --moduleBorder2: rgb(255, 255, 255);
     --moduleBorder3: rgb(0, 0, 0); 
     --moduleBorder4: rgb(0, 0, 0);
 
-    --columnwidth: 455px;
-    --moduleinteriorratio: 0.86;
+
 }
 
 @media (max-width: 500px) {
@@ -58,12 +58,15 @@ body {
     width: var(--columnwidth)
 }
 
+.header {
+    height: 38px;
+}
+
 .title {
     color: var(--title);
     text-shadow: 1px 1px black;
     font-family: luminari;
     font-size: 24px;
-    margin-bottom: 4px;
 }
 
 .module {
@@ -148,13 +151,17 @@ body {
 /* animations */
 @keyframes blink {
     50% {
-        /* background-color: var(--backgroundColor); */
         color: black;
-        text-decoration:underline;
-        font-weight: bold;
+        text-decoration: underline;
+        /* font-weight: bold; */
     }
 }
 .blinking {
     animation: blink 1s step-start 0s infinite;
 }
-
+.bold {
+    font-weight: bold;
+}
+.underline {
+    text-decoration: underline;
+}

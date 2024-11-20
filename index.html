@@ -14,9 +14,11 @@
 
             <div class="column">
 
-                <a href="https://alexanderpusey.github.io/">
-                    <h1 class="title">alexanderpusey.github.io</h1>
-                </a>
+                <div class="header">
+                    <a href="/index.html">
+                        <h1 class="title">alexanderpusey.github.io</h1>
+                    </a>
+                </div>
 
                 <div class="module">
                     <div id="navmenu" class="interiorBorder">
@@ -56,74 +58,62 @@
 
     <script>
 
-        class Selection {
-            constructor(selections, select, next) {
-                this.selections = selections 
-                this.select =  select
-                this.next = next
+
+        class NavSelection {
+            constructor(outerElements) {
+                this.outerElements = outerElements
+            }
+
+            create() {
+                for (const [key, element] of Object.entries(this.outerElements)) {
+                    element.HTML.classList.remove(...element.defaultStyle)
+                    element.HTML.classList.add(...element.style)
+                }
+            }
+
+            destroy() {
+                for (const [key, element] of Object.entries(this.outerElements)) {
+                    element.HTML.classList.remove(...element.style)
+                    element.HTML.classList.add(...element.defaultStyle)
+                }
             }
         }
 
-        async function main() {
-            // get featured projects
-            datajson = await fetch('data.json').then(res => res.json())
-            featuredProjects = await datajson.projects.filter(project => project.featured)
+        selections = [
+            new NavSelection(
+                [
+                    {HTML: document.getElementById('navmenu'), defaultStyle: ['interiorBorder'], style: ['selectedBorder']},
+                ],
+            ),
+            new NavSelection(
+                [
+                    {HTML: document.getElementsByClassName('gallery')[0], defaultStyle: ['interiorBorder'], style: ['selectedBorder']},
+                    {HTML: document.getElementById('project-counter'), defaultStyle: ['none'], style: ['underline']},
+                ],
+            ),
+            new NavSelection(
+                [
+                    {HTML: document.getElementById('all-projects'), defaultStyle: ['none'], style: ['underline']},
+                ],
+            ),
+        ]
 
-            // get module selection HTML
-            let navmenu = document.getElementById("navmenu")
-            let gallery = document.getElementsByClassName("gallery")[0]
-            let projectlink = document.getElementById("all-projects")
-
-            // selection tree
-            selections = [
-                new Selection(["big ting"], () => {
-                    navmenu.classList.remove("interiorBorder")
-                    navmenu.classList.add("selectedBorder")
-                }, () => {
-                    navmenu.classList.remove("selectedBorder")
-                    navmenu.classList.add("interiorBorder")
-                    return 1
-                }),
-                new Selection(["nothing"], () => {
-                    gallery.classList.remove("interiorBorder")
-                    gallery.classList.add("selectedBorder")
-                }, () => {
-                    gallery.classList.remove("selectedBorder")
-                    gallery.classList.add("interiorBorder")
-                    return 2
-                }),
-                new Selection(["nothing"], () => {
-                    projectlink.style.textDecoration = "underline"
-                }, () => {
-                    projectlink.style.textDecoration = "none"
-                    return 0
-                })
-            ]
-            
-            selectedModule = selections[0]
-            selectedModule.select()
-
-            document.addEventListener("keydown", (e) => {
-                e.preventDefault()
-                switch (e.key) {
-                    case "ArrowUp":
-                        break   
-                    case "ArrowDown":
-                        break
-                    case "ArrowRight":
-                        break
-                    case "ArrowLeft":
-                        break
-                    case "Enter":
-                        break   
-                    case "Tab":
-                        selectedModule = selections[selectedModule.next()]
-                        selectedModule.select()
-                }
-            })
-        }
-
-        main()
+        moduleIndex = 0
+        maxModuleIndex = selections.length - 1
+        selections[moduleIndex].create()
+    
+        document.addEventListener("keydown", (e) => {
+            e.preventDefault()
+            if (e.key == "Tab") {
+                selections[moduleIndex].destroy()
+                if (moduleIndex == maxModuleIndex) { moduleIndex = 0 }
+                else { moduleIndex++ }
+                selections[moduleIndex].create()
+            }
+            else {
+                selections[moduleIndex].keyEvent(e.key)
+            }
+        })
 
     </script>
 
