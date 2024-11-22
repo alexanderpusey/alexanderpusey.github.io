@@ -147,8 +147,8 @@
 
                         this.img = this.HTMLElements[0].HTML.querySelector('img')
                         this.img.src = this.data[this.index].img
-                        let link = this.HTMLElements[0].HTML.querySelector('a')
-                        link.href = this.data[this.index].link
+                        this.link = this.HTMLElements[0].HTML.querySelector('a')
+                        this.link.href = this.data[this.index].link
                     },
                     function() {},
                     [ {HTML: document.getElementsByClassName('gallery')[0], defaultStyle: ['interiorBorder'], style: ['selectedBorder']} ],
@@ -158,11 +158,13 @@
                                 if (this.index == this.maxIndex) {this.index = 0}
                                 else {this.index++}
                                 this.img.src = this.data[this.index].img
+                                this.link.href = this.data[this.index].link
                                 break
                             case "ArrowLeft":
                                 if (this.index == 0) {this.index = this.maxIndex}
                                 else {this.index--}
                                 this.img.src = this.data[this.index].img
+                                this.link.href = this.data[this.index].link
                                 break
                             case "Enter":
                                 window.open(this.data[this.index].link, "_self")

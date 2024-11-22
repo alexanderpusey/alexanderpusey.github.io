@@ -8,8 +8,8 @@
             "featured" : true
         },
         {
-            "title" : "Automatically-adjusting Seatpost",
-            "description": "Designing and manufacturing an automatically adjusting seatpost designed to be retrofitted onto BCycle's bikeshare bikes",
+            "title" : "Auto Seatpost",
+            "description": "Designing and machining an automatically-adjusting seatpost",
             "link" : "/projects/seatpost/seatpost.html",
             "img" : "/projects/seatpost/media/seatpost.jpg",
             "featured" : true
@@ -30,24 +30,45 @@
         },
         {
             "title" : "Bikesharemap",
-            "description": "System-agnostic bike share app designed for WatchOS",
+            "description": "SwiftUI app that finds bikes in any city",
             "link" : "/projects/bikesharemap/bikesharemap.html",
             "img" : "/projects/bikesharemap/media/bikesharemap.png",
             "featured" : false
         },
         {
             "title" : "Pokéwatch",
-            "description": "Pokewalker-inspired apple watch case",
+            "description": "Pokéwalker-inspired apple watch case",
             "link" : "/projects/pokewatch/pokewatch.html",
             "img" : "/projects/pokewatch/media/pokewatch.png",
             "featured" : false
         },
         {
             "title" : "New Parts",
-            "description" : "Plastic, concrete, and wax casts",
+            "description" : "Wax, concrete, and plastic casts using different molding methods",
             "link" : "/projects/newparts/newparts.html",
             "img" : "/projects/newparts/media/newparts.jpeg",
             "featured" : false
+        },
+        {
+            "title" : "Untitled Sculpture",
+            "description": "Scary sculpture",
+            "link": "",
+            "img": "",
+            "featured": false
+        },
+        {
+            "title" : "FPV Bag Organizer",
+            "description": "Cardboard backpack organizer designed for quick access",
+            "link": "",
+            "img": "",
+            "featured": false
+        },
+        {
+            "title": "Loftish Bed",
+            "description": "Semi-lofted space saving bed",
+            "link": "",
+            "img": "",
+            "featured": false
         }
     ], 
 

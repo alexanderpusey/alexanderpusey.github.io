@@ -20,15 +20,6 @@
     --moduleBorder4: rgb(0, 0, 0);
 }
 
-@media (max-width: 500px) {
-    * {
-        --columnwidth: 90%;
-    }
-    .column {
-        margin: 10px;
-    }
-} 
-
 body {
     background-color: var(--backgroundColor);
 }
@@ -119,7 +110,7 @@ body {
 .gallery {
     width: 100%;
     /* to achieve 4:3 aspect ratio gallery images */
-    height: calc((var(--moduleinteriorratio) * 3/4) * var(--columnwidth) + 1px);
+    height: calc((var(--moduleinteriorratio) * 3/4) * var(--columnwidth));
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -179,10 +170,35 @@ body {
 /* projects */
 .project {
     display: flex;
-    
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .project img {
     height: 200px;
-    width: 100px;
+    width: 200px;
+    margin-left: 10px;
 }
+
+.project-title {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 10px
+}
+
+@media (max-width: 500px) {
+    * {
+        --columnwidth: 90%;
+    }
+    .header {
+        margin-top: 10px;
+    }
+} 

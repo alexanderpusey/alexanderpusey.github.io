@@ -34,27 +34,42 @@
         async function main() {
             let data = await fetch("/data.json").then(res => res.json())
             data.projects.forEach(p => {
-                const projectLink = document.createElement("a")
-                projectLink.href = p.link
+                const project = document.createElement("a")
+                project.href = p.link
 
-                const project = document.createElement("div")
-                project.className = "module project"
+                const projectModule = document.createElement("div")
+                projectModule.className = "module project"
 
                 const projectImage = document.createElement("img")
                 projectImage.src = p.img
 
-                project.appendChild(projectImage)
-                projectLink.appendChild(project)
-                projects.appendChild(projectLink)
+                const projectText = document.createElement("div")
+                projectText.className = "project-text"
 
+                const projectTitle = document.createElement("p")
+                projectTitle.className = "project-title"
+                projectTitle.innerText = p.title
+
+                const projectDescription = document.createElement("p")
+                projectDescription.innerText = p.description
+
+                projectModule.appendChild(projectImage)
+                projectModule.appendChild(projectText)
+
+
+                projectText.appendChild(projectTitle)
+                projectText.appendChild(projectDescription)
+
+                project.appendChild(projectModule)
+                projects.appendChild(project)
                 })
         }
 
-        // escape to previous page
+        // escape back to previous page
         document.addEventListener("keydown", (e) => {
             e.preventDefault()
             if (e.key == "Escape") {
-                window.open('/index.html', '_self')
+                history.back()
             }
         })
 
