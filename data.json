@@ -1,76 +1,58 @@
 {
-    "navmenu" : [
-
-    ],
     "projects" : [
         {
-            "title" : "Auto-adjusting Seatpost",
-            "tags" : ["Machining", "Product Design"],
-            "link" : "/projects/bikeshareseat/bikeshareseat.html",
-            "imgs" : [""],
+            "title" : "Métro, Boulot, Dodo",
+            "description" : "Vinyl installation",
+            "link" : "/projects/metroboulotdodo/metroboulotdodo.html",
+            "img" : "/projects/metroboulotdodo/media/metroboulotdodo.jpeg",
             "featured" : true
         },
         {
-            "title" : "bikesharemap",
-            "tags" : ["SwiftUI", "WatchOS"],
-            "link" : "/projects/bikesharemap/bikesharemap.html",
-            "img" : "/media/bikesharemap.png",
+            "title" : "Automatically-adjusting Seatpost",
+            "description": "Designing and manufacturing an automatically adjusting seatpost designed to be retrofitted onto BCycle's bikeshare bikes",
+            "link" : "/projects/seatpost/seatpost.html",
+            "img" : "/projects/seatpost/media/seatpost.png",
+            "featured" : true
+        },
+        {
+            "title" : "PartyReg",
+            "description" : "Full-stack web application for university party registration and management",
+            "link" : "/projects/partyreg/partyreg.html",
+            "img" : "/projects/partyreg/media/partyreg.png",
             "featured" : true
         },
         {
             "title" : "Plastic Mart",
-            "description" : "Woodworking, waste",
-            "tags" : ["Woodworking"],
-            "link" : "/error.html",
-            "img" : "/media/plasticmart.png",
-            "featured" : true
+            "description" : "Wood sculpture",
+            "link" : "/projects/plasticmart.html",
+            "img" : "/projects/plasticmart/media/plasticmart.png",
+            "featured" : false  
         },
         {
-            "title" : "Métro, Boulot, Dodo",
-            "description" : "Vinyl installation",
-            "tags" : ["Vinyl"],
-            "link" : "/error.html",
-            "img" : "/media/metroboulotdodo.png",
-            "featured" : true
-        },
-        {
-            "title" : "partyreg.colorado.edu",
-            "description" : "Full-stack web application",
-            "tags" : ["Node.js", "Docker", "React"],
-            "link" : "/error.html",
-            "img" : "/media/partyreg.png",
-            "featured" : true
+            "title" : "Bikesharemap",
+            "description": "System-agnostic bike share app designed for WatchOS",
+            "link" : "/projects/bikesharemap/bikesharemap.html",
+            "img" : "/projects/bikesharemap/media/bikesharemap.png",
+            "featured" : false
         },
         {
             "title" : "Pokéwatch",
-            "description": "pokewalker-inspired apple watch case",
-            "tags" : ["3d Printing"],
-            "link" : "/error.html",
-            "img" : "/media/pokewatch.png",
-            "featured" : true
+            "description": "Pokewalker-inspired apple watch case",
+            "link" : "/projects/pokewatch/pokewatch.html",
+            "img" : "/projects/pokewatch/media/pokewatch.png",
+            "featured" : false
         },
         {
             "title" : "New Parts",
             "description" : "Plastic, concrete, and wax casts",
-            "tags" : ["Sculpture"],
-            "link" : "/error.html",
-            "img" : "/media/newparts.jpg",
-            "featured" : true
-        },
-        {
-            "title" : "Loft(ish) Bed",
-            "tags" : ["Woodworking", "CAD"],
-            "link" : "/error.html",
-            "img" : "/media/loftishbed.jpg",
-            "featured" : true
-        },
-        {
-            "title" : "FPV Drone Bag",
-            "tags" : ["Product Design"],
-            "link" : "/error.html",
-            "img" : "/media/fpvbag.jpg",
-            "featured" : true
+            "link" : "/projects/newparts/newparts.html",
+            "img" : "/projects/newparts/media/newparts.jpeg",
+            "featured" : false
         }
+    ], 
+
+    "misc" : [
+
     ]
 
 }

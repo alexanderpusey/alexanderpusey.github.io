@@ -14,16 +14,14 @@
 
             <div class="column">
 
-                <div class="header">
-                    <a href="/index.html">
-                        <div style=>&lt; back</div>
-                    </a>
-                </div>
-                
-                <div class="module">
-                    <div id="projects"></div>
-                </div>
+                <a href="/index.html">
+                    <div class="header">
+                        <div class="back-link"> &lt; back</div>
+                    </div>
+                </a>
 
+                <div id="projects"></div>
+                
             </div>
 
         </div>
@@ -33,55 +31,34 @@
     <script>
         const projects = document.getElementById("projects")
 
-        function populateProjects() {
+        async function main() {
+            let data = await fetch("/data.json").then(res => res.json())
             data.projects.forEach(p => {
+                const projectLink = document.createElement("a")
+                projectLink.href = p.link
 
                 const project = document.createElement("div")
-                project.className = "project-block"
+                project.className = "module project"
 
-                const projectInner = document.createElement("a")
-                projectInner.href = p.link
+                const projectImage = document.createElement("img")
+                projectImage.src = p.img
 
-                try {
-                    const projectImage = document.createElement("img")
-                    projectImage.className = "project-img"
-                    projectImage.src = p.imgs[0]
-                    projectInner.appendChild(projectImage)
-                }
-                catch {
-                    
-                }
+                project.appendChild(projectImage)
+                projectLink.appendChild(project)
+                projects.appendChild(projectLink)
 
-                project.appendChild(projectInner)
-                projects.appendChild(project)
-
-            })
+                })
         }
 
-        //instantiating
-        var data
-
-        async function getData() {
-            try {
-                const response = await fetch("/data.json")
-                const json = await response.json()
-                data = json
-            }
-            catch(error) {
-                console.error('Error getting json', error)
-            }
-        }
-
-        getData().then(() => {
-            populateProjects()
-        })
-
+        // escape to previous page
         document.addEventListener("keydown", (e) => {
             e.preventDefault()
             if (e.key == "Escape") {
                 window.open('/index.html', '_self')
             }
         })
+
+        main()
 
     </script>
 

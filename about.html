@@ -14,27 +14,25 @@
 
             <div class="column">
 
-                <div class="header">
-                    <a href="/index.html">
-                        <div style=>&lt; back</div>
-                    </a>
-                </div>
+                <a href="/index.html">
+                    <div class="header">
+                        <div class="back-link"> &lt; back</div>
+                    </div>
+                </a>
 
                 <div class="module">
                     <div id="about-me">
-                        <img class="reverseshadowed" src="/media/thing.jpg" alt="a picture of me">
+                        <!-- <img class="reverseshadowed" src="/media/thing.jpg" alt="a picture of me"> -->
                         <div id="about-text">
                             <p>
-                                I'm Alex and I love to make stuff.
-                                On this website you'll find an assortment of personal and professional projects involving art and engineering.
-                                Other interests of mine include skateboarding, biking, and petting fluffy cats. Thanks for stopping by!
+                                I'm Alex
                             </p>
                         </div>
                     </div>
-                </div>
-                <div id="about-links">
-                    <a class="shadowed" href="/media/resume.pdf" target="_blank">Resume</a>
-                    <a class="shadowed" href="https://www.linkedin.com/in/alex-pusey/" target="_blank">LinkedIn</a>
+                    <div id="about-links">
+                        <a class="shadowed" href="/media/resume.pdf" target="_blank">Resume</a>
+                        <a class="shadowed" href="https://www.linkedin.com/in/alex-pusey/" target="_blank">LinkedIn</a>
+                    </div>
                 </div>
 
             </div>
@@ -44,6 +42,7 @@
     </body>
 
     <script>
+        // escape back to previous page
         document.addEventListener("keydown", (e) => {
             e.preventDefault()
             if (e.key == "Escape") {

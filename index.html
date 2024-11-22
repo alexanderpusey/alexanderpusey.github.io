@@ -14,14 +14,14 @@
 
             <div class="column">
 
-                <div class="header">
-                    <a href="/index.html">
+                <a href="/index.html">
+                    <div class="header">
                         <h1 class="title">alexanderpusey.github.io</h1>
-                    </a>
-                </div>
+                    </div>
+                </a>
 
                 <div class="module">
-                    <div id="navmenu" class="interiorBorder">
+                    <div id="navmenu">
                         <div class="navitem">
                             <a href="projects.html">[*] Projects</a>
                         </div>
@@ -36,11 +36,17 @@
 
                 <!-- top and bottom padding adjustment -->
                 <div class="module" style="padding: 16px 0 12px 0">
-                    <div class="gallery interiorBorder">
-                        <img src="media/metroboulotdodo.png">
+                    <div class="gallery">
+                        <!-- hard coded project in case js is disabled -->
+                        <a id="project-link" href="projects/metroboulotdodo.html">
+                            <img src="projects/metroboulotdodo/media/metroboulotdodo.jpeg">
+                        </a>
                     </div>
                     <span class="gallery-footer">
-                        <div id="project-counter"><< >></div>
+                        <div class="gallery-buttons">
+                            <div id="gallery-left"><<</div>
+                            <div id="gallery-right">>></div>
+                        </div>
                         <a href="projects.html"><div id="all-projects">all projects</div></a>
                     </span>
                 </div>
@@ -48,9 +54,6 @@
             </div>
 
         </div>
-
-        <span tabindex="1" ></span>
-        <span tabindex="2"></span>
 
     </body>
 
@@ -86,6 +89,7 @@
 
         async function main() {
 
+            // propagates navmenu items into selection objects
             let navMenu = document.getElementById('navmenu')
             let navItems = [...navMenu.children].map((item) => new Selection (
                 item.querySelector('a').getAttribute('href'),
@@ -97,9 +101,10 @@
                 function() {}
             ))
 
+            // fetches featured projects
             datajson = await fetch('data.json').then(res => res.json())
             featuredProjects = await datajson.projects.filter(project => project.featured)
-            
+
             selections = [
                 new Selection (
                     navItems,
@@ -139,8 +144,11 @@
                             this.index = 0
                         }
                         this.maxIndex = this.data.length - 1
+
                         this.img = this.HTMLElements[0].HTML.querySelector('img')
                         this.img.src = this.data[this.index].img
+                        let link = this.HTMLElements[0].HTML.querySelector('a')
+                        link.href = this.data[this.index].link
                     },
                     function() {},
                     [ {HTML: document.getElementsByClassName('gallery')[0], defaultStyle: ['interiorBorder'], style: ['selectedBorder']} ],
@@ -164,21 +172,47 @@
                 )
             ]
 
-            moduleIndex = 0
-            maxModuleIndex = selections.length - 1
-            selections[moduleIndex].create()
-        
-            document.addEventListener("keydown", (e) => {
-                e.preventDefault()
-                if (e.key == "Tab") {
-                    selections[moduleIndex].destroy()
-                    if (moduleIndex == maxModuleIndex) { moduleIndex = 0 }
-                    else { moduleIndex++ }
-                    selections[moduleIndex].create()
-                }
-                else {
-                    selections[moduleIndex].keyEvent(e.key)
-                }
+            //instantiates objects so that touch functions work
+            selections.forEach(module => {
+                module.create()
+                module.destroy()
+            });
+
+            // if on desktop be interactive
+            if (window.innerWidth > 500) {
+                moduleIndex = 0
+                maxModuleIndex = selections.length - 1
+                selections[moduleIndex].create()
+            
+                document.addEventListener("keydown", (e) => {
+                    e.preventDefault()
+                    if (e.key == "Tab") {
+                        selections[moduleIndex].destroy()
+                        if (moduleIndex == maxModuleIndex) { moduleIndex = 0 }
+                        else { moduleIndex++ }
+                        selections[moduleIndex].create()
+                    }
+                    else {
+                        selections[moduleIndex].keyEvent(e.key)
+                    }
+                })
+            }
+            // if on mobile border both modules
+            else {
+                selections.forEach(module => {
+                    for (const [key, element] of Object.entries(module.HTMLElements)) {
+                    element.HTML.classList.remove(...element.defaultStyle)
+                    element.HTML.classList.add(...element.style)
+                    }
+                })
+            }
+
+            // arrow touch functions
+            document.getElementById('gallery-left').addEventListener("click", () => {
+                selections[1].keyEvent("ArrowLeft")
+            })
+            document.getElementById('gallery-right').addEventListener("click", () => {
+                selections[1].keyEvent("ArrowRight")
             })
 
         }
