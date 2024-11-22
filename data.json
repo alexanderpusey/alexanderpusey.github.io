@@ -4,28 +4,28 @@
             "title" : "Métro, Boulot, Dodo",
             "description" : "Vinyl installation",
             "link" : "/projects/metroboulotdodo/metroboulotdodo.html",
-            "img" : "/projects/metroboulotdodo/media/metroboulotdodo.jpeg",
+            "img" : "/projects/metroboulotdodo/media/metroboulotdodo.jpg",
             "featured" : true
         },
         {
             "title" : "Automatically-adjusting Seatpost",
             "description": "Designing and manufacturing an automatically adjusting seatpost designed to be retrofitted onto BCycle's bikeshare bikes",
             "link" : "/projects/seatpost/seatpost.html",
-            "img" : "/projects/seatpost/media/seatpost.png",
+            "img" : "/projects/seatpost/media/seatpost.jpg",
             "featured" : true
         },
         {
             "title" : "PartyReg",
             "description" : "Full-stack web application for university party registration and management",
             "link" : "/projects/partyreg/partyreg.html",
-            "img" : "/projects/partyreg/media/partyreg.png",
+            "img" : "/projects/partyreg/media/partyreg.jpg",
             "featured" : true
         },
         {
             "title" : "Plastic Mart",
             "description" : "Wood sculpture",
             "link" : "/projects/plasticmart.html",
-            "img" : "/projects/plasticmart/media/plasticmart.png",
+            "img" : "/projects/plasticmart/media/plasticmart.jpg",
             "featured" : false  
         },
         {
