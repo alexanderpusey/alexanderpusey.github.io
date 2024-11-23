@@ -5,7 +5,6 @@
         <title>alexanderpusey.github.io</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-
     </head>
 
     <body>
@@ -23,13 +22,13 @@
                 <div class="module">
                     <div id="navmenu">
                         <div class="navitem">
-                            <a href="projects.html">[*] Projects</a>
+                            <a href="projects.html">- Projects</a>
                         </div>
                         <div class="navitem">
-                            <a href="about.html">[*] About</a>
+                            <a href="about.html">- About</a>
                         </div>
                         <div class="navitem">
-                            <a href="misc.html">[*] Misc</a>
+                            <a href="misc.html">- Junk</a>
                         </div>
                     </div>
                 </div>
@@ -43,7 +42,7 @@
                         </a>
                     </div>
                     <span class="gallery-footer">
-                        <div class="gallery-buttons">
+                        <div id="gallery-buttons">
                             <div id="gallery-left"><<</div>
                             <div id="gallery-right">>></div>
                         </div>
@@ -89,21 +88,32 @@
 
         async function main() {
 
+            // fetches featured projects
+            let data = await fetch("/data.json").then(res => res.json())
+            featuredProjects = await data.projects.filter(project => project.featured)
+
             // propagates navmenu items into selection objects
             let navMenu = document.getElementById('navmenu')
             let navItems = [...navMenu.children].map((item) => new Selection (
-                item.querySelector('a').getAttribute('href'),
-                function() {},
-                function() {},
+                item.querySelector('a'),
+                function() {
+                    let currentText = this.data.textContent.trim()
+                    let sliced = currentText.slice(1,currentText.length)
+                    this.data.textContent = "> " + sliced
+                },
+                function() {
+                    let currentText = this.data.textContent 
+                    let sliced = currentText.slice(1,currentText.length)
+                    this.data.textContent = "- " + sliced
+                },
                 [
-                    {HTML: item, defaultStyle: ['none'], style: ['blinking']},
+                    {HTML: item.querySelector('a'), defaultStyle: ['none'], style: ['blinking']},
                 ],
                 function() {}
             ))
 
-            // fetches featured projects
-            datajson = await fetch('data.json').then(res => res.json())
-            featuredProjects = await datajson.projects.filter(project => project.featured)
+            let galleryButtons = document.getElementById("gallery-buttons")
+            console.log(galleryButtons)
 
             selections = [
                 new Selection (
@@ -116,7 +126,9 @@
                         navItems[this.index].create() 
                     },
                     function () { navItems[this.index].destroy() },
-                    [ {HTML: navMenu, defaultStyle: ['interiorBorder'], style: ['selectedBorder']} ],
+                    [ 
+                        {HTML: navMenu, defaultStyle: ['interiorBorder'], style: ['selectedBorder']} 
+                    ],
                     function (key) {
                         switch (key) {
                             case "ArrowDown":
@@ -132,7 +144,7 @@
                                 navItems[this.index].create()
                                 break
                             case "Enter":
-                                window.open(navItems[this.index].data, '_self')
+                                window.open(navItems[this.index].data.getAttribute('href'), '_self')
                                 break
                         }
                     }
@@ -151,7 +163,10 @@
                         this.link.href = this.data[this.index].link
                     },
                     function() {},
-                    [ {HTML: document.getElementsByClassName('gallery')[0], defaultStyle: ['interiorBorder'], style: ['selectedBorder']} ],
+                    [ 
+                        {HTML: document.getElementsByClassName('gallery')[0], defaultStyle: ['interiorBorder'], style: ['selectedBorder']},
+                        {HTML: galleryButtons, defaultStyle: ['none'], style: ['blinking']}
+                    ],
                     function(key) {
                         switch (key) {
                             case "ArrowRight":
@@ -178,7 +193,7 @@
             selections.forEach(module => {
                 module.create()
                 module.destroy()
-            });
+            })
 
             // if on desktop be interactive
             if (window.innerWidth > 500) {

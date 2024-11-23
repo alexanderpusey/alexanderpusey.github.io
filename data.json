@@ -16,7 +16,7 @@
         },
         {
             "title" : "PartyReg",
-            "description" : "Full-stack web application for university party registration and management",
+            "description" : "Web application for university party registration and management",
             "link" : "/projects/partyreg/partyreg.html",
             "img" : "/projects/partyreg/media/partyreg.jpg",
             "featured" : true
@@ -26,14 +26,14 @@
             "description" : "Wood sculpture",
             "link" : "/projects/plasticmart.html",
             "img" : "/projects/plasticmart/media/plasticmart.jpg",
-            "featured" : false  
+            "featured" : true  
         },
         {
             "title" : "Bikesharemap",
             "description": "SwiftUI app that finds bikes in any city",
             "link" : "/projects/bikesharemap/bikesharemap.html",
             "img" : "/projects/bikesharemap/media/bikesharemap.png",
-            "featured" : false
+            "featured" : true
         },
         {
             "title" : "Pokéwatch",
