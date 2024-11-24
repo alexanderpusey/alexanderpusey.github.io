@@ -11,13 +11,23 @@
     --moduleinteriorratio: 0.86;
 
     /* color scheme */
-    --backgroundColor: rgb(193, 102, 72);
-    --secondaryColor: rgb(187, 187, 187);
-    --title: rgb(187, 187, 187);
-    --moduleBorder1: rgb(255, 255, 255);
-    --moduleBorder2: rgb(255, 255, 255);
-    --moduleBorder3: rgb(0, 0, 0); 
-    --moduleBorder4: rgb(0, 0, 0);
+    --white: rgb(143, 143, 143);
+    --black: rgb(0, 0, 0);
+    --selectedColor: rgb(255, 255, 255);
+
+    --backgroundColor: var(--black);
+    --secondaryColor: var(--black);
+    --title: var(--white);
+    --textColor: var(--white);
+    --moduleBorder1: var(--white);
+    --moduleBorder2: var(--white);
+    --moduleBorder3: var(--black); 
+    --moduleBorder4: var(--black);
+    --moduleSelectedBorder1: var(--selectedColor);
+    --moduleSelectedBorder2: var(--selectedColor);
+    --moduleSelectedBorder3: var(--black); 
+    --moduleSelectedBorder4: var(--black); 
+    
 }
 
 body {
@@ -55,9 +65,10 @@ body {
 
 .back-link {
     position: absolute;
+    font-size: 14px;
     bottom: 9px;
     left: 0;
-    color: var(--secondaryColor)
+    color: var(--textColor)
 }
 
 .module {
@@ -71,7 +82,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    color: black;
+    color: var(--textColor);
     background-color: var(--secondaryColor);
 
     border-top: 1px solid var(--moduleBorder1);
@@ -79,39 +90,39 @@ body {
     border-bottom: 1px solid var(--moduleBorder4);
     border-right: 1px solid var(--moduleBorder3);
 
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .module > div {
-    background-color: var(--secondaryColor);
+    background-color: var(--backgroundColor);
     /* module interior width */
     width: calc(var(--moduleinteriorratio) * 100%);
 
 }
 
 .interiorBorder {
-    border: 1px solid var(--secondaryColor);
+    border: 1px solid var(--backgroundColor);
 }
 
 .selectedBorder {
     animation: border 1s step-start 0s infinite;
-    border-bottom: 1px solid var(--moduleBorder1);
-    border-right: 1px solid var(--moduleBorder2);
-    border-top: 1px solid var(--moduleBorder4);
-    border-left: 1px solid var(--moduleBorder3);
+    border-bottom: 1px solid var(--moduleSelectedBorder1);
+    border-right: 1px solid var(--moduleSelectedBorder2);
+    border-top: 1px solid var(--moduleSelectedBorder4);
+    border-left: 1px solid var(--moduleSelectedBorder3);
 }
 
 .navitem {
     padding: 2px 0 5px 5px;
     font-size: 14px;
     cursor: pointer;
-    color: black;
+    color: var(--textColor);
 }
 
 .gallery {
     width: 100%;
     /* to achieve 4:3 aspect ratio gallery images */
-    height: calc((var(--moduleinteriorratio) * 3/4) * var(--columnwidth));
+    height: calc((var(--moduleinteriorratio) * 2/3) * var(--columnwidth));
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -130,11 +141,11 @@ body {
 
 .gallery-footer {
     padding-top: 9px;
-    width: 95%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #gallery-buttons > div {
@@ -153,12 +164,10 @@ body {
 /* animations */
 @keyframes blink {
     50% {
-        color: black;
-        text-decoration: underline;
+        color: var(--selectedColor)
     }
-    50% {
-        color: var(--backgroundColor);
-        text-decoration: none;
+    100% {
+        color: var(--selectedColor)
     }
 }
 .blinking {
@@ -180,7 +189,7 @@ body {
 }
 
 .project:focus-visible {
-    border: 10px solid black;
+    border: 10px solid var(--textColor);
 }
 
 .project img {
@@ -195,6 +204,10 @@ body {
     margin-bottom: 5px;
 }
 
+.project-description {
+    color: var(--white)
+}
+
 .project-text {
     display: flex;
     font-size: 14px;
@@ -204,16 +217,11 @@ body {
 }
 
 .selected-project-text {
-    color: var(--backgroundColor);
-    text-decoration: underline;
+    color: var(--selectedColor);
 }
 
-.project-border {
-    border: 2px solid var(--secondaryColor);
-}
-
-.selected-project-border {
-    border: 2px solid var(--backgroundColor);
+.invisible {
+    opacity: 0;
 }
 
 @media (max-width: 500px) {

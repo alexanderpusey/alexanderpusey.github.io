@@ -15,7 +15,7 @@
 
                 <a href="/index.html">
                     <div class="header">
-                        <h1 class="title">alexanderpusey.github.io</h1>
+                        <h1 class="title">alexanderpusey.github.io</h1>            
                     </div>
                 </a>
 
@@ -43,10 +43,10 @@
                     </div>
                     <span class="gallery-footer">
                         <div id="gallery-buttons">
-                            <div id="gallery-left"><<</div>
-                            <div id="gallery-right">>></div>
+                            <div id="gallery-left"><</div>
+                            <div id="gallery-right">></div>
                         </div>
-                        <a href="projects.html"><div id="all-projects">all projects</div></a>
+                        <!-- <a href="projects.html"><div id="all-projects">all projects</div></a> -->
                     </span>
                 </div>
 
@@ -113,7 +113,8 @@
             ))
 
             let galleryButtons = document.getElementById("gallery-buttons")
-            console.log(galleryButtons)
+            let galleryLeft = document.getElementById("gallery-left")
+            let galleryRight = document.getElementById("gallery-right")
 
             selections = [
                 new Selection (
@@ -165,7 +166,7 @@
                     function() {},
                     [ 
                         {HTML: document.getElementsByClassName('gallery')[0], defaultStyle: ['interiorBorder'], style: ['selectedBorder']},
-                        {HTML: galleryButtons, defaultStyle: ['none'], style: ['blinking']}
+                        {HTML: galleryButtons, defaultStyle: ['invisible'], style: ['blinking']}
                     ],
                     function(key) {
                         switch (key) {
@@ -216,12 +217,12 @@
             }
             // if on mobile border both modules
             else {
-                selections.forEach(module => {
-                    for (const [key, element] of Object.entries(module.HTMLElements)) {
-                    element.HTML.classList.remove(...element.defaultStyle)
-                    element.HTML.classList.add(...element.style)
-                    }
-                })
+                // selections.forEach(module => {
+                //     for (const [key, element] of Object.entries(module.HTMLElements)) {
+                //     element.HTML.classList.remove(...element.defaultStyle)
+                //     element.HTML.classList.add(...element.style)
+                //     }
+                // })
             }
 
             // arrow touch functions

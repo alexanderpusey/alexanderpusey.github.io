@@ -77,6 +77,7 @@
                 projectTitle.innerText = p.title
 
                 const projectDescription = document.createElement("p")
+                projectDescription.className = "project-description"
                 projectDescription.innerText = p.description
 
                 projectModule.appendChild(projectImage)
@@ -99,12 +100,12 @@
             // propagates project items into selection objects
             let projects = document.getElementById('projects')
             let selections = [...projects.children].map((item) => new Selection (
-                [item, item.querySelector("div")],
+                item,
                 function() { },
                 function() { },
                 [
-                    {HTML: item.querySelector('p'), defaultStyle: ['none'], style: ['selected-project-text']},
-                    {HTML: item.querySelector('img'), defaultStyle: ['project-border'], style: ['selected-project-border']}
+                    // {HTML: item.querySelector('p'), defaultStyle: ['none'], style: ['selected-project-text']},
+                    {HTML: item, defaultStyle: ['project-border'], style: ['selected-project-border']}
                 ],
                 function() {}
             ))
@@ -128,18 +129,21 @@
                             selections[moduleIndex].destroy()
                             if (moduleIndex == maxModuleIndex) { 
                                 moduleIndex = 0 
-                                window.scroll(0, 0)
+                                // window.scrollBy(0, -1000)
                             }
                             else { moduleIndex++ }
                             selections[moduleIndex].create()
-                            window.scrollBy(0, 139)
+                            // window.scrollBy(0, 139)
                             break
                         case "ArrowUp":
                             selections[moduleIndex].destroy()
-                            if (moduleIndex == 0) { moduleIndex = maxModuleIndex }
+                            if (moduleIndex == 0) { 
+                                moduleIndex = maxModuleIndex 
+                                // window.scrollBy(0, 1000)
+                            }
                             else { moduleIndex-- }
                             selections[moduleIndex].create()
-                            window.scrollBy(0, -139)
+                            // window.scrollBy(0, -139)
                             break
                         
                     }

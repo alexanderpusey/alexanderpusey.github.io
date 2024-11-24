@@ -16,7 +16,7 @@
 
                 <a href="/index.html">
                     <div class="header">
-                        <div class="back-link"> &lt; back</div>
+                        <div class="back-link">&lt; back</div>
                     </div>
                 </a>
 
@@ -40,8 +40,11 @@
         // escape back to previous page
         document.addEventListener("keydown", (e) => {
             e.preventDefault()
-            if (e.key == "Escape") {
-                history.back()
+            switch (e.key){
+                case "Escape":
+                    history.back()
+                    break
+
             }
         })
     </script>
