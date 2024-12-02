@@ -46,7 +46,7 @@
                             <div id="gallery-left"><</div>
                             <div id="gallery-right">></div>
                         </div>
-                        <!-- <a href="projects.html"><div id="all-projects">all projects</div></a> -->
+                        <a href="projects.html"><div id="all-projects">all projects</div></a>
                     </span>
                 </div>
 
@@ -113,6 +113,7 @@
             ))
 
             let galleryButtons = document.getElementById("gallery-buttons")
+            console.log(galleryButtons)
             let galleryLeft = document.getElementById("gallery-left")
             let galleryRight = document.getElementById("gallery-right")
 
@@ -187,17 +188,23 @@
                                 break
                         }
                     }
-                )
+                ),
+                // new Selection(
+
+                // )
             ]
 
             //instantiates objects so that touch functions work
             selections.forEach(module => {
                 module.create()
-                module.destroy()
+                
             })
 
             // if on desktop be interactive
             if (window.innerWidth > 500) {
+
+                selections.forEach(module => {module.destroy()})
+
                 moduleIndex = 0
                 maxModuleIndex = selections.length - 1
                 selections[moduleIndex].create()

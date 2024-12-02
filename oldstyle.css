@@ -11,34 +11,14 @@
     --moduleinteriorratio: 0.86;
 
     /* color scheme */
-    --white: rgb(255, 255, 255);
-    --black: rgb(0, 0, 0);
-    --selectedColor: rgb(255, 255, 255);
-
-    --backgroundColor: var(--black);
-    --secondaryColor: var(--black);
-    --title: var(--white);
-    --textColor: var(--white);
-    --moduleBorder1: var(--white);
-    --moduleBorder2: var(--white);
-    --moduleBorder3: var(--black); 
-    --moduleBorder4: var(--black);
-    --moduleSelectedBorder1: var(--selectedColor);
-    --moduleSelectedBorder2: var(--selectedColor);
-    --moduleSelectedBorder3: var(--black); 
-    --moduleSelectedBorder4: var(--black); 
-    
+    --backgroundColor: rgb(193, 102, 72);
+    --secondaryColor: rgb(187, 187, 187);
+    --title: rgb(187, 187, 187);
+    --moduleBorder1: rgb(255, 255, 255);
+    --moduleBorder2: rgb(255, 255, 255);
+    --moduleBorder3: rgb(0, 0, 0); 
+    --moduleBorder4: rgb(0, 0, 0);
 }
-
-@media (max-width: 500px) {
-    * {
-        --columnwidth: 90vw;
-        --white: rgb(255, 255, 255)
-    }
-    .header {
-        margin-top: 10px;
-    }
-} 
 
 body {
     background-color: var(--backgroundColor);
@@ -67,7 +47,7 @@ body {
 
 .title {
     color: var(--title);
-    /* text-shadow: 1px 1px rgb(46, 106, 35); */
+    text-shadow: 1px 1px black;
     font-weight: bold;
     font-family: luminari;
     font-size: 24px;
@@ -75,10 +55,9 @@ body {
 
 .back-link {
     position: absolute;
-    font-size: 14px;
     bottom: 9px;
     left: 0;
-    color: var(--textColor)
+    color: var(--secondaryColor)
 }
 
 .module {
@@ -92,7 +71,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    color: var(--textColor);
+    color: black;
     background-color: var(--secondaryColor);
 
     border-top: 1px solid var(--moduleBorder1);
@@ -100,48 +79,39 @@ body {
     border-bottom: 1px solid var(--moduleBorder4);
     border-right: 1px solid var(--moduleBorder3);
 
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 .module > div {
-    background-color: var(--backgroundColor);
+    background-color: var(--secondaryColor);
     /* module interior width */
     width: calc(var(--moduleinteriorratio) * 100%);
+
 }
 
 .interiorBorder {
-    border: 1px solid var(--backgroundColor);
+    border: 1px solid var(--secondaryColor);
 }
 
 .selectedBorder {
     animation: border 1s step-start 0s infinite;
-    border-bottom: 1px solid var(--moduleSelectedBorder1);
-    border-right: 1px solid var(--moduleSelectedBorder2);
-    border-top: 1px solid var(--moduleSelectedBorder4);
-    border-left: 1px solid var(--moduleSelectedBorder3);
-}
-
-#navmenu {
-    padding-bottom: 7px;
+    border-bottom: 1px solid var(--moduleBorder1);
+    border-right: 1px solid var(--moduleBorder2);
+    border-top: 1px solid var(--moduleBorder4);
+    border-left: 1px solid var(--moduleBorder3);
 }
 
 .navitem {
-    padding: 2px 0 5px 0px;
+    padding: 2px 0 5px 5px;
     font-size: 14px;
-    color: var(--textColor);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.navitem > a {
     cursor: pointer;
+    color: black;
 }
 
 .gallery {
     width: 100%;
     /* to achieve 4:3 aspect ratio gallery images */
-    height: calc((var(--moduleinteriorratio) * 2/3) * var(--columnwidth));
+    height: calc((var(--moduleinteriorratio) * 3/4) * var(--columnwidth));
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -160,11 +130,11 @@ body {
 
 .gallery-footer {
     padding-top: 9px;
-    width: 85%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #gallery-buttons > div {
@@ -183,10 +153,12 @@ body {
 /* animations */
 @keyframes blink {
     50% {
-        color: var(--selectedColor)
+        color: black;
+        text-decoration: underline;
     }
-    100% {
-        color: var(--selectedColor)
+    50% {
+        color: var(--backgroundColor);
+        text-decoration: none;
     }
 }
 .blinking {
@@ -204,27 +176,23 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 15px;
+    gap: 10px;
 }
 
 .project:focus-visible {
-    border: 10px solid var(--textColor);
+    border: 10px solid black;
 }
 
 .project img {
     height: 100px;
     width: 200px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .project-title {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 5px;
-}
-
-.project-description {
-    color: var(--white)
 }
 
 .project-text {
@@ -236,19 +204,23 @@ body {
 }
 
 .selected-project-text {
-    color: var(--selectedColor);
+    color: var(--backgroundColor);
+    text-decoration: underline;
 }
 
-.invisible {
-    opacity: 0;
+.project-border {
+    border: 2px solid var(--secondaryColor);
 }
 
-/* about */
-#about {
-    display: flex;
-    gap: 12px;
+.selected-project-border {
+    border: 2px solid var(--backgroundColor);
 }
 
-#about img {
-    height: 200px;
-}
+@media (max-width: 500px) {
+    * {
+        --columnwidth: 90%;
+    }
+    .header {
+        margin-top: 10px;
+    }
+} 
