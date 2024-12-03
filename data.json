@@ -1,32 +1,11 @@
 {
     "projects" : [
         {
-            "title" : "Métro, Boulot, Dodo",
-            "description" : "Vinyl installation",
-            "link" : "/projects/metroboulotdodo/metroboulotdodo.html",
-            "img" : "/projects/metroboulotdodo/media/metroboulotdodo.jpg",
-            "featured" : true
-        },
-        {
-            "title" : "Auto Seatpost",
-            "description": "Designing and machining an automatically-adjusting seatpost",
+            "title" : "Automatic Seatpost",
+            "description": "Motor actuated seatpost retrofitted onto BCycle bikes",
             "link" : "/projects/seatpost/seatpost.html",
             "img" : "/projects/seatpost/media/seatpost.jpg",
             "featured" : true
-        },
-        {
-            "title" : "PartyReg",
-            "description" : "Web application for university party registration and management",
-            "link" : "/projects/partyreg/partyreg.html",
-            "img" : "/projects/partyreg/media/partyreg.jpeg",
-            "featured" : true
-        },
-        {
-            "title" : "Plastic Mart",
-            "description" : "Wood sculpture",
-            "link" : "/projects/plasticmart.html",
-            "img" : "/projects/plasticmart/media/plasticmart.jpg",
-            "featured" : true  
         },
         {
             "title" : "Bikesharemap",
@@ -34,6 +13,20 @@
             "link" : "/projects/bikesharemap/bikesharemap.html",
             "img" : "/projects/bikesharemap/media/bikesharemap.png",
             "featured" : true
+        },
+        {
+            "title" : "Métro, Boulot, Dodo",
+            "description" : "Vinyl installation",
+            "link" : "/projects/metroboulotdodo/metroboulotdodo.html",
+            "img" : "/projects/metroboulotdodo/media/metroboulotdodo.jpg",
+            "featured" : true
+        },
+        {
+            "title" : "PartyReg",
+            "description" : "Web application for university party registration and management",
+            "link" : "/projects/partyreg/partyreg.html",
+            "img" : "/projects/partyreg/media/partyreg.jpeg",
+            "featured" : false
         },
         {
             "title" : "Pokéwatch",
@@ -48,13 +41,6 @@
             "link" : "/projects/newparts/newparts.html",
             "img" : "/projects/newparts/media/newparts.jpeg",
             "featured" : false
-        },
-        {
-            "title" : "Untitled Sculpture",
-            "description": "Scary sculpture",
-            "link": "",
-            "img": "",
-            "featured": false
         },
         {
             "title" : "FPV Bag Organizer",
@@ -74,6 +60,23 @@
 
     "misc" : [
 
+    ],
+
+    "archive" : [
+        {
+            "title" : "Untitled Sculpture",
+            "description": "Scary sculpture",
+            "link": "",
+            "img": "",
+            "featured": false
+        },
+        {
+            "title" : "Plastic Mart",
+            "description" : "Wood sculpture",
+            "link" : "/projects/plasticmart.html",
+            "img" : "/projects/plasticmart/media/plasticmart.jpg",
+            "featured" : false  
+        }
     ]
 
 }

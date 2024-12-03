@@ -207,10 +207,6 @@ body {
     gap: 15px;
 }
 
-.project:focus-visible {
-    border: 10px solid var(--textColor);
-}
-
 .project img {
     height: 100px;
     width: 200px;
